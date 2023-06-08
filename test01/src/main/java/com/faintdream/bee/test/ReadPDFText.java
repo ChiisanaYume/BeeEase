@@ -7,12 +7,21 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
-public class PDFTest1 {
-    public static void main(String[] args) {
-        try {
+public class ReadPDFText {
+    public static String getClassPath() {
 
-            File filePath = new File(getClassPath() + "091蒋介石在挑动内战.pdf");
-            // System.out.println(filePath);
+        // 获取当前线程的类加载器
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+
+        // 使用类加载器获取类路径
+        return Objects.requireNonNull(classLoader.getResource("")).getPath();
+    }
+
+    public String getText(final File filePath) {
+
+        // 存放读取的文件(文本)内容
+        StringBuffer text = new StringBuffer();
+        try {
 
             // 加载PDF文件
             PDDocument document = PDDocument.load(filePath);
@@ -25,11 +34,12 @@ public class PDFTest1 {
                 stripper.setStartPage(page);
                 stripper.setEndPage(page);
 
-                // 提取当前页的文本内容
-                String text = stripper.getText(document);
+                // 添加页码标识
+                text.append("Page ").append(page).append(":\n");
 
-                // 打印文本内容
-                System.out.println("Page " + page + ":\n" + text);
+                // 提取当前页的文本内容
+                text.append(stripper.getText(document));
+
             }
 
             // 关闭PDF文件
@@ -37,16 +47,8 @@ public class PDFTest1 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        return text.toString();
     }
 
-    private static String getClassPath(){
-
-        // 获取当前线程的类加载器
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-
-        // 使用类加载器获取类路径
-        return Objects.requireNonNull(classLoader.getResource("")).getPath();
-    }
 
 }
