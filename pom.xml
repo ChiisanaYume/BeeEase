@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>test01</module>
+        <module>test01-pdfbox</module>
         <module>gui-test-javafx</module>
     </modules>
 
