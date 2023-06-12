@@ -11,7 +11,13 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="COMMIT 20230607" />
+    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="COMMIT 20230612">
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,25 +70,20 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.33103448&quot;,
     &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.com.faintdream.gui.javafx.test.Demo01">
-    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.bee.Demo01" />
-      <module name="test01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.bee.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="应用程序.Demo02">
+    <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.faintdream.gui.javafx.test.Demo01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo01" />
+      <module name="gui-test-javafx" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.faintdream.gui.javafx.test.*" />
@@ -93,9 +94,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.faintdream.gui.javafx.test.Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo01" />
-      <module name="gui-test" />
+    <configuration name="Demo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo02" />
+      <module name="gui-test-javafx" />
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
@@ -108,14 +109,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.com.faintdream.gui.javafx.test.Demo01" />
-      <item itemvalue="应用程序.com.faintdream.gui.javafx.test.Demo01 (1)" />
+      <item itemvalue="应用程序.未命名" />
+      <item itemvalue="应用程序.Demo02" />
       <item itemvalue="应用程序.Demo01" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.com.faintdream.gui.javafx.test.Demo01" />
-        <item itemvalue="应用程序.com.faintdream.gui.javafx.test.Demo01 (1)" />
+        <item itemvalue="应用程序.Demo02" />
         <item itemvalue="应用程序.Demo01" />
       </list>
     </recent_temporary>
@@ -141,6 +141,8 @@
       <workItem from="1686463883381" duration="9000" />
       <workItem from="1686580881813" duration="659000" />
       <workItem from="1686581561328" duration="59000" />
+      <workItem from="1686581638277" duration="2093000" />
+      <workItem from="1686583901761" duration="289000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230607">
       <created>1686153389329</created>
@@ -149,7 +151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686153389329</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="COMMIT 20230612 test">
+      <created>1686581843808</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686581843808</updated>
+    </task>
+    <task id="LOCAL-00003" summary="COMMIT 20230612">
+      <created>1686581975629</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686581975629</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +184,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="COMMIT 20230607" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230607" />
+    <MESSAGE value="COMMIT 20230612 test" />
+    <MESSAGE value="COMMIT 20230612" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230612" />
   </component>
 </project>
