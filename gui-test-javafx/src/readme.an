@@ -1,4 +1,10 @@
 ####
 #javaFX VM参数
- *
+ * --module-path "E:\lib\Other\javafx-sdk-18\lib" --add-modules javafx.controls,javafx.fxml
  * 其中module-path 为javafx-jdk(\lib)的的目录
+
+#javaFX结构
+ * 舞台 - 设置场景
+ * 场景 - 设置布局
+ * 布局 - 添加控件
+ * 控件
