@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="BeeEase" />
+      <module name="test01" />
+      <module name="gui-test" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="COMMIT 20230607" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\App\maven_workspace\maven_repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../App/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\App\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2QsJftBcuD2k0zf6LWRw32oQb7m" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33103448&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  }
+}</component>
+  <component name="RunManager" selected="应用程序.com.faintdream.gui.javafx.test.Demo01">
+    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.bee.Demo01" />
+      <module name="test01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.bee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.faintdream.gui.javafx.test.Demo01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.javafx.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.faintdream.gui.javafx.test.Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo01" />
+      <module name="gui-test" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.javafx.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="应用程序.com.faintdream.gui.javafx.test.Demo01" />
+      <item itemvalue="应用程序.com.faintdream.gui.javafx.test.Demo01 (1)" />
+      <item itemvalue="应用程序.Demo01" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.com.faintdream.gui.javafx.test.Demo01" />
+        <item itemvalue="应用程序.com.faintdream.gui.javafx.test.Demo01 (1)" />
+        <item itemvalue="应用程序.Demo01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="" />
+      <created>1686136461769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686136461769</updated>
+      <workItem from="1686136463276" duration="368000" />
+      <workItem from="1686136938554" duration="492000" />
+      <workItem from="1686153349743" duration="57000" />
+      <workItem from="1686180968968" duration="83000" />
+      <workItem from="1686324030904" duration="1581000" />
+      <workItem from="1686325641355" duration="236000" />
+      <workItem from="1686326198289" duration="474000" />
+      <workItem from="1686415912462" duration="494000" />
+      <workItem from="1686449704904" duration="2259000" />
+      <workItem from="1686463883381" duration="9000" />
+      <workItem from="1686580881813" duration="659000" />
+      <workItem from="1686581561328" duration="59000" />
+    </task>
+    <task id="LOCAL-00001" summary="COMMIT 20230607">
+      <created>1686153389329</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686153389329</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="COMMIT 20230607" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230607" />
+  </component>
+</project>
