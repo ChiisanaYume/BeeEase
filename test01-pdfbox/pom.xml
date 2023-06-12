@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>test01</artifactId>
+    <artifactId>test01-pdfbox</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

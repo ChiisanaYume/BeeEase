@@ -8,9 +8,10 @@
     <artifactId>BeeEase</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <modules>
-        <module>test01</module>
-        <module>gui-test</module>
+        <module>test01-pdfbox</module>
+        <module>gui-test-javafx</module>
     </modules>
 
     <properties>
