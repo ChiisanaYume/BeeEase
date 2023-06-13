@@ -11,9 +11,7 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="COMMIT 20230612">
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" afterDir="false" />
-    </list>
+    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="COMMIT 20230613" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,6 +187,7 @@
     <MESSAGE value="COMMIT 20230607" />
     <MESSAGE value="COMMIT 20230612 test" />
     <MESSAGE value="COMMIT 20230612" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230612" />
+    <MESSAGE value="COMMIT 20230613" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230613" />
   </component>
 </project>
