@@ -4,14 +4,28 @@
  * 其中module-path 为javafx-jdk(\lib)的的目录
 
 ## javaFX结构
- * 舞台 - 设置场景
- * 场景 - 设置布局
+ * 应用程序(javaFX Application)
+ * 舞台 - 设置场景(Stage)
+ * 场景 - 设置布局(Scenes)
  * 布局 - 添加控件
  * 控件
 
-## 异常代码
+# 第一个 JavaFX 应用程序
+ * javaFX 应用程序需要一个主启动类
+ * 该类必须
+     * 扩展 javafx.application.Application 接口
+     * 实现 start() 方法
+ * 添加一个 main() 方法
+ * 设置场景,添加控件...
+
+
+## 异常(代码)
  * 6月 13, 2023 4:13:08 下午 com.sun.javafx.application.PlatformImpl startup
    警告: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @573fd745'
+ * 使用 junit 测试方法 @Test运行javaFX launch()方法的报错↑↑↑ 但是程序可以跑起来???
+
+ * 错误: 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序
+
 
 ## 课外
  * VM选项 -ea 表示启用java的断言assert

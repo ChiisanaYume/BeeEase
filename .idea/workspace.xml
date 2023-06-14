@@ -11,11 +11,12 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="COMMIT 20230613">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test01-pdfbox/src/test/java/com/faintdream/pdfbox/Demo04.java" afterDir="false" />
+    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="COMMIT 20230614">
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/JavaFX 应用程序的一般结构.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test01-pdfbox/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test01-pdfbox/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,39 +69,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.33103448&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "D:/study/BeeEase/gui-test-javafx/src/note",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.33103448",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\BeeEase\gui-test-javafx\src\note" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.faintdream.pdfbox" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Demo04.Domo04Test">
+  <component name="RunManager" selected="JUnit.Demo06.launchTest">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo03.TextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Demo05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo05" />
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -108,15 +116,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.test" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo03" />
-      <option name="METHOD_NAME" value="TextTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo03.TextTest2" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration name="Demo06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo06" />
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +129,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.test" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo03" />
-      <option name="METHOD_NAME" value="TextTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,7 +166,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo04.getParametersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Demo06.launchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -175,28 +175,28 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.test" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo04" />
-      <option name="METHOD_NAME" value="getParametersTest" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo06" />
+      <option name="METHOD_NAME" value="launchTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.Demo06.launchTest" />
       <item itemvalue="JUnit.Demo04.Domo04Test" />
       <item itemvalue="JUnit.Demo04.Domo04Test2" />
-      <item itemvalue="JUnit.Demo04.getParametersTest" />
-      <item itemvalue="JUnit.Demo03.TextTest" />
-      <item itemvalue="JUnit.Demo03.TextTest2" />
       <item itemvalue="应用程序.未命名" />
+      <item itemvalue="应用程序.Demo06" />
+      <item itemvalue="应用程序.Demo05" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo06.launchTest" />
+        <item itemvalue="应用程序.Demo06" />
+        <item itemvalue="应用程序.Demo05" />
         <item itemvalue="JUnit.Demo04.Domo04Test" />
         <item itemvalue="JUnit.Demo04.Domo04Test2" />
-        <item itemvalue="JUnit.Demo04.Domo04Test" />
-        <item itemvalue="JUnit.Demo04.getParametersTest" />
-        <item itemvalue="JUnit.Demo03.TextTest" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +225,8 @@
       <workItem from="1686583901761" duration="623000" />
       <workItem from="1686642933868" duration="2674000" />
       <workItem from="1686645783233" duration="571000" />
-      <workItem from="1686706540524" duration="2296000" />
+      <workItem from="1686706540524" duration="3134000" />
+      <workItem from="1686717594962" duration="2807000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230607">
       <created>1686153389329</created>
@@ -283,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686644697492</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="COMMIT 20230614">
+      <created>1686708932222</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686708932222</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +313,7 @@
     <MESSAGE value="COMMIT 20230612 test" />
     <MESSAGE value="COMMIT 20230612" />
     <MESSAGE value="COMMIT 20230613" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230613" />
+    <MESSAGE value="COMMIT 20230614" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230614" />
   </component>
 </project>
