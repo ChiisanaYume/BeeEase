@@ -43,33 +43,7 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>jpackager-maven-plugin</artifactId>
-            <version>1.2.5</version> <!-- 根据需要更改版本 -->
-        </dependency>
-
     </dependencies>
-
-    <plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>jpackager-maven-plugin</artifactId>
-            <version>1.2.5</version> <!-- 根据需要更改版本 -->
-            <executions>
-                <execution>
-                    <id>jpackage</id>
-                    <phase>package</phase> <!-- 将jpackage插件绑定到打包生命周期 -->
-                    <goals>
-                        <goal>jpackage</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <!-- 配置打包参数，例如应用程序名称、版本、描述、图标等 -->
-            </configuration>
-        </plugin>
-    </plugins>
 
 
 </project>
