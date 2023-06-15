@@ -26,7 +26,7 @@ public class Demo07 extends Application {
         HBox hBox = new HBox();
 
         // 场景
-        Scene scene = new Scene(hBox,400,200);
+        Scene scene = new Scene(hBox,WIDTH,HEIGHT);
 
         //----------------------------------------------------------------------------------------------------
 

@@ -11,7 +11,10 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="COMMIT 20230612" />
+    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="COMMIT">
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo07.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo07.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686732217786</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="COMMIT">
+      <created>1686818427668</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686818427668</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +340,7 @@
     <MESSAGE value="COMMIT 20230612" />
     <MESSAGE value="COMMIT 20230613" />
     <MESSAGE value="COMMIT 20230614" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230614" />
+    <MESSAGE value="COMMIT" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT" />
   </component>
 </project>
