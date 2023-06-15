@@ -10,7 +10,7 @@
  * 布局 - 添加控件
  * 控件
 
-# 第一个 JavaFX 应用程序
+## 第一个 JavaFX 应用程序
  * javaFX 应用程序需要一个主启动类
  * 该类必须
      * 扩展 javafx.application.Application 接口
@@ -18,7 +18,7 @@
  * 添加一个 main() 方法
  * 设置场景,添加控件...
 
-# Stage(舞台)
+## Stage(舞台)
  * 设置标题
      * setTitle("标题") // 设置(窗口)标题
  * 设置位置
@@ -30,6 +30,30 @@
      *
      * 注意,窗口的大小一般通过场景(Scene)来设置
      * Scene scene = new Scene(hBox,WIDTH,HEIGHT);
+ * 设置窗口风格
+     * stage.initStyle(StageStyle.DECORATED); // 设置舞台的风格
+     *
+     * StageStyle.DECORATED：默认样式，舞台具有装饰（标题栏、边框等）
+     * StageStyle.UNDECORATED：舞台没有装饰，即没有标题栏和边框
+     * StageStyle.TRANSPARENT：舞台透明，没有背景颜色和装饰，只显示舞台中的内容。
+     * StageStyle.UNIFIED：舞台具有统一的装饰，标题栏与内容区域融为一体。
+     * StageStyle.UTILITY：类似于UNIFIED样式，但舞台具有较小的尺寸和简化的装饰，通常用作工具窗口或对话框。
+ * 设置全屏模式
+     * setFullScreen(true); // 全屏
+ * 绑定生命周期事件(监听器)
+     * 注册窗口关闭事件
+     * stage.setOnCloseRequest((event)->{System.out.println("关闭窗口");});
+
+     * 窗口生命周期
+         * setOnShowing()：  窗口即将显示时触发的事件。
+         * setOnShown()：    窗口已经显示后触发的事件。
+         * setOnHiding()：   窗口即将隐藏时触发的事件。
+         * setOnHidden()：   窗口已经隐藏后触发的事件。
+         *
+ * 绑定键盘事件(监听器)
+
+## 文本(javafx.scene.text.Text)
+ * Text节点是JavaFX节点，它允许我们在场景图上显示文本
 
 ## 异常(代码)
  * 6月 13, 2023 4:13:08 下午 com.sun.javafx.application.PlatformImpl startup

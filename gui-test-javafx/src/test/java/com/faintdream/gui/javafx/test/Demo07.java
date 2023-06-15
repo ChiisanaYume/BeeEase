@@ -42,15 +42,44 @@ public class Demo07 extends Application {
         // stage.setHeight(400);
 
         // 设置舞台的风格
-         stage.initStyle(StageStyle.DECORATED);
+        stage.initStyle(StageStyle.DECORATED); // 默认
         // stage.initStyle(StageStyle.UNIFIED);
+        // stage.initStyle(StageStyle.UNDECORATED); // 什么也没有
+        // stage.initStyle(StageStyle.TRANSPARENT); // 透明
+        // stage.initStyle(StageStyle.UTILITY); // 极简
+
+        // 监听器
+        stage.setOnCloseRequest((event)->{
+            System.out.println("关闭窗口");
+        });
+
+        stage.setOnHidden(event->{
+           System.out.println("窗口已经隐藏");
+        });
+
+        stage.setOnHiding(event->{
+            System.out.println("窗口即将隐藏");
+        });
+
+        stage.setOnShowing(event->{
+            System.out.println("窗口即将显示");
+        });
+
+        stage.setOnShown(event->{
+           System.out.println("窗口已经显示");
+        });
 
         // 设置场景
         stage.setScene(scene);
 
+        // 全屏显示舞台
+        // stage.setFullScreen(true);
+
         // 显示舞台
         stage.show();
 
+        // 隐藏窗口
+        // stage.hide();
         //----------------------------------------------------------------------------------------------------
     }
     @Test
