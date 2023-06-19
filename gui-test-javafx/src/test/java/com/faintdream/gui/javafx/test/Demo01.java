@@ -1,5 +1,3 @@
-package com.faintdream.gui.javafx.test;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
