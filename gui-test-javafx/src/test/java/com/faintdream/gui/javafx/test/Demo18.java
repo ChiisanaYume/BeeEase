@@ -29,7 +29,10 @@ public class Demo18 extends Application {
         Scene scene = new Scene(root,400,400);
 
         // 测试设置鼠标样式
-        scene.setCursor(Cursor.OPEN_HAND);
+        // scene.setCursor(Cursor.OPEN_HAND); // 手掌展开
+        // scene.setCursor(Cursor.CLOSED_HAND); // 手掌半握
+        // scene.setCursor(Cursor.CROSSHAIR); // 十字
+        scene.setCursor(Cursor.HAND); // 手指点击
 
         stage.setScene(scene);
         stage.setTitle("Scene 测试");

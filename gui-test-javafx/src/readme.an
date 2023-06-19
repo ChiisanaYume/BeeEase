@@ -73,11 +73,11 @@
      * scene.setCursor(Cursor.OPEN_HAND); // 设置场景鼠标样式
 
      * 一些鼠标样式值
-     * Cursor.OPEN_HAND     // 手掌
-     * Cursor.CLOSED_HAND
-     * Cursor.CROSSHAIR
-     * Cursor.DEFAULT
-     * Cursor.HAND
+     * Cursor.OPEN_HAND     // 手掌展开
+     * Cursor.CLOSED_HAND   // 半握
+     * Cursor.CROSSHAIR     // 十字
+     * Cursor.DEFAULT       // 默认
+     * Cursor.HAND          // 手指点击
      * Cursor.WAIT
      * Cursor.H_RESIZE
      * Cursor.V_RESIZE
