@@ -52,6 +52,47 @@
          *
  * 绑定键盘事件(监听器)
 
+## 场景(javafx.scene.Scene)
+ * 场景是场景图(布局)的根
+ * 场景 <- 场景图(布局) <- 可视 JavaFX GUI 组件
+
+ * 创建场景
+     * 您必须传递根场景图(布局)组件
+     * VBox vBox = new VBox();
+     * Scene scene = new Scene(vBox);
+
+     * 指定场景宽高
+     * VBox vBox = new VBox();
+     * Scene scene = new Scene(vBox,640,480);
+
+ * 将场景添加到舞台
+     * 一个舞台(stage)智能添加一个场景
+     * stage.setScene(scene);
+
+ * 场景鼠标样式
+     * scene.setCursor(Cursor.OPEN_HAND); // 设置场景鼠标样式
+
+     * 一些鼠标样式值
+     * Cursor.OPEN_HAND
+     * Cursor.CLOSED_HAND
+     * Cursor.CROSSHAIR
+     * Cursor.DEFAULT
+     * Cursor.HAND
+     * Cursor.WAIT
+     * Cursor.H_RESIZE
+     * Cursor.V_RESIZE
+     * Cursor.MOVE
+     * Cursor.TEXT
+
+## 节点(javafx.scene.Node)
+ * javafx.scene.Node是添加到JavaFX 场景图的所有组件 的基类（超类）
+     * JavaFX Node 类是抽象的，因此您只需将 Node 类的子类添加到场景中
+     * 每个 JavaFX 节点（子类）实例只能添加到 JavaFX 场景中一次
+     * JavaFX 节点有时可以有子项——也称为子项
+     * 将 Node 实例附加到场景图后，仅允许管理 JavaFX 场景图的线程(JavaFX 应用程序线程)修改 Node 实例
+
+ *
+
 ## 文本(javafx.scene.text.Text)
  * Text节点是JavaFX节点，它允许我们在场景图上显示文本
 
