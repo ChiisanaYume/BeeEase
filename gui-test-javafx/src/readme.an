@@ -111,6 +111,9 @@
 
  * 错误: 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序
 
+ * Error: A JNI error has occurred, please check your installation and try again
+   java虚拟机（JVM）无法加载或调用本地方法库（Native Method Library）↑↑↑
+   一般是java版本不是您期望的版本或与Maven不兼容
 
 ## 课外
  * VM选项 -ea 表示启用java的断言assert
