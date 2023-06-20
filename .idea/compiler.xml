@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gui-test-javafx" />
+        <module name="module-test-001" />
         <module name="test01-pdfbox" />
         <module name="gui-test-javafx-jdk8" />
       </profile>

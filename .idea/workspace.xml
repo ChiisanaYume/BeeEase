@@ -12,9 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at Faintdream">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/java/com/faintdream/gui/javafx/Demo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/module/MyClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-test-001/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-test-001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-test-001/src/main/java/com/faintdream/moudle1/ModuleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-test-001/src/main/java/com/faintdream/moudle1/ModuleTestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-test-001/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,18 +40,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "author": "ChiisanaYume"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;ChiisanaYume&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN",
-    "author": "ChiisanaYume"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;author&quot;: &quot;ChiisanaYume&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -84,14 +92,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "D:/app/jdks/jdk8",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "D:/study/BeeEase/module-test-001/src/main/java/com/faintdream/moudle1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDK",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33103448",
     "ruby.rails.projectView.checked": "true",
@@ -101,6 +109,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\BeeEase\module-test-001\src\main\java\com\faintdream\moudle1" />
+      <recent name="D:\study\BeeEase\gui-test-javafx\src\main\java\com\faintdream\module2" />
       <recent name="D:\study\BeeEase\gui-test-javafx\src\note" />
       <recent name="D:\study\Beee\BeeEase\gui-test-javafx\src\test\resources" />
     </key>
@@ -109,7 +119,7 @@
       <recent name="com.faintdream.pdfbox" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Demo01">
+  <component name="RunManager" selected="应用程序.ModuleTest">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -129,18 +139,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo17.launchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gui-test-javafx" />
+    <configuration name="ModuleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.moudle1.ModuleTest" />
+      <module name="module-test-001" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.javafx.test.*" />
+          <option name="PATTERN" value="com.faintdream.moudle1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.test" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo17" />
-      <option name="METHOD_NAME" value="launchTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,17 +204,17 @@
       <item itemvalue="JUnit.Demo19.Test" />
       <item itemvalue="JUnit.Demo19.launchTest" />
       <item itemvalue="JUnit.Demo18.launchTest" />
-      <item itemvalue="JUnit.Demo17.launchTest" />
       <item itemvalue="应用程序.未命名" />
+      <item itemvalue="应用程序.ModuleTest" />
       <item itemvalue="应用程序.Demo01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ModuleTest" />
         <item itemvalue="应用程序.Demo01" />
         <item itemvalue="JUnit.Demo19.launchTest" />
         <item itemvalue="JUnit.Demo19.Test" />
         <item itemvalue="JUnit.Demo18.launchTest" />
-        <item itemvalue="JUnit.Demo17.launchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +250,8 @@
       <workItem from="1686914744228" duration="3378000" />
       <workItem from="1687152573588" duration="3020000" />
       <workItem from="1687165301338" duration="972000" />
-      <workItem from="1687224262697" duration="6895000" />
+      <workItem from="1687224262697" duration="7300000" />
+      <workItem from="1687237767962" duration="4811000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230607">
       <created>1686153389329</created>
@@ -434,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687233555130</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Commit at Faintdream">
+      <created>1687234436324</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1687234436324</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
