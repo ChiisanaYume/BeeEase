@@ -12,6 +12,7 @@
     <modules>
         <module>test01-pdfbox</module>
         <module>gui-test-javafx</module>
+        <module>gui-test-javafx-jdk8</module>
     </modules>
 
     <properties>

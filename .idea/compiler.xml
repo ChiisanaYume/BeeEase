@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gui-test-javafx" />
         <module name="test01-pdfbox" />
+        <module name="gui-test-javafx-jdk8" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
