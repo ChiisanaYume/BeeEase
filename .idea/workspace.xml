@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at Faintdream">
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo19.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo18.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo18.java" afterDir="false" />
@@ -99,22 +100,9 @@
       <recent name="com.faintdream.pdfbox" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Demo18.launchTest">
+  <component name="RunManager" selected="JUnit.Demo19.launchTest">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo14" />
-      <module name="gui-test-javafx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.javafx.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,22 +116,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo14.launchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gui-test-javafx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.javafx.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.test" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo14" />
-      <option name="METHOD_NAME" value="launchTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,21 +152,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo19.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gui-test-javafx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.javafx.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.test" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo19" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo19.launchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gui-test-javafx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.javafx.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.test" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo19" />
+      <option name="METHOD_NAME" value="launchTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="JUnit.Demo19.Test" />
+      <item itemvalue="JUnit.Demo19.launchTest" />
       <item itemvalue="JUnit.Demo18.launchTest" />
       <item itemvalue="JUnit.Demo17.launchTest" />
-      <item itemvalue="JUnit.Demo14.launchTest" />
       <item itemvalue="应用程序.未命名" />
       <item itemvalue="应用程序.Demo17" />
-      <item itemvalue="应用程序.Demo14" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo19.launchTest" />
+        <item itemvalue="JUnit.Demo19.Test" />
         <item itemvalue="JUnit.Demo18.launchTest" />
         <item itemvalue="JUnit.Demo17.launchTest" />
         <item itemvalue="应用程序.Demo17" />
-        <item itemvalue="应用程序.Demo14" />
-        <item itemvalue="JUnit.Demo14.launchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +233,8 @@
       <workItem from="1686756643600" duration="1518000" />
       <workItem from="1686914744228" duration="3378000" />
       <workItem from="1687152573588" duration="3020000" />
-      <workItem from="1687165301338" duration="940000" />
+      <workItem from="1687165301338" duration="972000" />
+      <workItem from="1687224262697" duration="3066000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230607">
       <created>1686153389329</created>
@@ -385,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687165809666</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Commit at Faintdream">
+      <created>1687166258775</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1687166258775</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,6 +433,11 @@
           <url>file://$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo08.java</url>
           <line>26</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo19.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

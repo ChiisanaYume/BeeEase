@@ -30,6 +30,14 @@
      *
      * 注意,窗口的大小一般通过场景(Scene)来设置
      * Scene scene = new Scene(hBox,WIDTH,HEIGHT);
+
+ * 设置窗口图标
+     * getIcon().addIcon(); // 设置窗口图标
+     *
+     * FileInputStream inputStream = new FileInputStream(getClassPath()+"纸箱.png");
+     * inputStream.close();
+     * Image icon = new Image(inputStream);
+     * 注意IO问题
  * 设置窗口风格
      * stage.initStyle(StageStyle.DECORATED); // 设置舞台的风格
      *
@@ -78,9 +86,9 @@
      * Cursor.CROSSHAIR     // 十字
      * Cursor.DEFAULT       // 默认
      * Cursor.HAND          // 手指点击
-     * Cursor.WAIT
-     * Cursor.H_RESIZE
-     * Cursor.V_RESIZE
+     * Cursor.WAIT          // 转圈圈
+     * Cursor.H_RESIZE      // 双向箭头水平
+     * Cursor.V_RESIZE      // 双向箭头垂直
      * Cursor.MOVE
      * Cursor.TEXT
 

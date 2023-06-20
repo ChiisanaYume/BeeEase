@@ -33,7 +33,9 @@ public class Demo18 extends Application {
         // scene.setCursor(Cursor.CLOSED_HAND); // 手掌半握
         // scene.setCursor(Cursor.CROSSHAIR); // 十字
         scene.setCursor(Cursor.HAND); // 手指点击
-
+        // scene.setCursor(Cursor.WAIT); // 转圈圈
+        // scene.setCursor(Cursor.H_RESIZE); // 双向箭头水平
+        // scene.setCursor(Cursor.H_RESIZE); // 双向箭头垂直
         stage.setScene(scene);
         stage.setTitle("Scene 测试");
         stage.show();
