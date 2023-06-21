@@ -11,8 +11,10 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at Faintdream;">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo21.java" afterDir="false" />
+    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo22.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +114,7 @@
       <recent name="com.faintdream.pdfbox" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Demo21">
+  <component name="RunManager" selected="应用程序.Demo22">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -139,8 +141,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.faintdream.test1.gui.javafx.Demo20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo20" />
+    <configuration name="Demo22" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo22" />
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -152,18 +154,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo19.launchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.faintdream.test1.gui.javafx.Demo20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo20" />
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.javafx.test.*" />
+          <option name="PATTERN" value="com.faintdream.test1.gui.javafx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.test" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test.Demo19" />
-      <option name="METHOD_NAME" value="launchTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,19 +185,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Demo20.Test" />
-      <item itemvalue="JUnit.Demo19.launchTest" />
       <item itemvalue="应用程序.未命名" />
+      <item itemvalue="应用程序.Demo22" />
       <item itemvalue="应用程序.Demo21" />
       <item itemvalue="应用程序.com.faintdream.test1.gui.javafx.Demo20" />
       <item itemvalue="应用程序.Demo01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Demo22" />
         <item itemvalue="应用程序.Demo21" />
         <item itemvalue="应用程序.com.faintdream.test1.gui.javafx.Demo20" />
         <item itemvalue="应用程序.Demo01" />
         <item itemvalue="JUnit.Demo20.Test" />
-        <item itemvalue="JUnit.Demo19.launchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -463,6 +462,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -474,15 +482,6 @@
                 </option>
               </RecentGroup>
             </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
           </value>
         </entry>
       </map>
