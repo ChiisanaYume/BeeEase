@@ -1,4 +1,4 @@
-package com.faintdream.gui.javafx.test;
+package com.faintdream.test1.gui.javafx;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -8,7 +8,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.stage.Stage;
-import org.junit.Test;
 
 public class Demo20 extends Application {
     /**
@@ -53,12 +52,9 @@ public class Demo20 extends Application {
 
     }
 
-    @Test
-    public void Test(){
-        launch();
-    }
 
     public static void main(String[] args) {
         launch(args);
     }
+
 }
