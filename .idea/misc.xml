@@ -11,10 +11,11 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/gui-test/pom.xml" />
+        <option value="$PROJECT_DIR$/module-test-001/pom.xml" />
       </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
-    <output url="file://C:/Windows/Temp" />
+    <output url="file://C:/Windows/temp" />
   </component>
 </project>

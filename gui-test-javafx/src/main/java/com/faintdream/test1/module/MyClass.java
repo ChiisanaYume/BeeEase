@@ -1,4 +1,4 @@
-package com.faintdream.module;
+package com.faintdream.test1.module;
 
 
 public class MyClass {

@@ -1,4 +1,4 @@
-package com.faintdream.gui.javafx;
+package com.faintdream.test2.gui.javafx;
 
 public class Demo01 {
     public static void main(String[] args) {

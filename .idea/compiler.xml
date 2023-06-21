@@ -7,13 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gui-test-javafx" />
-        <module name="module-test-001" />
+        <module name="module_A_test" />
         <module name="test01-pdfbox" />
         <module name="gui-test-javafx-jdk8" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gui-test" target="17" />
+      <module name="module-test-001" target="17" />
       <module name="test01" target="17" />
     </bytecodeTargetLevel>
   </component>

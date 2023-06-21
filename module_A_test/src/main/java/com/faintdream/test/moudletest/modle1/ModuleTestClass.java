@@ -1,4 +1,4 @@
-package com.faintdream.moudle1;
+package com.faintdream.test.moudletest.modle1;
 
 
 public class ModuleTestClass {
