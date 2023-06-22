@@ -6,14 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="moduleD" />
         <module name="module_C_test" />
         <module name="module_E_test" />
         <module name="gui-test-javafx-jdk8" />
         <module name="gui-test-javafx" />
         <module name="module_A_test" />
         <module name="test01-pdfbox" />
+        <module name="moduleA" />
         <module name="module_test" />
+        <module name="moduleC" />
         <module name="module_B_test" />
+        <module name="moduleB" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

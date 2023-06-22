@@ -18,6 +18,10 @@
         <module>module_C_test</module>
         <module>module_E_test</module>
         <module>module_test</module>
+        <module>module_test/moduleA</module>
+        <module>module_test/moduleB</module>
+        <module>module_test/moduleC</module>
+        <module>module_test/moduleD</module>
     </modules>
 
     <properties>
