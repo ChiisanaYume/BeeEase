@@ -43,7 +43,7 @@ module guiTestJavafx {
 通过 exports 关键字将 "com.faintdream.test1.gui.javafx" 包导出,以使其他模块能够访问该包中的类;
 使用 opens 关键字将 "com.faintdream.test1.gui.javafx" 包开放给javafx.fxml包,
 允许 JavaFX 访问该包中的资源<br>
-**将 "com.faintdream.test1.gui.javafx"
+**将上面代码 "com.faintdream.test1.gui.javafx"<br><br>
 替换为JavaFX应用程序(javafx.application.Application)所在的包**
 
 ### 方法3: 配置VM参数
