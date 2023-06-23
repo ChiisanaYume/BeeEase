@@ -47,6 +47,10 @@ module guiTestJavafx {
 <!-- 空行 -->
 ![测试方法调用launch()](04测试方法调用launch().png)
 <!-- 空行 -->
+```java 
+@Test
+public void Test(){launch();}
+```
 原理未知,但是可以运行!个人猜测可能是Junit帮我们封装了模块;
 如果要使用这种方法,记得引入Junit的依赖,
 使用这种方法运行会在控制台输出以下警告(不影响运行):
