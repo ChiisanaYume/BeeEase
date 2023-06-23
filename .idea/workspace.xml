@@ -11,12 +11,7 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at Faintdream;">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/03配置VM参数.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/04测试方法调用launch().png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/note/解决缺少 javaFX 运行时组件(jdk9以上模块化问题).md" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/解决缺少 javaFX 运行时组件(jdk9以上模块化问题).md" afterDir="false" />
-    </list>
+    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at Faintdream;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +238,7 @@
       <workItem from="1687313399522" duration="5888000" />
       <workItem from="1687336256550" duration="582000" />
       <workItem from="1687474282497" duration="35000" />
-      <workItem from="1687484473408" duration="15859000" />
+      <workItem from="1687484473408" duration="15969000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230607">
       <created>1686153389329</created>
@@ -574,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687510959498</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Commit at Faintdream;">
+      <created>1687511022343</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1687511022343</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
