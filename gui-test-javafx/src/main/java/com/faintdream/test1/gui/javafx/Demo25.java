@@ -1,6 +1,8 @@
 package com.faintdream.test1.gui.javafx;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -22,26 +24,31 @@ public class Demo25 extends Application {
         Button top = new Button("上");
         BorderPane.setAlignment(top, Pos.TOP_CENTER);
         BorderPane.setMargin(top, new Insets(10));
+        top.setOnAction(eventHandler); // 添加按钮点击事件
         root.setTop(top);
 
         Button right = new Button("右");
         BorderPane.setAlignment(right, Pos.CENTER_RIGHT);
         BorderPane.setMargin(right, new Insets(10));
+        right.setOnAction(eventHandler); // 添加按钮点击事件
         root.setRight(right);
 
         Button bottom = new Button("下");
         BorderPane.setAlignment(bottom, Pos.BOTTOM_CENTER);
         BorderPane.setMargin(bottom, new Insets(10));
+        bottom.setOnAction(eventHandler); // 添加按钮点击事件
         root.setBottom(bottom);
 
         Button left = new Button("左");
         BorderPane.setAlignment(left, Pos.CENTER_LEFT);
         BorderPane.setMargin(left, new Insets(10));
+        left.setOnAction(eventHandler); // 添加按钮点击事件
         root.setLeft(left);
 
         Button center = new Button("中");
         BorderPane.setAlignment(center, Pos.CENTER);
         BorderPane.setMargin(center, new Insets(10));
+        center.setOnAction(eventHandler); // 添加按钮点击事件
         root.setCenter(center);
 
         Scene scene = new Scene(root,300,300);
@@ -53,4 +60,18 @@ public class Demo25 extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
+    EventHandler<ActionEvent> eventHandler = new EventHandler<ActionEvent>() {
+        @Override
+        public void handle(ActionEvent actionEvent) {
+
+            // System.out.println(actionEvent);
+
+            if(actionEvent.getSource() instanceof Button sourceButton){
+                String buttonText = sourceButton.getText();
+                System.out.println(buttonText);
+            }
+
+        }
+    };
 }
