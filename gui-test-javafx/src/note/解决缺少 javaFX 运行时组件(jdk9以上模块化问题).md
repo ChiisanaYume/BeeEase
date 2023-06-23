@@ -9,7 +9,7 @@ Java JDK 1.8之后的JDK 9,引入了 模块 这一概念,
 所以即使我们引入了JavaFX的依赖jar包,
 仍然会报错无法运行;
 <!-- 空行 -->
-![错误: 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序](ExceptionImage1.png)
+![错误: 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序](https://github.com/ChiisanaYume/BeeEase/blob/9234d340d2eb440d424be20bc0f77a5ee1fc1c7d/gui-test-javafx/src/note/ExceptionImage1.png)
 <!-- 空行 -->
 如何解决?根据我自己的研究和网上的一些资料,我总结出以下4种方法解决:
 
