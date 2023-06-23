@@ -35,7 +35,7 @@ module guiTestJavafx {
 }
 ```
 上面的代码,声明了一个名为 guiTestJavafx 的模块,
-并引入了 javafx.controls 和 javafx.fxml 这两个模块的依赖;
+并引入了 javafx.controls 和 javafx.fxml 这两个模块的依赖;<!-- 空行 -->
 通过 exports 关键字将 "com.faintdream.test1.gui.javafx" 包导出,以使其他模块能够访问该包中的类
 使用 opens 关键字将 "com.faintdream.test1.gui.javafx" 包开放给javafx.fxml包,
 允许 JavaFX 访问该包中的资源
@@ -53,9 +53,6 @@ module guiTestJavafx {
 ### 方法4: 奇奇怪怪的方法
 不使用main方法调用launch()方法,
 而是使用Junit单元测试的测试方法(@Test)来调用;
-<!-- 空行 -->
-![测试方法调用launch()](04测试方法调用launch().png)
-<!-- 空行 -->
 ```java 
 @Test
 public void Test(){launch();}
@@ -64,8 +61,36 @@ public void Test(){launch();}
 如果要使用这种方法,记得引入Junit的依赖,
 使用这种方法运行会在控制台输出以下警告(不影响运行):
 <!-- 空行 -->
-<span style="color:#fd6a67; ">
+```
 6月 13, 2023 4:13:08 下午 com.sun.javafx.application.PlatformImpl startup
 警告: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @573fd745'
-</span>
-<!-- 空行 -->
+```
+以下是一个范例,记得引入Junit依赖;
+```java 
+package com.faintdream.test1.gui.javafx;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import org.junit.Test;
+
+public class Demo01 extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+
+        VBox vBox = new VBox();
+        Scene scene = new Scene(vBox,600,400);
+        stage.setScene(scene);
+        stage.setTitle(getClass().getSimpleName());
+        stage.show();
+    }
+    
+    // 用Test方法代替main方法
+    @Test
+    public void launchTest(){
+        launch();
+    }
+}
+```
