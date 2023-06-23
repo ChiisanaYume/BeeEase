@@ -34,7 +34,7 @@ Java JDK 1.8之后的JDK 9,引入了 模块 这一概念,
 如果要使用这种方法,记得引入Junit的依赖,
 使用这种方法运行会在控制台输出以下警告(不影响运行):
 <!-- 空行 -->
-<font style="color:#fd6b68; ">
+<span style="color:#fd6a67; ">
 6月 13, 2023 4:13:08 下午 com.sun.javafx.application.PlatformImpl startup
 警告: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @573fd745'
-</font>
+</span>
