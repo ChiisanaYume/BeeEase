@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at Faintdream;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/note/解决缺少 javaFX 运行时组件(jdk9以上模块化问题).md" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/解决缺少 javaFX 运行时组件(jdk9以上模块化问题).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/note/错误 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序.png" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/ExceptionImage1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +239,7 @@
       <workItem from="1687313399522" duration="5888000" />
       <workItem from="1687336256550" duration="582000" />
       <workItem from="1687474282497" duration="35000" />
-      <workItem from="1687484473408" duration="12006000" />
+      <workItem from="1687484473408" duration="12545000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230607">
       <created>1686153389329</created>
@@ -537,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687506708071</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Commit at Faintdream;">
+      <created>1687507468428</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1687507468428</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
