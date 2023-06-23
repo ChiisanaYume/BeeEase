@@ -4,14 +4,14 @@
 
 Java JDK 1.8以后，JavaFX 被从Java JDK中移除了，
 因此我们使用 JavaFX 来进行开发时，如果我们使用的是1.8以后的版本，
-需要引入JavaFX的依赖(使用Maven或者手动配置jar包);<br>
+需要引入JavaFX的依赖(使用Maven或者手动配置jar包);
 Java JDK 1.8之后的JDK 9,引入了 模块化 这一概念,
 在未启用java模块的情况下，JVM 是找不到JavaFX相关的依赖的;
 所以即使我们引入了JavaFX的依赖jar包,
 仍然会报错无法运行;
-<!-- 空行 -->
-![错误: 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序](ExceptionImage1.png)
-<!-- 空行 -->
+```
+错误: 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序
+```
 如何解决?根据我自己的研究和网上的一些资料,我总结出以下4种方法解决:
 
 ### 方法1: 直接使用 Java JDK 1.8 进行开发
@@ -40,10 +40,9 @@ module guiTestJavafx {
 
 上面的代码,声明了一个名为 guiTestJavafx 的模块,
 并引入了 javafx.controls 和 javafx.fxml 这两个模块的依赖;<br>
-通过 exports 关键字将 "com.faintdream.test1.gui.javafx" 包导出,以使其他模块能够访问该包中的类;<br>
+通过 exports 关键字将 "com.faintdream.test1.gui.javafx" 包导出,以使其他模块能够访问该包中的类;
 使用 opens 关键字将 "com.faintdream.test1.gui.javafx" 包开放给javafx.fxml包,
 允许 JavaFX 访问该包中的资源<br>
-<!-- 空行 -->
 **将 "com.faintdream.test1.gui.javafx"
 替换为JavaFX应用程序(javafx.application.Application)所在的包**
 
