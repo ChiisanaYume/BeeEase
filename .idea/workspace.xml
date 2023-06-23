@@ -122,7 +122,7 @@
       <recent name="com.faintdream.pdfbox" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.com.faintdream.gui.javafx.test3.Demo25">
+  <component name="RunManager" selected="应用程序.Demo20">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -155,8 +155,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo25" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo25" />
+    <configuration name="Demo20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo20" />
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -188,18 +188,18 @@
     <list>
       <item itemvalue="JAR 应用程序.gui-test-javafx-jdk8-1.0-SNAPSHOT.jar" />
       <item itemvalue="应用程序.未命名" />
+      <item itemvalue="应用程序.Demo20" />
       <item itemvalue="应用程序.Demo02" />
       <item itemvalue="应用程序.Demo04" />
-      <item itemvalue="应用程序.Demo25" />
       <item itemvalue="应用程序.com.faintdream.gui.javafx.test3.Demo25" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Demo20" />
         <item itemvalue="应用程序.com.faintdream.gui.javafx.test3.Demo25" />
         <item itemvalue="应用程序.Demo04" />
         <item itemvalue="JAR 应用程序.gui-test-javafx-jdk8-1.0-SNAPSHOT.jar" />
         <item itemvalue="应用程序.Demo02" />
-        <item itemvalue="应用程序.Demo25" />
       </list>
     </recent_temporary>
   </component>
@@ -241,13 +241,6 @@
       <workItem from="1687336256550" duration="582000" />
       <workItem from="1687474282497" duration="35000" />
       <workItem from="1687484473408" duration="13034000" />
-    </task>
-    <task id="LOCAL-00001" summary="COMMIT 20230607">
-      <created>1686153389329</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1686153389329</updated>
     </task>
     <task id="LOCAL-00002" summary="COMMIT 20230612 test">
       <created>1686581843808</created>
@@ -578,7 +571,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687524108595</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Commit at faintdream">
+      <created>1687525380845</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1687525380845</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Commit at faintdream">
+      <created>1687525495960</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1687525495961</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

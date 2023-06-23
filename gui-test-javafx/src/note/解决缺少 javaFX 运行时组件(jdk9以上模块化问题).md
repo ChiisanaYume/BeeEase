@@ -1,4 +1,4 @@
-## 解决JavaFX报错缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序
+## 解决JavaFX报错缺少JavaFX 运行时组件, 需要使用该组件来运行此应用程序问题
 
 ### 概述(废话)
 Java JDK 1.8以后，JavaFX 被从Java JDK中移除了，
@@ -19,6 +19,7 @@ Java JDK 1.8之后的JDK 9,引入了 模块化 这一概念,
 
 ### 方法2: 使用模块化的方式引入JavaFX 的依赖
 
+在项目(模块)的**根目录**下创建一个 "module-info.java" 的模块配置文件:
 ```java filename=module-info.java
 module guiTestJavafx {
     
@@ -33,6 +34,14 @@ module guiTestJavafx {
     opens com.faintdream.test1.gui.javafx to javafx.fxml;
 }
 ```
+上面的代码,声明了一个名为 guiTestJavafx 的模块,
+并引入了 javafx.controls 和 javafx.fxml 这两个模块的依赖;
+通过 exports 关键字将 "com.faintdream.test1.gui.javafx" 包导出,以使其他模块能够访问该包中的类
+使用 opens 关键字将 "com.faintdream.test1.gui.javafx" 包开放给javafx.fxml包,
+允许 JavaFX 访问该包中的资源
+<!-- 空行 -->
+**将 "com.faintdream.test1.gui.javafx" 
+替换为JavaFX应用程序(javafx.application.Application)所在的包**
 
 ### 方法3: 配置VM参数
 配置VM参数 来告诉java虚拟机 JavaFX在哪!
