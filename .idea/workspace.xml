@@ -12,15 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at Faintdream;">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-3/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-3/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-3/src/main/java/com/faintdream/gui/javafx/test3/Demo25.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/解决缺少 javaFX 运行时组件(jdk9以上模块化问题).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/note/解决缺少 javaFX 运行时组件(jdk9以上模块化问题).md" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/解决缺少 javaFX 运行时组件(jdk9以上模块化问题).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/note/错误 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序.png" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/ExceptionImage1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +87,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "271",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/study/Beee/BeeEase/module_test/moduleD/src/main/java",
+    "last_opened_file_path": "D:/study/BeeEase/gui-test-javafx/src/note",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,11 +103,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\BeeEase\gui-test-javafx\src\note" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleD\src\main\java" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleB\src\main\java" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleC\src\main\java" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleA\src\main\java" />
-      <recent name="D:\study\Beee\BeeEase\module_E_test\src\main\java\com\faintdream\test\moudletest\modle5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\study\Beee\BeeEase\module_test\moduleD\src\main\java" />
@@ -247,7 +241,7 @@
       <workItem from="1687313399522" duration="5888000" />
       <workItem from="1687336256550" duration="582000" />
       <workItem from="1687474282497" duration="35000" />
-      <workItem from="1687484473408" duration="11231000" />
+      <workItem from="1687484473408" duration="12006000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230607">
       <created>1686153389329</created>
@@ -536,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687497301516</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Commit at Faintdream;">
+      <created>1687506708071</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1687506708071</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
