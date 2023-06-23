@@ -12,28 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change afterPath="$PROJECT_DIR$/module_test/moduleA/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleA/src/main/java/com/faintdream/moudle/a/MyName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleA/src/main/java/com/faintdream/moudle/a/MyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleA/src/main/java/com/faintdream/moudle/a/impl/Kirara.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleA/src/main/java/com/faintdream/moudle/a/impl/MyServiceImplByMySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleA/src/main/java/com/faintdream/moudle/a/impl/MyServiceImplByOracle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleA/src/main/java/com/faintdream/moudle/a/impl/MyServiceImplDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleA/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleB/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleB/src/main/java/com/faintdream/moudle/b/MyServiceBySqlLite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleB/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleC/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleC/src/main/java/com/faintdream/moudle/c/TestC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleC/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleD/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleD/src/main/java/com/faintdream/moudle/d/DTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/moduleD/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_test/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_A_test/src/note/java 模块的关键字.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/note/java 模块的关键字.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -514,15 +496,6 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -534,6 +507,15 @@
                 </option>
               </RecentGroup>
             </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
           </value>
         </entry>
       </map>

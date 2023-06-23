@@ -11,10 +11,8 @@
         <module name="module_E_test" />
         <module name="gui-test-javafx-jdk8" />
         <module name="gui-test-javafx" />
-        <module name="module_A_test" />
         <module name="test01-pdfbox" />
         <module name="moduleA" />
-        <module name="module_test" />
         <module name="moduleC" />
         <module name="module_B_test" />
         <module name="moduleB" />
@@ -23,6 +21,7 @@
     <bytecodeTargetLevel>
       <module name="gui-test" target="17" />
       <module name="module-test-001" target="17" />
+      <module name="module_A_test" target="17" />
       <module name="module_D_test" target="17" />
       <module name="test01" target="17" />
     </bytecodeTargetLevel>
