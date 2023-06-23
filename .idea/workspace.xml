@@ -12,8 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at Faintdream;">
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/java/com/faintdream/test2/gui/javafx/Demo02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx-jdk8/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,13 +115,13 @@
       <recent name="D:\study\Beee\BeeEase\module_test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.faintdream.test1.gui.javafx" />
       <recent name="com.faintdream.test2.gui.javafx" />
+      <recent name="com.faintdream.test1.gui.javafx" />
       <recent name="" />
       <recent name="com.faintdream.pdfbox" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Demo25">
+  <component name="RunManager" selected="JAR 应用程序.gui-test-javafx-jdk8-1.0-SNAPSHOT.jar">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -133,6 +134,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.faintdream.moudle.d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo02" />
+      <module name="gui-test-javafx-jdk8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.test2.gui.javafx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,47 +180,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.moudle.c.TestC" />
-      <module name="moduleC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.moudle.c.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test.moudletest.modle5.TestE" />
-      <module name="module_E_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.test.moudletest.modle5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="gui-test-javafx-jdk8-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/gui-test-javafx-jdk8/target/gui-test-javafx-jdk8-1.0-SNAPSHOT.jar" />
+      <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JAR 应用程序.gui-test-javafx-jdk8-1.0-SNAPSHOT.jar" />
       <item itemvalue="应用程序.未命名" />
+      <item itemvalue="应用程序.Demo02" />
       <item itemvalue="应用程序.Demo24" />
       <item itemvalue="应用程序.Demo25" />
       <item itemvalue="应用程序.DTest" />
-      <item itemvalue="应用程序.TestC" />
-      <item itemvalue="应用程序.TestE" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR 应用程序.gui-test-javafx-jdk8-1.0-SNAPSHOT.jar" />
+        <item itemvalue="应用程序.Demo02" />
         <item itemvalue="应用程序.Demo25" />
         <item itemvalue="应用程序.Demo24" />
         <item itemvalue="应用程序.DTest" />
-        <item itemvalue="应用程序.TestC" />
-        <item itemvalue="应用程序.TestE" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +239,7 @@
       <workItem from="1687313399522" duration="5888000" />
       <workItem from="1687336256550" duration="582000" />
       <workItem from="1687474282497" duration="35000" />
-      <workItem from="1687484473408" duration="6574000" />
+      <workItem from="1687484473408" duration="7630000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230607">
       <created>1686153389329</created>
@@ -515,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687494569141</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Commit at Faintdream;">
+      <created>1687495553987</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1687495553987</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
