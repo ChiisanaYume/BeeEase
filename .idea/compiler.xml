@@ -11,6 +11,7 @@
         <module name="module_E_test" />
         <module name="gui-test-javafx-jdk8" />
         <module name="gui-test-javafx" />
+        <module name="gui-test-javafx-3" />
         <module name="test01-pdfbox" />
         <module name="moduleA" />
         <module name="moduleC" />
