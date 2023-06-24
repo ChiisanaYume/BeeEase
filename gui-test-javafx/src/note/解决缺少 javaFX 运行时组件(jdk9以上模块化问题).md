@@ -5,6 +5,24 @@
 Java JDK 1.8以后，JavaFX 被从Java JDK中移除了，
 因此我们使用 JavaFX 来进行开发时，如果我们使用的是1.8以后的版本，
 需要引入JavaFX的依赖(使用Maven或者手动配置jar包);
+```xml
+<!-- javaFX的maven依赖(版本)-->
+<dependencies>
+    <!--https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/-->
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>11</version>
+    </dependency>
+
+    <!--https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/-->
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+        <version>11</version>
+    </dependency>
+</dependency>
+```
 Java JDK 1.8之后的JDK 9,引入了 模块化 这一概念,
 在未启用java模块的情况下，JVM 是找不到JavaFX相关的依赖的;
 所以即使我们引入了JavaFX的依赖jar包,
@@ -48,8 +66,11 @@ module guiTestJavafx {
 
 ### 方法3: 配置VM参数
 
-配置VM参数 来告诉java虚拟机 JavaFX在哪!
-注意，这里配置的VM参数,不是程序实参
+使用VM参数配置模块信息;告诉JVM虚拟机 JavaFX在哪(注意,这里配置的VM参数,不是程序实参)!
+```
+--module-path "E:\lib\Other\javafx-sdk-18\lib" --add-modules javafx.controls,javafx.fxml
+```
+--module-path为JavaFX JDK的lib目录;实际上是 javafx.controls,javafx.fxml 两个jar所在的根目录
 <!-- 空行 -->
 ![配置VM参数](03配置VM参数.png)
 <!-- 空行 -->
