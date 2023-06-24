@@ -6,13 +6,18 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/gui-test-javafx/pom.xml" />
+        <option value="$PROJECT_DIR$/module_test/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/gui-test/pom.xml" />
         <option value="$PROJECT_DIR$/module-test-001/pom.xml" />
+        <option value="$PROJECT_DIR$/module_A_test/pom.xml" />
+        <option value="$PROJECT_DIR$/module_B_test/pom.xml" />
+        <option value="$PROJECT_DIR$/module_C_test/pom.xml" />
         <option value="$PROJECT_DIR$/module_D_test/pom.xml" />
+        <option value="$PROJECT_DIR$/module_E_test/pom.xml" />
       </set>
     </option>
   </component>
