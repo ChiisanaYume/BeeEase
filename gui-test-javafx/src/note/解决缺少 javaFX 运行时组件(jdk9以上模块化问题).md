@@ -12,14 +12,14 @@ Java JDK 1.8以后，JavaFX 被从Java JDK中移除了，
     <dependency>
         <groupId>org.openjfx</groupId>
         <artifactId>javafx-controls</artifactId>
-        <version>17</version>
+        <version>11</version>
     </dependency>
 
     <!--https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/-->
     <dependency>
         <groupId>org.openjfx</groupId>
         <artifactId>javafx-fxml</artifactId>
-        <version>17</version>
+        <version>11</version>
     </dependency>
 </dependency>
 ```

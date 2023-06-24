@@ -24,14 +24,14 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>17</version>
+            <version>11</version>
         </dependency>
 
         <!--https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/-->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>17</version>
+            <version>11</version>
         </dependency>
 
         <!--junit 单元测试-->
