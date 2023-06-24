@@ -12,10 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo26.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/warn不明确的模块引用.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "271",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/study/Beee/BeeEase/gui-test-javafx/src/note",
+    "last_opened_file_path": "D:/study/BeeEase/gui-test-javafx/src/note",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,8 +105,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\study\Beee\BeeEase\gui-test-javafx\src\note" />
       <recent name="D:\study\BeeEase\gui-test-javafx\src\note" />
+      <recent name="D:\study\Beee\BeeEase\gui-test-javafx\src\note" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleD\src\main\java" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleB\src\main\java" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleC\src\main\java" />
@@ -258,14 +256,7 @@
       <workItem from="1687336256550" duration="582000" />
       <workItem from="1687474282497" duration="35000" />
       <workItem from="1687484473408" duration="13034000" />
-      <workItem from="1687566282072" duration="6984000" />
-    </task>
-    <task id="LOCAL-00009" summary="COMMIT 20230614">
-      <created>1686708932222</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1686708932222</updated>
+      <workItem from="1687566282072" duration="7990000" />
     </task>
     <task id="LOCAL-00010" summary="COMMIT 20230614">
       <created>1686723162764</created>
@@ -603,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687570632518</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Commit at faintdream">
+      <created>1687593220624</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1687593220624</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
