@@ -13,6 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/note/04测试方法调用launch().png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/note/ExceptionImage1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,9 @@
     &quot;author&quot;: &quot;ChiisanaYume&quot;
   }
 }</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="d6361aa8-d66b-4a63-a363-df64ff63f278" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -95,7 +100,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33103448",
     "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "vcs.Perforce",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -243,14 +248,7 @@
       <workItem from="1687336256550" duration="582000" />
       <workItem from="1687474282497" duration="35000" />
       <workItem from="1687484473408" duration="13034000" />
-      <workItem from="1687566282072" duration="2241000" />
-    </task>
-    <task id="LOCAL-00007" summary="COMMIT 20230613">
-      <created>1686644656769</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1686644656769</updated>
+      <workItem from="1687566282072" duration="3874000" />
     </task>
     <task id="LOCAL-00008" summary="COMMIT 20230613">
       <created>1686644697491</created>
@@ -588,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687567882061</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Commit at faintdream">
+      <created>1687568662352</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1687568662352</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
