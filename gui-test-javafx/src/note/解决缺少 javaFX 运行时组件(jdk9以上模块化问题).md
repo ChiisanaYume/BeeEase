@@ -2,9 +2,9 @@
 
 ### 概述(废话)
 
-Java JDK 1.8以后，JavaFX 被从Java JDK中移除了，
+Java JDK 1.8以后，JavaFX 被从`Java JDK`中移除了，
 因此我们使用 JavaFX 来进行开发时，如果我们使用的是1.8以后的版本，
-需要引入JavaFX的依赖(使用Maven或者手动配置jar包);
+需要引入JavaFX的依赖(使用`Maven`或者手动配置jar包);
 ```xml
 <!-- javaFX的maven依赖(版本)-->
 <dependencies>
@@ -23,7 +23,7 @@ Java JDK 1.8以后，JavaFX 被从Java JDK中移除了，
     </dependency>
 </dependency>
 ```
-Java JDK 1.8之后的JDK 9,引入了 模块化 这一概念,
+Java JDK 1.8之后的JDK 1.9,引入了`模块化`概念,
 在未启用java模块的情况下，JVM 是找不到JavaFX相关的依赖的;
 所以即使我们引入了JavaFX的依赖jar包,
 仍然会报错无法运行;
@@ -39,7 +39,7 @@ Java JDK 1.8之后的JDK 9,引入了 模块化 这一概念,
 
 ### 方法2: 使用模块化的方式引入 JavaFX 的依赖
 
-在项目(模块)的**根目录**下创建一个 "module-info.java" 的模块配置文件:
+在项目(模块)的**根目录**下创建一个 `module-info.java` 的模块配置文件:
 
 ```java 
 module guiTestJavafx {
@@ -56,12 +56,12 @@ module guiTestJavafx {
 }
 ```
 
-上面的代码,声明了一个名为 guiTestJavafx 的模块,
-并引入了 javafx.controls 和 javafx.fxml 这两个模块的依赖;<br>
-通过 exports 关键字将 "com.faintdream.test1.gui.javafx" 包导出,以使其他模块能够访问该包中的类;
-使用 opens 关键字将 "com.faintdream.test1.gui.javafx" 包开放给javafx.fxml包,
+上面的代码,声明了一个名为 **guiTestJavafx** 的模块,
+并引入了 **javafx.controls** 和 **javafx.fxml** 这两个模块的依赖;<br>
+通过 **exports** 关键字将 "com.faintdream.test1.gui.javafx" 包导出,以使其他模块能够访问该包中的类;
+使用 **opens** 关键字将 "com.faintdream.test1.gui.javafx" 包开放给javafx.fxml包,
 允许 JavaFX 访问该包中的资源<br>
-**将上面代码 "com.faintdream.test1.gui.javafx"<br><br>
+**将上面代码 `com.faintdream.test1.gui.javafx`<br><br>
 替换为JavaFX应用程序(javafx.application.Application)所在的包**
 
 ### 方法3: 配置VM参数
