@@ -14,6 +14,7 @@
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui-test-javafx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,14 +258,7 @@
       <workItem from="1687474282497" duration="35000" />
       <workItem from="1687484473408" duration="13034000" />
       <workItem from="1687566282072" duration="11256000" />
-      <workItem from="1687650807740" duration="1129000" />
-    </task>
-    <task id="LOCAL-00014" summary="Commit At faintdream">
-      <created>1686840684299</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1686840684299</updated>
+      <workItem from="1687650807740" duration="3502000" />
     </task>
     <task id="LOCAL-00015" summary="Commit at faintdream">
       <created>1686916364663</created>
@@ -602,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687625025159</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Commit at faintdream">
+      <created>1687652696847</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1687652696848</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

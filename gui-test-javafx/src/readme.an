@@ -116,5 +116,10 @@
    一般是java版本不是您期望的版本或与Maven不兼容
  * java: 程序包javafx.application不存在
 
+ * -source 11 中不支持 instanceof 中的模式匹配
+ * Process exited with an error: 1 (Exit value: 1)
+ * 找不到模块: javafx.controls
+ * 找不到模块: javafx.fxml
+
 ## 课外
  * VM选项 -ea 表示启用java的断言assert

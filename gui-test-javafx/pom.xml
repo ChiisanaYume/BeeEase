@@ -67,7 +67,8 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.1</version>
                 <configuration>
-                    <mainClass>com.faintdream.test1.gui.javafx.Demo26</mainClass>
+                    <mainClass>com.faintdream.test1.gui.javafx.Demo28</mainClass>
+                    <!--outputFile>custom/output/directory</outputFile-->
                 </configuration>
             </plugin>
 
