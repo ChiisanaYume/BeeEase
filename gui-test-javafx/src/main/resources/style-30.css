@@ -1,0 +1,10 @@
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;/*按钮文本颜色*/
+    -fx-font-size: 14px;
+}
+
+.label {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+}

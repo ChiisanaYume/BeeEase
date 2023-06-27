@@ -24,6 +24,7 @@
       <module name="module-test-001" target="17" />
       <module name="module_A_test" target="17" />
       <module name="module_D_test" target="17" />
+      <module name="SmallTool" target="17" />
       <module name="test01" target="17" />
     </bytecodeTargetLevel>
   </component>
