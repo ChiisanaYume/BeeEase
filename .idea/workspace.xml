@@ -12,7 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo29.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="20f95b30-9b92-48a8-86f3-49db3b56a443" />
+        <option name="accountId" value="d6361aa8-d66b-4a63-a363-df64ff63f278" />
         <option name="url" value="https://github.com/ChiisanaYume/BeeEase.git" />
       </UrlAndAccount>
     </option>
@@ -124,7 +125,7 @@
       <recent name="com.faintdream.pdfbox" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Demo28">
+  <component name="RunManager" selected="应用程序.Demo29">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -183,25 +184,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo01.launchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gui-test-javafx-3" />
+    <configuration name="Demo29" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo29" />
+      <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.javafx.test3.*" />
+          <option name="PATTERN" value="com.faintdream.test1.gui.javafx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.test3" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.test3.Demo01" />
-      <option name="METHOD_NAME" value="launchTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Demo01.launchTest" />
       <item itemvalue="应用程序.未命名" />
+      <item itemvalue="应用程序.Demo29" />
       <item itemvalue="应用程序.Demo28" />
       <item itemvalue="应用程序.Demo24" />
       <item itemvalue="应用程序.Demo26" />
@@ -209,11 +207,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Demo29" />
         <item itemvalue="应用程序.Demo28" />
         <item itemvalue="应用程序.Demo27" />
         <item itemvalue="应用程序.Demo26" />
         <item itemvalue="应用程序.Demo24" />
-        <item itemvalue="JUnit.Demo01.launchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -257,14 +255,7 @@
       <workItem from="1687484473408" duration="13034000" />
       <workItem from="1687566282072" duration="11256000" />
       <workItem from="1687650807740" duration="3502000" />
-      <workItem from="1687830738156" duration="1106000" />
-    </task>
-    <task id="LOCAL-00021" summary="Commit at Faintdream">
-      <created>1687165319007</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1687165319007</updated>
+      <workItem from="1687830738156" duration="3165000" />
     </task>
     <task id="LOCAL-00022" summary="Commit at Faintdream">
       <created>1687165809666</created>
@@ -602,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687831775299</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Commit at faintdream">
+      <created>1687831855797</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1687831855797</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
