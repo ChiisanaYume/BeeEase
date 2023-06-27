@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.an" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,13 +257,7 @@
       <workItem from="1687484473408" duration="13034000" />
       <workItem from="1687566282072" duration="11256000" />
       <workItem from="1687650807740" duration="3502000" />
-    </task>
-    <task id="LOCAL-00017" summary="Commit at faintdream">
-      <created>1686929799569</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1686929799569</updated>
+      <workItem from="1687830738156" duration="301000" />
     </task>
     <task id="LOCAL-00018" summary="Commit at Faintdream">
       <created>1687138589497</created>
@@ -601,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687756893033</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Commit at faintdream">
+      <created>1687830783592</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1687830783592</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
