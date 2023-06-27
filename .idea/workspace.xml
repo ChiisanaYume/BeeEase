@@ -12,16 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo30.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/util/Tool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/resources/demo30.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/resources/style-30.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/util/ToolTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo30.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo30.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/util/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/util/Tool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +125,7 @@
       <recent name="com.faintdream.pdfbox" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ToolTest.getClassLoaderTest">
+  <component name="RunManager" selected="应用程序.Demo30">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -224,8 +216,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ToolTest.getClassLoaderTest" />
         <item itemvalue="应用程序.Demo30" />
+        <item itemvalue="JUnit.ToolTest.getClassLoaderTest" />
         <item itemvalue="JUnit.ToolTest.getClassPath" />
         <item itemvalue="JUnit.ToolTest.getInputStream" />
         <item itemvalue="应用程序.Demo29" />
@@ -272,14 +264,7 @@
       <workItem from="1687484473408" duration="13034000" />
       <workItem from="1687566282072" duration="11256000" />
       <workItem from="1687650807740" duration="3502000" />
-      <workItem from="1687830738156" duration="10434000" />
-    </task>
-    <task id="LOCAL-00023" summary="Commit at Faintdream">
-      <created>1687166258775</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1687166258775</updated>
+      <workItem from="1687830738156" duration="11446000" />
     </task>
     <task id="LOCAL-00024" summary="Commit at Faintdream">
       <created>1687227358185</created>
@@ -617,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687833997067</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Commit at faintdream">
+      <created>1687849130484</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1687849130484</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

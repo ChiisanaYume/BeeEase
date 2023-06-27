@@ -6,10 +6,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import com.faintdream.test1.gui.util.Tool;
+import com.faintdream.test1.gui.util.IOUtil;
 
 import java.net.URL;
-import java.util.Objects;
 
 public class Demo30 extends Application {
     /**
@@ -39,6 +38,15 @@ public class Demo30 extends Application {
     }
 
     public static void main(String[] args) {
-        launch(args);
+        // launch(args);
+        new Demo30().test01();
+    }
+
+    private void test01(){
+        ClassLoader classLoader1 = this.getClass().getClassLoader();
+        ClassLoader classLoader2 = IOUtil.getClassLoader();
+        System.out.println(classLoader1);
+        System.out.println(classLoader2);
+        System.out.println(classLoader1.equals(classLoader2));
     }
 }
