@@ -12,8 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo30.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo30.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/util/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/util/Tool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/util/IOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/util/IOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/util/IOUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/util/IOUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,19 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo29" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo29" />
-      <module name="gui-test-javafx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.test1.gui.javafx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Demo30" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo30" />
       <module name="gui-test-javafx" />
@@ -158,7 +148,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToolTest.getClassLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IOUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -167,14 +157,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.util" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.util.ToolTest" />
-      <option name="METHOD_NAME" value="getClassLoaderTest" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.util.IOUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IOUtilTest.getFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gui-test-javafx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.javafx.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.util" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.util.IOUtilTest" />
+      <option name="METHOD_NAME" value="getFileTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToolTest.getClassPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IOUtilTest.getInputStreamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -183,14 +188,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.util" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.util.ToolTest" />
-      <option name="METHOD_NAME" value="getClassPath" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.util.IOUtilTest" />
+      <option name="METHOD_NAME" value="getInputStreamTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToolTest.getInputStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IOUtilTest.getURLTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -199,28 +204,28 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.faintdream.gui.javafx.util" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.util.ToolTest" />
-      <option name="METHOD_NAME" value="getInputStream" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.javafx.util.IOUtilTest" />
+      <option name="METHOD_NAME" value="getURLTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ToolTest.getClassLoaderTest" />
-      <item itemvalue="JUnit.ToolTest.getClassPath" />
-      <item itemvalue="JUnit.ToolTest.getInputStream" />
+      <item itemvalue="JUnit.IOUtilTest" />
+      <item itemvalue="JUnit.IOUtilTest.getFileTest" />
+      <item itemvalue="JUnit.IOUtilTest.getInputStreamTest" />
+      <item itemvalue="JUnit.IOUtilTest.getURLTest" />
       <item itemvalue="应用程序.未命名" />
-      <item itemvalue="应用程序.Demo29" />
       <item itemvalue="应用程序.Demo30" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.Demo30" />
-        <item itemvalue="JUnit.ToolTest.getClassLoaderTest" />
-        <item itemvalue="JUnit.ToolTest.getClassPath" />
-        <item itemvalue="JUnit.ToolTest.getInputStream" />
-        <item itemvalue="应用程序.Demo29" />
+        <item itemvalue="JUnit.IOUtilTest" />
+        <item itemvalue="JUnit.IOUtilTest.getURLTest" />
+        <item itemvalue="JUnit.IOUtilTest.getInputStreamTest" />
+        <item itemvalue="JUnit.IOUtilTest.getFileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -616,6 +621,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -643,15 +657,6 @@
                 </option>
               </RecentGroup>
             </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
           </value>
         </entry>
       </map>

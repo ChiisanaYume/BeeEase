@@ -1,11 +1,11 @@
 # JavaFX 笔记
 
-## javaFX VM参数
+### javaFX VM参数
 
 * --module-path "E:\lib\Other\javafx-sdk-18\lib" --add-modules javafx.controls,javafx.fxml
 * 其中module-path 为javafx-jdk(\lib)的的目录
 
-## javaFX结构
+### javaFX结构
 
 * 应用程序(javaFX Application)
 * 舞台 - 设置场景(Stage)
@@ -13,7 +13,7 @@
 * 布局 - 添加控件
 * 控件
 
-## 第一个 JavaFX 应用程序
+### 第一个 JavaFX 应用程序
 
 * javaFX 应用程序需要一个主启动类
 * 该类必须
@@ -22,7 +22,7 @@
 * 添加一个 main() 方法
 * 设置场景,添加控件...
 
-## Stage(舞台)
+### Stage(舞台)
 
 * 设置标题
     * setTitle("标题") // 设置(窗口)标题
@@ -65,7 +65,7 @@
         *
 * 绑定键盘事件(监听器)
 
-## 场景(javafx.scene.Scene)
+### 场景(javafx.scene.Scene)
 
 * 场景是场景图(布局)的根
 * 场景 <- 场景图(布局) <- 可视 JavaFX GUI 组件
@@ -105,7 +105,7 @@
       Cursor.TEXT
     ```
 
-## 节点(javafx.scene.Node)
+### 节点(javafx.scene.Node)
 
 * javafx.scene.Node是添加到JavaFX 场景图的所有组件 的基类（超类）
     * JavaFX Node 类是抽象的，因此您只需将 Node 类的子类添加到场景中
@@ -115,27 +115,38 @@
 
 *
 
-## 文本(javafx.scene.text.Text)
+### 文本(javafx.scene.text.Text)
 
 * Text节点是JavaFX节点，它允许我们在场景图上显示文本
 
-## 异常(代码)
+### 异常(~~解决方法~~)
 
-* 6月 13, 2023 4:13:08 下午 com.sun.javafx.application.PlatformImpl startup
+ ```
+  6月 13, 2023 4:13:08 下午 com.sun.javafx.application.PlatformImpl startup
   警告: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @573fd745'
-* 使用 junit 测试方法 @Test运行javaFX launch()方法的报错↑↑↑ 但是程序可以跑起来???
+ ```
 
-* 错误: 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序
+* 使用 junit 测试方法 @Test运行javaFX launch()方法的报错↑↑↑ <br>
+虽然报错但是程序可以跑起来???
 
-* Error: A JNI error has occurred, please check your installation and try again
+* `错误: 缺少 JavaFX 运行时组件, 需要使用该组件来运行此应用程序` jdk8之后的版本需要引入模块
+
+* `Error: A JNI error has occurred, please check your installation and try again`
   java虚拟机（JVM）无法加载或调用本地方法库（Native Method Library）↑↑↑
   一般是java版本不是您期望的版本或与Maven不兼容
-* java: 程序包javafx.application不存在
+* `java: 程序包javafx.application不存在`
 
 * -source 11 中不支持 instanceof 中的模式匹配
-* Process exited with an error: 1 (Exit value: 1)
-* 找不到模块: javafx.controls
-* 找不到模块: javafx.fxml
+* `Process exited with an error: 1 (Exit value: 1)` 未知的问题
+* `找不到模块: javafx.controls` 使用javaFX 17版本及以上版本找不到模块;原因未知;
+* `找不到模块: javafx.fxml` 使用javaFX 17版本及以上版本找不到模块;原因未知;
+
+```
+6月 27, 2023 9:02:29 下午 com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+警告: Resource "D:\study\Beee\BeeEase\gui-test-javafx\target\classes\style-30.css" not found.
+```
+
+* ↑↑`scene.getStylesheets().add("style-30.css");`↑↑这个路径是相对于类路径根的相对路径
 
 ## 课外
 

@@ -16,7 +16,6 @@
 
         <module>module_test</module>
         <module>gui-test-javafx-3</module>
-        <module>SmallTool</module>
     </modules>
 
     <properties>
