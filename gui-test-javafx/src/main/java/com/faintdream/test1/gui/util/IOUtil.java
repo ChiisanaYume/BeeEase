@@ -2,6 +2,7 @@ package com.faintdream.test1.gui.util;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.net.URL;
 import java.util.Objects;
 
 public class IOUtil {
@@ -31,9 +32,16 @@ public class IOUtil {
         return new FileInputStream(getClassPath()+filename);
     }
 
+    /**
+     * 获取类加载器
+     * @return 类加载器(ClassLoader)
+     */
     public static ClassLoader getClassLoader(){
         return IOUtil.class.getClassLoader();
     }
 
+    public static URL getURL(String filename){
+        return getClassLoader().getResource(filename);
+    }
 
 }
