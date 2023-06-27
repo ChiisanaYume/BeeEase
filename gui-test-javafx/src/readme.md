@@ -86,20 +86,24 @@
     * 一个舞台(stage)智能添加一个场景
     * stage.setScene(scene);
 
-* 场景鼠标样式
-    * scene.setCursor(Cursor.OPEN_HAND); // 设置场景鼠标样式
+    * 场景鼠标样式
+    ``` java
+      scene.setCursor(Cursor.OPEN_HAND); // 设置场景鼠标样式
+    ```
 
     * 一些鼠标样式值
-    * Cursor.OPEN_HAND // 手掌展开
-    * Cursor.CLOSED_HAND // 半握
-    * Cursor.CROSSHAIR // 十字
-    * Cursor.DEFAULT // 默认
-    * Cursor.HAND // 手指点击
-    * Cursor.WAIT // 转圈圈
-    * Cursor.H_RESIZE // 双向箭头水平
-    * Cursor.V_RESIZE // 双向箭头垂直
-    * Cursor.MOVE
-    * Cursor.TEXT
+    ```
+      Cursor.OPEN_HAND // 手掌展开
+      Cursor.CLOSED_HAND // 半握
+      Cursor.CROSSHAIR // 十字
+      Cursor.DEFAULT // 默认
+      Cursor.HAND // 手指点击
+      Cursor.WAIT // 转圈圈
+      Cursor.H_RESIZE // 双向箭头水平
+      Cursor.V_RESIZE // 双向箭头垂直
+      Cursor.MOVE
+      Cursor.TEXT
+    ```
 
 ## 节点(javafx.scene.Node)
 
