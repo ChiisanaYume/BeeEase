@@ -91,7 +91,7 @@
       scene.setCursor(Cursor.OPEN_HAND); // 设置场景鼠标样式
     ```
 
-    * 一些鼠标样式值
+    * 一些常用的鼠标样式值
     ```
       Cursor.OPEN_HAND // 手掌展开
       Cursor.CLOSED_HAND // 半握
