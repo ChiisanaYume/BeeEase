@@ -1,0 +1,11 @@
+/* styles.css */
+.grid-pane {
+    -fx-background-color: lightblue; /* 设置背景颜色为浅蓝色 */
+}
+.bordered-label {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-alignment: center;
+}
+

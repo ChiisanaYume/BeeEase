@@ -12,6 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo31.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo32.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo33.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/resources/style-31.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/resources/style-33.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +93,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "271",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/App/jdk/corretto-1.8",
+    "last_opened_file_path": "D:/study/Beee/BeeEase/gui-test-javafx/src/main/java/com/faintdream/tool/util",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,13 +109,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\Beee\BeeEase\gui-test-javafx\src\main\java\com\faintdream\tool\util" />
       <recent name="D:\study\BeeEase\gui-test-javafx-jdk8\src\main\java\com\faintdream\tool" />
       <recent name="D:\study\BeeEase\gui-test-javafx-jdk8\src\main\java\com\faintdream\test2\gui\javafx" />
       <recent name="D:\study\BeeEase\gui-test-javafx-jdk8\src\main\resources" />
       <recent name="D:\study\BeeEase\gui-test-javafx\src\note" />
-      <recent name="D:\study\Beee\BeeEase\gui-test-javafx\src\note" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\Beee\BeeEase\gui-test-javafx\src\main\resources" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleD\src\main\java" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleD\src\main" />
       <recent name="D:\study\Beee\BeeEase\module_test\moduleD\src" />
@@ -124,16 +130,9 @@
       <recent name="com.faintdream.test1.gui.javafx" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.gui-test-javafx-jdk8 [compile]">
+  <component name="RunManager" selected="应用程序.Demo33">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Demo01" />
-      <module name="gui-test-javafx" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,19 +143,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.faintdream.test2.gui.javafx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo29" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo29" />
-      <module name="gui-test-javafx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.test1.gui.javafx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,8 +163,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Main" />
+    <configuration name="Demo31" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo31" />
+      <module name="gui-test-javafx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.test1.gui.javafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo32" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo32" />
+      <module name="gui-test-javafx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.test1.gui.javafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo33" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo33" />
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -382,19 +394,19 @@
       <item itemvalue="Maven.gui-test-javafx-jdk8 [test]" />
       <item itemvalue="Maven.module_test [package]" />
       <item itemvalue="应用程序.未命名" />
+      <item itemvalue="应用程序.Demo31" />
+      <item itemvalue="应用程序.Demo32" />
+      <item itemvalue="应用程序.Demo33" />
       <item itemvalue="应用程序.Demo03" />
-      <item itemvalue="应用程序.Demo01" />
-      <item itemvalue="应用程序.Demo29" />
-      <item itemvalue="应用程序.Main" />
       <item itemvalue="应用程序.Demo30" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Demo33" />
+        <item itemvalue="应用程序.Demo32" />
+        <item itemvalue="应用程序.Demo31" />
         <item itemvalue="应用程序.Demo03" />
         <item itemvalue="应用程序.Demo30" />
-        <item itemvalue="应用程序.Demo01" />
-        <item itemvalue="应用程序.Demo29" />
-        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -441,14 +453,7 @@
       <workItem from="1687830738156" duration="11446000" />
       <workItem from="1687926134316" duration="42000" />
       <workItem from="1687926223873" duration="9141000" />
-      <workItem from="1687961940981" duration="322000" />
-    </task>
-    <task id="LOCAL-00032" summary="Commit at faintdream">
-      <created>1687349620181</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1687349620181</updated>
+      <workItem from="1687961940981" duration="3908000" />
     </task>
     <task id="LOCAL-00033" summary="Commit at faintdream">
       <created>1687368787076</created>
@@ -786,7 +791,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687941705831</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Commit at faintdream">
+      <created>1687962547676</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1687962547676</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
