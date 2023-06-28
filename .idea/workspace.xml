@@ -12,10 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/maven-shade-plugin 这个插件有什么用.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,28 +124,22 @@
       <recent name="com.faintdream.test1.gui.javafx" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Demo29">
+  <component name="RunManager" selected="应用程序.Demo01">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo02" />
-      <module name="gui-test-javafx-jdk8" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.test2.gui.javafx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Demo01" />
+      <module name="gui-test-javafx" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo03" />
+    <configuration name="Demo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo02" />
       <module name="gui-test-javafx-jdk8" />
       <extension name="coverage">
         <pattern>
@@ -391,19 +382,19 @@
       <item itemvalue="Maven.gui-test-javafx-jdk8 [test]" />
       <item itemvalue="Maven.module_test [package]" />
       <item itemvalue="应用程序.未命名" />
+      <item itemvalue="应用程序.Demo01" />
       <item itemvalue="应用程序.Demo02" />
-      <item itemvalue="应用程序.Demo03" />
       <item itemvalue="应用程序.Demo29" />
       <item itemvalue="应用程序.Main" />
       <item itemvalue="应用程序.Demo30" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Demo01" />
         <item itemvalue="应用程序.Demo29" />
         <item itemvalue="应用程序.Demo30" />
         <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.Demo02" />
-        <item itemvalue="应用程序.Demo03" />
       </list>
     </recent_temporary>
   </component>
@@ -449,28 +440,7 @@
       <workItem from="1687650807740" duration="3502000" />
       <workItem from="1687830738156" duration="11446000" />
       <workItem from="1687926134316" duration="42000" />
-      <workItem from="1687926223873" duration="7891000" />
-    </task>
-    <task id="LOCAL-00029" summary="Commit at Faintdream;javafx模块化问题解决">
-      <created>1687328262922</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1687328262922</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Commit at Faintdream;">
-      <created>1687328913422</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1687328913422</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Commit at Faintdream;">
-      <created>1687336266711</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1687336266711</updated>
+      <workItem from="1687926223873" duration="9141000" />
     </task>
     <task id="LOCAL-00032" summary="Commit at faintdream">
       <created>1687349620181</created>
@@ -794,7 +764,28 @@
       <option name="project" value="LOCAL" />
       <updated>1687938376749</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Commit at faintdream">
+      <created>1687940724523</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1687940724523</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Commit at faintdream">
+      <created>1687940877662</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1687940877662</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Commit at faintdream">
+      <created>1687941705831</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1687941705831</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
