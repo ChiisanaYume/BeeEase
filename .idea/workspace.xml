@@ -12,12 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo31.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo32.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo33.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/resources/style-31.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/resources/style-33.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/resources/纸箱.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo33.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo33.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +90,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "271",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/study/Beee/BeeEase/gui-test-javafx/src/main/java/com/faintdream/tool/util",
+    "last_opened_file_path": "D:/study/Beee/BeeEase/gui-test-javafx/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -453,14 +450,8 @@
       <workItem from="1687830738156" duration="11446000" />
       <workItem from="1687926134316" duration="42000" />
       <workItem from="1687926223873" duration="9141000" />
-      <workItem from="1687961940981" duration="3908000" />
-    </task>
-    <task id="LOCAL-00033" summary="Commit at faintdream">
-      <created>1687368787076</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1687368787076</updated>
+      <workItem from="1687961940981" duration="4061000" />
+      <workItem from="1687995938404" duration="326000" />
     </task>
     <task id="LOCAL-00034" summary="Commit at faintdream">
       <created>1687396968891</created>
@@ -798,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687962547676</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Commit at faintdream">
+      <created>1687965991760</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1687965991760</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

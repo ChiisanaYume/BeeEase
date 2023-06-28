@@ -1,8 +1,10 @@
 package com.faintdream.test1.gui.javafx;
 
+import com.faintdream.tool.util.IOUtil;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
@@ -48,7 +50,7 @@ public class Demo33 extends Application {
         // 将组件添加到网格布局的指定位置
         gridPane.add(label1,0,0);
         gridPane.add(label2,1,0);
-        gridPane.add(label3,2,0);
+        gridPane.add(label3,3,0);
         gridPane.add(label4,0,1);
         gridPane.add(label5,1,1);
         gridPane.add(label6,2,1);
@@ -59,6 +61,7 @@ public class Demo33 extends Application {
         scene.getStylesheets().add("style-33.css");
 
         stage.setScene(scene);
+        stage.getIcons().add(new Image(IOUtil.getInputStream("纸箱.png")));
         stage.setTitle("GridPane Test");
         stage.show();
     }
