@@ -1,8 +1,10 @@
-package com.faintdream.test1.gui.util;
+package com.faintdream.tool.util;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
-import java.util.Objects;
 
 public class IOUtil {
 

@@ -30,6 +30,11 @@ public class IOUtilTest {
     }
 
     @Test
+    public void getPathFTest(){
+        String path1 = IOUtil.getPathF("纸箱.png");
+        System.out.println(path1);
+    }
+    @Test
     public void getFileTest(){
         File file1 = IOUtil.getFile("纸箱.png");
         System.out.println(file1);

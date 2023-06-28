@@ -1,4 +1,5 @@
-package com.faintdream.test1.gui.javafx;
+package com.faintdream.test2.gui.javafx;
+
 
 import com.faintdream.tool.util.IOUtil;
 import javafx.application.Application;
@@ -7,10 +8,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
 import java.net.URL;
 
-public class Demo30 extends Application {
+public class Demo03 extends Application {
     /**
      * @param stage
      * @throws Exception
@@ -19,7 +19,7 @@ public class Demo30 extends Application {
     public void start(Stage stage) throws Exception {
 
         // FXML配置文件URL
-        URL fxmlUrl = IOUtil.getURL("demo30.fxml");
+        URL fxmlUrl = IOUtil.getURL("demo03.fxml");
 
         // 加载FXML文件
         Parent root = FXMLLoader.load(fxmlUrl);
@@ -27,7 +27,7 @@ public class Demo30 extends Application {
         // 创建场景并应用css样式
         Scene scene = new Scene(root,400,300);
 
-        scene.getStylesheets().add("style-30.css"); // 这个路径式相对于类路径的相对路径
+        scene.getStylesheets().add("style-03.css"); // 这个路径式相对于类路径的相对路径
 
         // 设置舞台属性并显示舞台
         stage.setScene(scene);
@@ -37,7 +37,7 @@ public class Demo30 extends Application {
 
     public static void main(String[] args) {
         launch(args);
-        // new Demo30().test01();
+        // new Demo03().test01();
     }
 
     private void test01(){

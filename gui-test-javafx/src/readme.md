@@ -148,6 +148,11 @@
 
 * ↑↑`scene.getStylesheets().add("style-30.css");`↑↑这个路径是相对于类路径根的相对路径
 
+```
+六月 28, 2023 2:40:37 下午 javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 16 by JavaFX runtime of version 8.0.202-ea
+```
+* ↑↑ 警告：通过8.0.202-ea版的JavaFX运行时加载带有16版JavaFX API的FXML文档
 ## 课外
 
 * VM选项 -ea 表示启用java的断言assert

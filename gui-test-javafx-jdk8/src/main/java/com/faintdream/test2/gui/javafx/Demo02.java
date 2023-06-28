@@ -1,5 +1,6 @@
 package com.faintdream.test2.gui.javafx;
 
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
