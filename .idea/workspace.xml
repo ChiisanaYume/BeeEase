@@ -127,7 +127,7 @@
       <recent name="com.faintdream.test1.gui.javafx" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Main">
+  <component name="RunManager" selected="应用程序.Demo29">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -399,9 +399,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.Demo29" />
         <item itemvalue="应用程序.Demo30" />
+        <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.Demo02" />
         <item itemvalue="应用程序.Demo03" />
       </list>
