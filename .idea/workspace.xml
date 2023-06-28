@@ -12,19 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/java/com/faintdream/test2/gui/javafx/Demo03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/java/com/faintdream/tool/util/IOUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/resources/demo03.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/resources/style-03.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui-test-javafx-jdk8/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/java/com/faintdream/test2/gui/javafx/Demo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/java/com/faintdream/test2/gui/javafx/Demo02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo30.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/javafx/Demo30.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/test1/gui/util/IOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/main/java/com/faintdream/tool/util/IOUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/util/IOUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/util/IOUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/test-classes/com/faintdream/pdfbox/Demo04.class" beforeDir="false" afterPath="$PROJECT_DIR$/test01-pdfbox/target/test-classes/com/faintdream/pdfbox/Demo04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/util/IOUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/tool/util/IOUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +69,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2QsJftBcuD2k0zf6LWRw32oQb7m" />
   <component name="ProjectLevelVcsManager">
@@ -136,7 +126,7 @@
       <recent name="com.faintdream.test1.gui.javafx" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Demo02">
+  <component name="RunManager" selected="Maven.gui-test-javafx-jdk8 [test]">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -211,8 +201,172 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="gui-test-javafx-jdk8 [compile]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="corretto-1.8" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="compile" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/gui-test-javafx-jdk8" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="gui-test-javafx-jdk8 [package]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="corretto-1.8" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/gui-test-javafx-jdk8" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="gui-test-javafx-jdk8 [test]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="corretto-1.8" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/gui-test-javafx-jdk8" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="module_test [package]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="corretto-1.8" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/module_test" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JUnit.IOUtilTest.getPathFTest" />
+      <item itemvalue="Maven.gui-test-javafx-jdk8 [compile]" />
+      <item itemvalue="Maven.gui-test-javafx-jdk8 [package]" />
+      <item itemvalue="Maven.gui-test-javafx-jdk8 [test]" />
+      <item itemvalue="Maven.module_test [package]" />
       <item itemvalue="应用程序.未命名" />
       <item itemvalue="应用程序.Demo01" />
       <item itemvalue="应用程序.Demo02" />
@@ -271,14 +425,7 @@
       <workItem from="1687650807740" duration="3502000" />
       <workItem from="1687830738156" duration="11446000" />
       <workItem from="1687926134316" duration="42000" />
-      <workItem from="1687926223873" duration="4064000" />
-    </task>
-    <task id="LOCAL-00027" summary="Commit at Faintdream">
-      <created>1687233555130</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1687233555130</updated>
+      <workItem from="1687926223873" duration="5546000" />
     </task>
     <task id="LOCAL-00028" summary="Commit at Faintdream">
       <created>1687315352332</created>
@@ -616,7 +763,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687926528194</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Commit at faintdream">
+      <created>1687936697656</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1687936697656</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

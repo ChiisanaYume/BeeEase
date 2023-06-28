@@ -1,6 +1,5 @@
-package com.faintdream.gui.javafx.util;
+package com.faintdream.tool.util;
 
-import com.faintdream.test1.gui.util.IOUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

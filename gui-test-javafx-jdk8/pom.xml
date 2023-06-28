@@ -31,7 +31,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!--设置jar压缩包的主类(带包名的完整类名)-->
-                            <mainClass>com.faintdream.test2.gui.javafx.Demo03</mainClass>
+                            <mainClass>com.faintdream.test2.gui.javafx.Demo02</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
