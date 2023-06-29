@@ -4,6 +4,7 @@ module guiTestJavafx {
     // 依赖的模块
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
     // 导出的包
     exports com.faintdream.test1.gui.javafx;
