@@ -24,9 +24,9 @@ public class run extends Application{
         window.setHeight(400);
         window.setResizable(false);
         CollectMoneyStage collectMoneyStage = new CollectMoneyStage();
-        collectMoneyStage.CollectMoneyStageController(window,"服务码");
+        // collectMoneyStage.CollectMoneyStageController(window,"服务码");
         messageBox messageBox = new messageBox();
-        messageBox.messageController(window,"支付宝收款码","为了孩子的奶粉钱、尿布钱、请大佬打赏一点把。",600);
+        // messageBox.messageController(window,"支付宝收款码","为了孩子的奶粉钱、尿布钱、请大佬打赏一点把。",600);
         paneFramework.paneFrameworkController();
         window.setScene(new Scene(paneFramework.pane));
         window.getScene().getStylesheets().addAll(this.getClass().getClassLoader().getResource("style.css").toExternalForm());

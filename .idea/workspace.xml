@@ -12,70 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/CollectMoneyBox/CollectMoneyStage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/CollectMoneyBox/CollectMoneyStagePane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/CollectMoneyBox/CollectMoneyStagePaneImageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/paneFramework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameCommandPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameCommandPaneCodeTextArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameConsolePane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameConsolePaneOutTextArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneImagesPathButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneImagesPathTextFieId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneJarPackageButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneJarPackageTextField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneOutputButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneOutputTextField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneSdkButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneSdkTextField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneVBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameHomePaneVBoxButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneCopyrightLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneCopyrightTextFieId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneMainClassLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneMainClassTextFieId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneProgramNameLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneProgramNameTextFieId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneTypeChoiceBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneTypeLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneVersionNumberLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameKeyPaneVersionNumberTextFieId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptionalInstructionsLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptionalInstructionsTextFieId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptionalPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptionalPaneGeneratePackagingButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptionalPaneGeneratePackagingLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptionalPaneIsInstallCheckBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptionalPaneIsInstallLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptionalPaneSupplierLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tabFrameOptionalPaneSupplierTextFieId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/controller/tablePaneFramework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/messagesbox/messageBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/messagesbox/messageBoxButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/messagesbox/messageBoxContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/messagesbox/messageBoxPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/messagesbox/messageBoxVBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/tools/consoleHander.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/java/org/example/tools/consoleHanderRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/resources/md5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/resources/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -511,6 +449,8 @@
       <workItem from="1688202253301" duration="60000" />
       <workItem from="1688356444230" duration="103000" />
       <workItem from="1688531543159" duration="786000" />
+      <workItem from="1688558974077" duration="266000" />
+      <workItem from="1688559310058" duration="1490000" />
     </task>
     <task id="LOCAL-00035" summary="Commit at Faintdream;">
       <created>1687482505156</created>
@@ -862,6 +802,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -894,15 +843,6 @@
                 </option>
               </RecentGroup>
             </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
           </value>
         </entry>
       </map>
