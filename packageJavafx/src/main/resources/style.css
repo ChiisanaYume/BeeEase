@@ -1,0 +1,194 @@
+*{
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-focus-color: #eeeeee;
+    -fx-background-insets: 0;
+    -fx-faint-focus-color: #eeeeee;
+}
+#paneFramework{
+    -fx-background-color: #eeeeee;
+}
+#tablePaneFramework{
+    -fx-background-color: #eeeeee;
+}
+#tabFrameHome{
+    -fx-pref-height: 50;
+    -fx-text-alignment: center;
+}
+#tabFrameKey{
+    -fx-pref-height: 50;
+    -fx-text-alignment: center;
+}
+#tabFrameOptional{
+    -fx-pref-height: 50;
+    -fx-text-alignment: center;
+}
+#tabFrameCommand{
+    -fx-pref-height: 50;
+    -fx-text-alignment: center;
+}
+#tabFrameConsole{
+    -fx-pref-height: 50;
+    -fx-text-alignment: center;
+}
+#tabFrameHomePaneSdkButton{
+    -fx-background-color: #444444;
+}
+#tabFrameHomePaneSdkButton:hover{
+    -fx-background-color: #d92626;
+}
+#tabFrameHomePaneSdkButton> .text{
+    -fx-fill: #ffffff;
+}
+
+#tabFrameHomePaneOutputButton{
+    -fx-background-color: #444444;
+}
+#tabFrameHomePaneOutputButton:hover{
+    -fx-background-color: #d92626;
+}
+#tabFrameHomePaneOutputButton> .text{
+    -fx-fill: #ffffff;
+}
+
+#tabFrameHomePaneJarPackageButton{
+    -fx-background-color: #444444;
+}
+#tabFrameHomePaneJarPackageButton:hover{
+    -fx-background-color: #d92626;
+}
+#tabFrameHomePaneJarPackageButton> .text{
+    -fx-fill: #ffffff;
+}
+
+#tabFrameHomePaneVBoxButton{
+    -fx-background-color: #444444;
+}
+#tabFrameHomePaneVBoxButton:hover{
+    -fx-background-color: #d92626;
+}
+#tabFrameHomePaneVBoxButton> .text{
+    -fx-fill: #ffffff;
+}
+#tabFrameHomePaneImagesPathButton{
+    -fx-background-color: #444444;
+}
+#tabFrameHomePaneImagesPathButton:hover{
+    -fx-background-color: #d92626;
+}
+#tabFrameHomePaneImagesPathButton> .text{
+    -fx-fill: #ffffff;
+}
+#tabFrameKeyPaneProgramNameLabel{
+    -fx-background-color: #444444;
+    -fx-font-size: 18;
+}
+#tabFrameKeyPaneProgramNameLabel>.text{
+    -fx-fill: #ffffff;
+}
+#tabFrameKeyPaneTypeLabel{
+    -fx-background-color: #444444;
+    -fx-font-size: 18;
+}
+#tabFrameKeyPaneTypeLabel>.text{
+    -fx-fill: #ffffff;
+}
+#tabFrameKeyPaneVersionNumberLabel{
+    -fx-background-color: #444444;
+    -fx-font-size: 18;
+}
+#tabFrameKeyPaneVersionNumberLabel>.text{
+    -fx-fill: #ffffff;
+}
+#tabFrameKeyPaneCopyrightLabel{
+    -fx-background-color: #444444;
+    -fx-font-size: 18;
+}
+#tabFrameKeyPaneCopyrightLabel>.text{
+    -fx-fill: #ffffff;
+}
+#tabFrameOptionalInstructionsLabel{
+    -fx-background-color: #444444;
+    -fx-font-size: 18;
+}
+#tabFrameOptionalInstructionsLabel>.text{
+    -fx-fill: #ffffff;
+}
+#tabFrameOptionalPaneSupplierLabel{
+    -fx-background-color: #444444;
+    -fx-font-size: 18;
+}
+#tabFrameOptionalPaneSupplierLabel>.text{
+    -fx-fill: #ffffff;
+}
+#tabFrameOptionalPaneIsInstallLabel{
+    -fx-background-color: #444444;
+    -fx-font-size: 18;
+}
+#tabFrameOptionalPaneGeneratePackagingLabel>.text{
+    -fx-fill: #ffffff;
+}
+#tabFrameOptionalPaneGeneratePackagingLabel{
+    -fx-background-color: #444444;
+    -fx-font-size: 18;
+}
+#tabFrameOptionalPaneIsInstallLabel>.text{
+    -fx-fill: #ffffff;
+}
+#tabFrameOptionalPaneIsInstallCheckBox{
+    -fx-font-size: 18;
+}
+#tabFrameCommandPaneCodeTextArea{
+    -fx-font-size: 18;
+}
+
+
+
+#tabFrameOptionalPaneGeneratePackagingButton{
+    -fx-background-color: #444444;
+}
+#tabFrameOptionalPaneGeneratePackagingButton:hover{
+    -fx-background-color: #d92626;
+}
+#tabFrameOptionalPaneGeneratePackagingButton> .text{
+    -fx-fill: #ffffff;
+}
+
+
+
+
+
+
+
+
+#tabFrameKeyPaneMainClassLabel{
+    -fx-background-color: #444444;
+    -fx-font-size: 18;
+}
+#tabFrameKeyPaneMainClassLabel>.text{
+    -fx-fill: #ffffff;
+}
+#tabFrameKeyPaneTypeChoiceBox .context-menu{
+    -fx-min-width: 350px;
+    -fx-background-color: #eeeeee;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+.tab-pane:top>.tab-header-area>.headers-region>.tab:selected:top>.tab-container>.tab-label{
+    -fx-font-size: 18;
+    -fx-text-alignment: center;
+}
+.tab-pane:top>.tab-header-area>.headers-region>.tab:selected:top{
+    -fx-background-color: #ffffff;
+}
+.tab-pane:top>.tab-header-area>.tab-header-background{
+    -fx-background-color: #dedede;
+    -fx-text-alignment: center;
+}
+.tab-pane:top>.tab-header-area>.headers-region>.tab:top{
+    -fx-background-color: #dedede;
+}
+.tab-pane:top>.tab-header-area>.headers-region>.tab:top>.tab-container>.tab-label{
+    -fx-font-size: 18;
+    -fx-text-alignment: center;
+}

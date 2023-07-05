@@ -14,6 +14,7 @@
         <module name="gui-test-javafx-3" />
         <module name="test01-pdfbox" />
         <module name="moduleA" />
+        <module name="packageJavafx" />
         <module name="moduleC" />
         <module name="module_B_test" />
         <module name="moduleB" />
