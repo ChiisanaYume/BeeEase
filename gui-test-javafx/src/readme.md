@@ -153,6 +153,10 @@
 WARNING: Loading FXML document with JavaFX API of version 16 by JavaFX runtime of version 8.0.202-ea
 ```
 * ↑↑ 警告：通过8.0.202-ea版的JavaFX运行时加载带有16版JavaFX API的FXML文档
+```
+Error occurred during initialization of boot layer
+java.lang.module.FindException: Module guiTestJavafx not found
+```
 ## 课外
 
 * VM选项 -ea 表示启用java的断言assert

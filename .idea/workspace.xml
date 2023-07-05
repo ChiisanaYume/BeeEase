@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="gui-test-javafx-jdk8:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -11,9 +16,26 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="Commit at faintdream">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="引入大佬开发的打包工具 PackageJavaFx[QQ 1012518027]">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/gui_test_javafx_jdk8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/temp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packageJavafx/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleA/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/moduleA/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleB/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/moduleB/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleC/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/moduleC/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleD/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/moduleD/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/091蒋介石在挑动内战.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/com/faintdream/bee/Demo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/com/faintdream/bee/test/PDFTest1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/com/faintdream/bee/test/PDFTest2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/com/faintdream/bee/test/ReadPDFText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/test-classes/com/faintdream/pdfbox/Demo04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/test01-pdfbox-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +85,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\App\maven_workspace\maven_repository" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../../App/apache-maven-3.3.9" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\App\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -89,13 +112,13 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "271",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "16",
-    "last_opened_file_path": "D:/study/BeeEase/packageJavafx",
+    "last_opened_file_path": "D:/aaa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "工件",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33103448",
     "ruby.rails.projectView.checked": "true",
@@ -126,19 +149,19 @@
       <recent name="com.faintdream.test1.gui.javafx" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.App">
+  <component name="RunManager" selected="应用程序.Demo03">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
-      <module name="packageJavafx" />
+    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo01" />
+      <module name="gui-test-javafx-jdk8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.faintdream.test2.gui.javafx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,15 +169,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Demo01" />
-      <module name="gui-test-javafx" />
+    <configuration name="Demo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo02" />
+      <module name="gui-test-javafx-jdk8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.test2.gui.javafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo36" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo36" />
+    <configuration name="Demo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo03" />
+      <module name="gui-test-javafx-jdk8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.test2.gui.javafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo20" />
       <module name="gui-test-javafx" />
       <extension name="coverage">
         <pattern>
@@ -179,23 +221,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.faintdream.test1.gui.swing.Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.swing.Demo01" />
-      <module name="gui-test-javafx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.test1.gui.swing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="gui-test-javafx [compile]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
             <option name="profiles">
@@ -384,19 +428,19 @@
       <item itemvalue="Maven.gui-test-javafx-jdk8 [test]" />
       <item itemvalue="Maven.module_test [package]" />
       <item itemvalue="应用程序.未命名" />
-      <item itemvalue="应用程序.App" />
       <item itemvalue="应用程序.Demo01" />
-      <item itemvalue="应用程序.Demo36" />
+      <item itemvalue="应用程序.Demo02" />
+      <item itemvalue="应用程序.Demo03" />
+      <item itemvalue="应用程序.Demo20" />
       <item itemvalue="应用程序.Demo38" />
-      <item itemvalue="应用程序.com.faintdream.test1.gui.swing.Demo01" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.App" />
-        <item itemvalue="应用程序.Demo36" />
-        <item itemvalue="应用程序.com.faintdream.test1.gui.swing.Demo01" />
+        <item itemvalue="应用程序.Demo03" />
         <item itemvalue="应用程序.Demo01" />
+        <item itemvalue="应用程序.Demo02" />
         <item itemvalue="应用程序.Demo38" />
+        <item itemvalue="应用程序.Demo20" />
       </list>
     </recent_temporary>
   </component>
@@ -450,14 +494,11 @@
       <workItem from="1688356444230" duration="103000" />
       <workItem from="1688531543159" duration="786000" />
       <workItem from="1688558974077" duration="266000" />
-      <workItem from="1688559310058" duration="1490000" />
-    </task>
-    <task id="LOCAL-00035" summary="Commit at Faintdream;">
-      <created>1687482505156</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1687482505156</updated>
+      <workItem from="1688559310058" duration="2291000" />
+      <workItem from="1688561911942" duration="3288000" />
+      <workItem from="1688565233429" duration="589000" />
+      <workItem from="1688565842003" duration="3427000" />
+      <workItem from="1688571876165" duration="863000" />
     </task>
     <task id="LOCAL-00036" summary="Commit at Faintdream;">
       <created>1687483302274</created>
@@ -795,7 +836,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687996397138</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="引入大佬开发的打包工具 PackageJavaFx[QQ 1012518027]">
+      <created>1688561568114</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1688561568115</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -861,7 +909,8 @@
     <MESSAGE value="Commit at Faintdream;javafx模块化问题解决" />
     <MESSAGE value="Commit at Faintdream;" />
     <MESSAGE value="Commit at faintdream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit at faintdream" />
+    <MESSAGE value="引入大佬开发的打包工具 PackageJavaFx[QQ 1012518027]" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入大佬开发的打包工具 PackageJavaFx[QQ 1012518027]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -870,6 +919,15 @@
           <url>file://$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo19.java</url>
           <line>57</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/gui-test-javafx/target/test-classes/Demo01.class</url>
+          <line>12</line>
+          <properties class="Demo01" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
