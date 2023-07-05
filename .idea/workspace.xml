@@ -16,26 +16,9 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="引入大佬开发的打包工具 PackageJavaFx[QQ 1012518027]">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/gui_test_javafx_jdk8_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx-jdk8/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui-test-javafx/src/note/temp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageJavafx/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="测试打包，不过没成功">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui-test-javafx/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/gui-test-javafx/src/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_test/moduleA/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/moduleA/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_test/moduleB/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/moduleB/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_test/moduleC/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/moduleC/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_test/moduleD/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_test/moduleD/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/091蒋介石在挑动内战.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/com/faintdream/bee/Demo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/com/faintdream/bee/test/PDFTest1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/com/faintdream/bee/test/PDFTest2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/classes/com/faintdream/bee/test/ReadPDFText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/test-classes/com/faintdream/pdfbox/Demo04.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test01-pdfbox/target/test01-pdfbox-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,31 +84,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "OverrideImplement.generate.javadoc": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "271",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "16",
-    "last_opened_file_path": "D:/aaa",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "工件",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.33103448",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;271&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;16&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/aaa&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33103448&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\study\BeeEase\packageJavafx" />
@@ -498,14 +481,8 @@
       <workItem from="1688561911942" duration="3288000" />
       <workItem from="1688565233429" duration="589000" />
       <workItem from="1688565842003" duration="3427000" />
-      <workItem from="1688571876165" duration="863000" />
-    </task>
-    <task id="LOCAL-00036" summary="Commit at Faintdream;">
-      <created>1687483302274</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1687483302274</updated>
+      <workItem from="1688571876165" duration="1910000" />
+      <workItem from="1688599290466" duration="419000" />
     </task>
     <task id="LOCAL-00037" summary="Commit at Faintdream;">
       <created>1687489700354</created>
@@ -843,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688561568115</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="测试打包，不过没成功">
+      <created>1688573121809</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1688573121810</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -910,7 +894,8 @@
     <MESSAGE value="Commit at Faintdream;" />
     <MESSAGE value="Commit at faintdream" />
     <MESSAGE value="引入大佬开发的打包工具 PackageJavaFx[QQ 1012518027]" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入大佬开发的打包工具 PackageJavaFx[QQ 1012518027]" />
+    <MESSAGE value="测试打包，不过没成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试打包，不过没成功" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
