@@ -17,8 +17,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090c3a1-d6ef-4954-a103-ee226f16a06f" name="变更" comment="测试打包，不过没成功">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/BeeEase.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bee.test.pdfbox/PDFTest5.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/java/com/faintdream/bee/test/pdfbox/ImagePdf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/java/com/faintdream/bee/test/pdfbox/ImagePdfImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/java/com/faintdream/bee/test/pdfbox/PDFTest3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/java/com/faintdream/bee/test/pdfbox/PDFTest4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/java/com/faintdream/bee/test/pdfbox/PDFTest5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/resources/akuma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/src/main/java/com/faintdream/tool/util/IOUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/src/test/java/com/faintdream/tool/util/IOUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/src/test/resources/Miyu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/src/test/resources/box.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleA/target/classes/com/faintdream/moudle/a/MyName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleA/target/classes/com/faintdream/moudle/a/MyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleA/target/classes/com/faintdream/moudle/a/impl/Kirara.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleA/target/classes/com/faintdream/moudle/a/impl/MyServiceImplByMySQL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleA/target/classes/com/faintdream/moudle/a/impl/MyServiceImplByOracle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleA/target/classes/com/faintdream/moudle/a/impl/MyServiceImplDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleA/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleB/target/classes/com/faintdream/moudle/b/MyServiceBySqlLite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleB/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleC/target/classes/com/faintdream/moudle/c/TestC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleC/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleD/target/classes/com/faintdream/moudle/d/DTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_test/moduleD/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bee.test.pdfbox/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/src/main/java/com/faintdream/bee/Demo01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/src/main/java/com/faintdream/bee/test/PDFTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/java/com/faintdream/bee/test/pdfbox/PDFTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/src/main/java/com/faintdream/bee/test/PDFTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/java/com/faintdream/bee/test/pdfbox/PDFTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/src/main/java/com/faintdream/bee/test/ReadPDFText.java" beforeDir="false" afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/java/com/faintdream/bee/test/pdfbox/ReadPdfText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/src/main/resources/091蒋介石在挑动内战.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/main/resources/091蒋介石在挑动内战.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/src/note/PDFTextStripper的常用方法" beforeDir="false" afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/note/PDFTextStripper的常用方法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test01-pdfbox/src/test/java/com/faintdream/pdfbox/Demo04.java" beforeDir="false" afterPath="$PROJECT_DIR$/bee.test.pdfbox/src/test/java/com/faintdream/pdfbox/Demo04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +71,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JavaFXApplication" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -84,38 +127,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;271&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;16&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/aaa&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.33103448&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "271",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "D:/study/Beee/BeeEase/bee.test.pdfbox/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.33103448",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\study\BeeEase\packageJavafx" />
-      <recent name="D:\study\BeeEase\packageJavafx\src" />
-      <recent name="D:\study\Beee\BeeEase\gui-test-javafx\src\main\resources" />
-      <recent name="D:\study\Beee\BeeEase\gui-test-javafx\src\main\java\com\faintdream\tool\util" />
-      <recent name="D:\study\BeeEase\gui-test-javafx-jdk8\src\main\java\com\faintdream\tool" />
+      <recent name="D:\study\Beee\BeeEase\bee.test.pdfbox\src\main\resources" />
+      <recent name="D:\study\Beee\BeeEase\bee.test.pdfbox\src\main\java" />
+      <recent name="D:\study\Beee\BeeEase\tool\src\main\java" />
+      <recent name="D:\study\Beee\BeeEase\tool\src\test" />
+      <recent name="D:\study\Beee\BeeEase\tool\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\study\Beee\BeeEase\gui-test-javafx\src\main\resources" />
@@ -125,26 +168,33 @@
       <recent name="D:\study\Beee\BeeEase\module_test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.faintdream.tool.util" />
       <recent name="com.faintdream.tool" />
       <recent name="com.faintdream.test2.gui.util" />
       <recent name="com.faintdream.test2.gui.javafx" />
       <recent name="com.faintdream.gui.javafx.test3" />
-      <recent name="com.faintdream.test1.gui.javafx" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Demo03">
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$/bee.test.pdfbox" />
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PDFTest5.test">
     <configuration name="未命名" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="VM_PARAMETERS" value="--module-path &quot;E:\lib\Other\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo01" />
-      <module name="gui-test-javafx-jdk8" />
+    <configuration name="PDFTest4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.bee.test.pdfbox.PDFTest4" />
+      <module name="bee.test.pdfbox" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.test2.gui.javafx.*" />
+          <option name="PATTERN" value="com.faintdream.bee.test.pdfbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,54 +202,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo02" />
-      <module name="gui-test-javafx-jdk8" />
+    <configuration name="IOUtilTest.getFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.test2.gui.javafx.*" />
+          <option name="PATTERN" value="com.faintdream.tool.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.tool.util" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.tool.util.IOUtilTest" />
+      <option name="METHOD_NAME" value="getFileTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test2.gui.javafx.Demo03" />
-      <module name="gui-test-javafx-jdk8" />
+    <configuration name="PDFTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bee.test.pdfbox" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.test2.gui.javafx.*" />
+          <option name="PATTERN" value="com.faintdream.bee.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.bee.test" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.bee.test.PDFTest3" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo20" />
-      <module name="gui-test-javafx" />
+    <configuration name="PDFTest3.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bee.test.pdfbox" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.test1.gui.javafx.*" />
+          <option name="PATTERN" value="com.faintdream.bee.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.bee.test" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.bee.test.PDFTest3" />
+      <option name="METHOD_NAME" value="Test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo38" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.test1.gui.javafx.Demo38" />
-      <module name="gui-test-javafx" />
+    <configuration name="PDFTest5.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bee.test.pdfbox" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.test1.gui.javafx.*" />
+          <option name="PATTERN" value="com.faintdream.bee.test.pdfbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.bee.test.pdfbox" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.bee.test.pdfbox.PDFTest5" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -405,25 +466,25 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.PDFTest3" />
+      <item itemvalue="JUnit.PDFTest3.Test1" />
+      <item itemvalue="JUnit.PDFTest5.test" />
+      <item itemvalue="JUnit.IOUtilTest.getFileTest" />
       <item itemvalue="Maven.gui-test-javafx [compile]" />
       <item itemvalue="Maven.gui-test-javafx-jdk8 [compile]" />
       <item itemvalue="Maven.gui-test-javafx-jdk8 [package]" />
       <item itemvalue="Maven.gui-test-javafx-jdk8 [test]" />
       <item itemvalue="Maven.module_test [package]" />
       <item itemvalue="应用程序.未命名" />
-      <item itemvalue="应用程序.Demo01" />
-      <item itemvalue="应用程序.Demo02" />
-      <item itemvalue="应用程序.Demo03" />
-      <item itemvalue="应用程序.Demo20" />
-      <item itemvalue="应用程序.Demo38" />
+      <item itemvalue="应用程序.PDFTest4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Demo03" />
-        <item itemvalue="应用程序.Demo01" />
-        <item itemvalue="应用程序.Demo02" />
-        <item itemvalue="应用程序.Demo38" />
-        <item itemvalue="应用程序.Demo20" />
+        <item itemvalue="JUnit.PDFTest5.test" />
+        <item itemvalue="应用程序.PDFTest4" />
+        <item itemvalue="JUnit.PDFTest3" />
+        <item itemvalue="JUnit.PDFTest3.Test1" />
+        <item itemvalue="JUnit.IOUtilTest.getFileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -482,14 +543,9 @@
       <workItem from="1688565233429" duration="589000" />
       <workItem from="1688565842003" duration="3427000" />
       <workItem from="1688571876165" duration="1910000" />
-      <workItem from="1688599290466" duration="419000" />
-    </task>
-    <task id="LOCAL-00037" summary="Commit at Faintdream;">
-      <created>1687489700354</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1687489700354</updated>
+      <workItem from="1688599290466" duration="691000" />
+      <workItem from="1688642442630" duration="3805000" />
+      <workItem from="1688646298799" duration="12335000" />
     </task>
     <task id="LOCAL-00038" summary="Commit at Faintdream;">
       <created>1687494569141</created>
@@ -827,7 +883,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688573121810</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="测试打包，不过没成功">
+      <created>1688601058671</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1688601058672</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -900,15 +963,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gui-test-javafx/src/test/java/com/faintdream/gui/javafx/test/Demo19.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/gui-test-javafx/target/test-classes/Demo01.class</url>
           <line>12</line>
-          <properties class="Demo01" method="&lt;init&gt;">
+          <properties class="Demo01">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

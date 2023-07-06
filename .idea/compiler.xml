@@ -6,17 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="moduleD" />
+        <module name="bee.test.pdfbox" />
         <module name="module_C_test" />
+        <module name="packageJavafx" />
+        <module name="tool" />
+        <module name="module_B_test" />
+        <module name="moduleD" />
         <module name="module_E_test" />
         <module name="gui-test-javafx-jdk8" />
         <module name="gui-test-javafx" />
         <module name="gui-test-javafx-3" />
-        <module name="test01-pdfbox" />
         <module name="moduleA" />
-        <module name="packageJavafx" />
         <module name="moduleC" />
-        <module name="module_B_test" />
         <module name="moduleB" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
       <module name="module-test-001" target="17" />
       <module name="module_A_test" target="17" />
       <module name="module_D_test" target="17" />
+      <module name="pdfTest01" target="17" />
       <module name="SmallTool" target="17" />
       <module name="test01" target="17" />
     </bytecodeTargetLevel>

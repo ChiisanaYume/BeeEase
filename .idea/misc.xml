@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/gui-test-javafx/pom.xml" />
         <option value="$PROJECT_DIR$/module_test/pom.xml" />
+        <option value="$PROJECT_DIR$/pdfTest01/pom.xml" />
+        <option value="$PROJECT_DIR$/bee.test.pdfbox/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
