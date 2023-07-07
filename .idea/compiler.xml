@@ -25,7 +25,11 @@
       <module name="bee.gui.test.javafx" target="17" />
       <module name="bee.gui.test.javafx.jdk8" target="1.8" />
       <module name="bee.test.javafx.jdk8" target="1.8" />
+      <module name="bee.test.pdfbox" target="17" />
       <module name="gui-test" target="17" />
+      <module name="gui-test-javafx" target="17" />
+      <module name="gui-test-javafx-3" target="17" />
+      <module name="gui-test-javafx-jdk8" target="1.8" />
       <module name="javafx" target="17" />
       <module name="jdk8" target="1.8" />
       <module name="module-test-001" target="17" />
