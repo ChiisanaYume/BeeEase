@@ -10,12 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>bee.test.pdfbox</module>
-        <module>gui-test-javafx</module>
-        <module>gui-test-javafx-jdk8</module>
+        <module>test_pdfbox</module>
+        <module>test_javafx</module>
+        <module>test_javafx_jdk8</module>
 
         <module>module_test</module>
-        <module>gui-test-javafx-3</module>
+        <module>test_javafx_beta</module>
         <module>packageJavafx</module>
         <module>tool</module>
     </modules>
