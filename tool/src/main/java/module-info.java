@@ -6,5 +6,6 @@ module tool {
 
     // 导出的包
     exports com.faintdream.tool.util;
+    exports com.faintdream.tool.annotate;
 
 }

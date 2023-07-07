@@ -7,7 +7,7 @@ import java.io.IOException;
  * @version 1.0
  * @author faintdream
  * */
-public interface ImagePdf {
+public interface ImagePdf extends AutoCloseable {
 
     /**
      * 将图片插入到pdf文件

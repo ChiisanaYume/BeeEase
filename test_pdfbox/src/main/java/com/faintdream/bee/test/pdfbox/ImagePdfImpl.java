@@ -1,9 +1,10 @@
 package com.faintdream.bee.test.pdfbox;
 
-import com.faintdream.tool.util.IOUtil;
+import com.faintdream.tool.annotate.NotComplete;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
+import org.apache.pdfbox.pdmodel.PDPageTree;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
@@ -16,9 +17,19 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     /**
      * 默认页面宽高
      */
-    private final float ratio_72 = 2.834645669f;
     private float defPageWidth = 595.27563f;
     private float defPageHeight = 841.8898f;
+
+    /**
+     * 新页面;
+     * */
+    private PDPage newPage;
+
+    /**
+     * 是否开启单张图片处理模式(singleMode);
+     * singleMode 一次只处理一张图片，一张图片一个pdf
+     * */
+    private boolean singleMode = true;
 
     /**
      * 将图片插入到pdf文件
@@ -29,8 +40,10 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     @Override
     public void pdfByImage(String imageFile, String pdfFile) throws IOException {
 
-        // 创建空白的 PDF 文档
-        PDDocument document = this;
+        // 文档关闭抛异常
+        if(getDocument().isClosed()){
+            throw new IOException(getClass().getSimpleName() + ": 对象已不可用，暂存文件已关闭");
+        }
 
         // 创建一个新页面
         PDPage page = createPage();
@@ -41,25 +54,21 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         // 加载图片文件
         PDImageXObject image = PDImageXObject.createFromFileByContent(new File(imageFile), this);
 
-        // 获取图片宽度和高度
-        float imageWidth = image.getWidth();
-        float imageHeight = image.getHeight();
-
         // 设置图片位置和大小
-        float[] conf = setImageConfig(image);
+        ImageInfo info = setImageConfig(image);
 
         // 绘制图片到 PDF
-        // 方法中的坐标 (x, y) 表示图片左下角的位置
-        contentStream.drawImage(image, conf[0], conf[1], conf[2], conf[3]);
+        // 注意: 方法中的坐标 (x, y) 表示图片左下角的位置
+        contentStream.drawImage(image, info.getAxisX(), info.getAxisY(), info.getWidth(), info.getHeight());
 
         // 关闭内容流
         contentStream.close();
 
         // 保存 PDF 文件
-        document.save(pdfFile);
+        save(pdfFile);
 
         // 关闭 PDF 文档
-        document.close();
+        // document.close();
     }
 
     /**
@@ -67,57 +76,89 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
      */
     private PDPage createPage() throws IOException {
 
-        // 创建一页
-        PDPage page = new PDPage(PDRectangle.A4);
-        addPage(page);
-        return page;
+        // 删除原来的所有页面
+        if(singleMode){
+            PDPageTree pages = getPages();
+            for(int i=0; i<pages.getCount();i++){
+                pages.remove(i);
+            }
+        }
+
+        // 创建一个新页
+        if(newPage==null){
+            setNewPage(new PDPage(PDRectangle.A4));
+        }
+        setNewPage(new PDPage(PDRectangle.A4));
+        addPage(newPage);
+        return newPage;
     }
 
     /**
      * 计算图片的大小和位置
      */
-    private float[] setImageConfig(PDImageXObject image) {
-        float[] config = new float[4];
+    private ImageInfo setImageConfig(PDImageXObject image) {
 
-        config[0] = 0f;
-        config[1] = 0f;
+        // 图片的大小,位置信息
+        ImageInfo info = new ImageInfo();
 
         float width = image.getWidth();
         float height = image.getHeight();
 
+        // 页面宽高
+        float pageWidth = newPage.getMediaBox().getWidth();
+        float pageHeight = newPage.getMediaBox().getHeight();
 
-//        // A4纸竖放，宽要小于高
-//        if (width > height) {
-//            config[3] = getDefPageWidth();
-//
-//            float ratioH = getDefPageHeight() / width;
-//            config[2] = width * ratioH * ratio_72;
-//            return config;
-//        }
+        // 宽高缩放比
+        float ratio = pageWidth / width;
 
-        float ratio = getDefPageWidth() / width;
-        config[2] = getDefPageWidth(); // 宽度等于默认宽度
-        config[3] = height * ratio;
+        info.setWidth(pageWidth); // 宽度等于默认宽度
+        info.setHeight(height * ratio); // 高度按照宽度的缩放比例计算
 
-        config[0] = (getDefPageWidth()-config[2])/2;
-        config[1] = (getDefPageHeight()-config[3])/2;
+        info.setAxisX((pageWidth - info.getWidth()) / 2);
+        info.setAxisY((pageHeight - info.getHeight()) / 2);
 
-        return config;
+        return info;
     }
 
+    /**
+     * getter & setter methods
+     */
+
+    @NotComplete
     public float getDefPageWidth() {
         return defPageWidth;
     }
 
+    @NotComplete
     public void setDefPageWidth(float defPageWidth) {
         this.defPageWidth = defPageWidth;
     }
 
+    @NotComplete
     public float getDefPageHeight() {
         return defPageHeight;
     }
 
+    @NotComplete
     public void setDefPageHeight(float defPageHeight) {
         this.defPageHeight = defPageHeight;
+    }
+
+    @NotComplete
+    public boolean isSingleMode() {
+        return singleMode;
+    }
+
+    @NotComplete
+    public void setSingleMode(boolean singleMode) {
+        this.singleMode = singleMode;
+    }
+
+    public PDPage getNewPage() {
+        return newPage;
+    }
+
+    public void setNewPage(PDPage newPage) {
+        this.newPage = newPage;
     }
 }
