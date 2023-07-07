@@ -13,13 +13,12 @@ import java.io.IOException;
 public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
 
-
-
     /**
      * 默认页面宽高
      */
-    private float defPageWidth = 210f * 2.8346457f;
-    private float defPageHeight = 297f * 2.8346457f;
+    private final float ratio_72 = 2.834645669f;
+    private float defPageWidth = 595.27563f;
+    private float defPageHeight = 841.8898f;
 
     /**
      * 将图片插入到pdf文件
@@ -37,7 +36,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         PDPage page = createPage();
 
         // 创建内容流
-        PDPageContentStream contentStream = new PDPageContentStream((PDDocument) this, page);
+        PDPageContentStream contentStream = new PDPageContentStream(this, page);
 
         // 加载图片文件
         PDImageXObject image = PDImageXObject.createFromFileByContent(new File(imageFile), this);
@@ -78,28 +77,31 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
      * 计算图片的大小和位置
      */
     private float[] setImageConfig(PDImageXObject image) {
+        float[] config = new float[4];
+
+        config[0] = 0f;
+        config[1] = 0f;
 
         float width = image.getWidth();
         float height = image.getHeight();
 
-        float ratio = getDefPageWidth()/width;
 
-        // A4纸竖放，宽要小于高
-        if (width > height) {
-            float temp = width;
-            width = height;
-            height = temp;
-        }
+//        // A4纸竖放，宽要小于高
+//        if (width > height) {
+//            config[3] = getDefPageWidth();
+//
+//            float ratioH = getDefPageHeight() / width;
+//            config[2] = width * ratioH * ratio_72;
+//            return config;
+//        }
 
-        float[] config = new float[4];
-        config[0] = 0f;
-        config[1] = 0f;
+        float ratio = getDefPageWidth() / width;
         config[2] = getDefPageWidth(); // 宽度等于默认宽度
-
-
-
         config[3] = height * ratio;
-        //config[3] = getDefPageHeight();
+
+        config[0] = (getDefPageWidth()-config[2])/2;
+        config[1] = (getDefPageHeight()-config[3])/2;
+
         return config;
     }
 
