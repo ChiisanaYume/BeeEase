@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="test_javafx" />
-        <module name="test_javafx3" />
         <module name="module_C_test" />
         <module name="test_javafx_jdk8" />
         <module name="test_pdfbox" />
         <module name="packageJavafx" />
+        <module name="test_javafx_beta" />
         <module name="tool" />
         <module name="module_B_test" />
         <module name="moduleD" />
