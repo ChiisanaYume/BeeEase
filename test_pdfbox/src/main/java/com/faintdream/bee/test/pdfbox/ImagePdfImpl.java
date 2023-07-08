@@ -7,6 +7,7 @@ import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.PDPageTree;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
+import com.faintdream.tool.util.IOUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,20 +16,16 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
 
     /**
-     * 默认页面宽高
+     * newPage 新页面(对象内使用)
+     * newPageFactory 创建新页面的工厂方法
      */
-    private float defPageWidth = 595.27563f;
-    private float defPageHeight = 841.8898f;
-
-    /**
-     * 新页面;
-     * */
     private PDPage newPage;
+    private PageFactory<PDPage> newPageFactory = new DefNewPageFactory();
 
     /**
      * 是否开启单张图片处理模式(singleMode);
      * singleMode 一次只处理一张图片，一张图片一个pdf
-     * */
+     */
     private boolean singleMode = true;
 
     /**
@@ -41,7 +38,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     public void pdfByImage(String imageFile, String pdfFile) throws IOException {
 
         // 文档关闭抛异常
-        if(getDocument().isClosed()){
+        if (getDocument().isClosed()) {
             throw new IOException(getClass().getSimpleName() + ": 对象已不可用，暂存文件已关闭");
         }
 
@@ -52,7 +49,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         PDPageContentStream contentStream = new PDPageContentStream(this, page);
 
         // 加载图片文件
-        PDImageXObject image = PDImageXObject.createFromFileByContent(new File(imageFile), this);
+        PDImageXObject image = loadImage(imageFile);
 
         // 设置图片位置和大小
         ImageInfo info = setImageConfig(image);
@@ -77,18 +74,15 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     private PDPage createPage() throws IOException {
 
         // 删除原来的所有页面
-        if(singleMode){
+        if (singleMode) {
             PDPageTree pages = getPages();
-            for(int i=0; i<pages.getCount();i++){
+            for (int i = 0; i < pages.getCount(); i++) {
                 pages.remove(i);
             }
         }
 
         // 创建一个新页
-        if(newPage==null){
-            setNewPage(new PDPage(PDRectangle.A4));
-        }
-        setNewPage(new PDPage(PDRectangle.A4));
+        newPage = newPageFactory.build();
         addPage(newPage);
         return newPage;
     }
@@ -120,45 +114,38 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         return info;
     }
 
+    private PDImageXObject loadImage(String imageFile) throws IOException {
+
+        // 加载图片文件
+        File file = new File(imageFile);
+
+        if (!file.isFile()) {
+            file = IOUtil.getFile(imageFile);
+            if (!file.isFile()) {
+                throw new IOException(String.format("[%s] 文件不存在!", file));
+            }
+        }
+
+        return PDImageXObject.createFromFileByContent(file, this);
+    }
+
     /**
      * getter & setter methods
      */
 
-    @NotComplete
-    public float getDefPageWidth() {
-        return defPageWidth;
-    }
-
-    @NotComplete
-    public void setDefPageWidth(float defPageWidth) {
-        this.defPageWidth = defPageWidth;
-    }
-
-    @NotComplete
-    public float getDefPageHeight() {
-        return defPageHeight;
-    }
-
-    @NotComplete
-    public void setDefPageHeight(float defPageHeight) {
-        this.defPageHeight = defPageHeight;
-    }
-
-    @NotComplete
     public boolean isSingleMode() {
         return singleMode;
     }
 
-    @NotComplete
     public void setSingleMode(boolean singleMode) {
         this.singleMode = singleMode;
     }
 
-    public PDPage getNewPage() {
-        return newPage;
+    public PageFactory<PDPage> getNewPageFactory() {
+        return newPageFactory;
     }
 
-    public void setNewPage(PDPage newPage) {
-        this.newPage = newPage;
+    public void setNewPageFactory(PageFactory<PDPage> newPageFactory) {
+        this.newPageFactory = newPageFactory;
     }
 }
