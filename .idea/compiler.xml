@@ -15,6 +15,7 @@
         <module name="tool" />
         <module name="module_B_test" />
         <module name="moduleD" />
+        <module name="pdf" />
         <module name="module_E_test" />
         <module name="moduleA" />
         <module name="moduleC" />
