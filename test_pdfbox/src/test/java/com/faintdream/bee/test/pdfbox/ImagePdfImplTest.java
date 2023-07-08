@@ -12,4 +12,12 @@ public class ImagePdfImplTest {
         pdf.close();
 
     }
+
+    @Test
+    public void test2() throws Exception {
+        ImagePdfImpl pdf = new ImagePdfImpl();
+        pdf.setNewPageFactory(new A3Page());
+        pdf.pdfByImage("iria.jpg","ImagePdfImplTest2.pdf");
+        pdf.close();
+    }
 }
