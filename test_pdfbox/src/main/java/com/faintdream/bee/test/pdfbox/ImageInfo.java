@@ -24,6 +24,16 @@ public class ImageInfo {
         this.axisY = axisY;
     }
 
+    public ImageInfo(Size<Float> size) {
+        width = size.getWidth();
+        height = size.getHeight();
+    }
+
+    public ImageInfo(Position<Float> position){
+        axisX = position.getX();
+        axisY = position.getY();
+    }
+
     /**
      * 图片的宽，高，位置(x轴，y轴);
      * */
@@ -31,6 +41,9 @@ public class ImageInfo {
     private float height;
     private float axisX;
     private float axisY;
+
+    private Size<Float> size = new ImageSize();
+    private Position<Float> position = new ImagePosition();
 
 
     /**
@@ -42,6 +55,7 @@ public class ImageInfo {
 
     public void setWidth(float width) {
         this.width = width;
+        size.setWidth(width);
     }
 
     public float getHeight() {
@@ -50,6 +64,7 @@ public class ImageInfo {
 
     public void setHeight(float height) {
         this.height = height;
+        size.setHeight(height);
     }
 
     public float getAxisX() {
@@ -58,6 +73,7 @@ public class ImageInfo {
 
     public void setAxisX(float axisX) {
         this.axisX = axisX;
+        position.setX(axisX);
     }
 
     public float getAxisY() {
@@ -66,5 +82,26 @@ public class ImageInfo {
 
     public void setAxisY(float axisY) {
         this.axisY = axisY;
+        position.setY(axisY);
+    }
+
+    public Size<Float> getSize() {
+        return size;
+    }
+
+    public void setSize(Size<Float> size) {
+        this.size = size;
+        setWidth(size.getWidth());
+        setHeight(size.getHeight());
+    }
+
+    public Position<Float> getPosition() {
+        return position;
+    }
+
+    public void setPosition(Position<Float> position) {
+        this.position = position;
+        setAxisX(position.getX());
+        setAxisY(position.getY());
     }
 }

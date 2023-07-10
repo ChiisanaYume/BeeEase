@@ -1,13 +1,8 @@
 package com.faintdream.bee.test.pdfbox;
 
-import com.faintdream.tool.annotate.NotComplete;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.PDPageTree;
-import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import com.faintdream.tool.util.IOUtil;
+import org.apache.pdfbox.pdmodel.*;
+import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,15 +13,32 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     /**
      * newPage 新页面(对象内使用)
      * newPageFactory 创建新页面的工厂方法
+     * newPagePadding 新页面padding
      */
     private PDPage newPage;
     private PageFactory<PDPage> newPageFactory = new DefNewPageFactory();
+
+    private Padding newPagePadding = new Padding(0, 0, 0, 0);
+
 
     /**
      * 是否开启单张图片处理模式(singleMode);
      * singleMode 一次只处理一张图片，一张图片一个pdf
      */
     private boolean singleMode = true;
+
+    /**
+     * 图片自动拉伸(fixedImageSize);
+     * fixedImageSize 图片大小恒等于: 页面 - 页边距（padding）
+     */
+    private boolean fixedImageSize = false;
+
+    /**
+     * 忽略水平 & 垂直方法的padding
+     * */
+    private boolean ignorePaddingH =true;
+
+    private boolean ignorePaddingV =false;
 
     /**
      * 将图片插入到pdf文件
@@ -61,6 +73,9 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         // 关闭内容流
         contentStream.close();
 
+        // 添加属性信息
+        additionInformation();
+
         // 保存 PDF 文件
         save(pdfFile);
 
@@ -92,9 +107,10 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
      */
     private ImageInfo setImageConfig(PDImageXObject image) {
 
-        // 图片的大小,位置信息
+        // 图片的尺寸,位置信息
         ImageInfo info = new ImageInfo();
 
+        // 图片尺寸
         float width = image.getWidth();
         float height = image.getHeight();
 
@@ -102,18 +118,94 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         float pageWidth = newPage.getMediaBox().getWidth();
         float pageHeight = newPage.getMediaBox().getHeight();
 
-        // 宽高缩放比
-        float ratio = pageWidth / width;
+        // 页面实际宽高(去掉padding)
+        float actualWidth = pageWidth - newPagePadding.getLeft() - newPagePadding.getRight();
+        float actualHeight = pageHeight - newPagePadding.getTop() - newPagePadding.getBottom();
 
-        info.setWidth(pageWidth); // 宽度等于默认宽度
-        info.setHeight(height * ratio); // 高度按照宽度的缩放比例计算
+        // 计算尺寸
+        info.setSize(calcSize(actualWidth, actualHeight, width, height));
 
-        info.setAxisX((pageWidth - info.getWidth()) / 2);
-        info.setAxisY((pageHeight - info.getHeight()) / 2);
-
+        // 计算位置
+        info.setPosition(calcPosition(pageWidth, pageHeight, info.getWidth(), info.getHeight()));
         return info;
     }
 
+    /**
+     * 计算位置 图片位于页面中心
+     *
+     * @param outer 边长
+     * @param inner 图长
+     */
+    private float calcCP(float outer, float inner) {
+        if (isFixedImageSize()) {
+            System.out.println("---");
+        }
+        return (outer - inner) / 2;
+    }
+
+    /**
+     * 计算位置
+     *
+     * @param outW 外边宽
+     * @param outH 外边高
+     * @param w    图宽
+     * @param h    图高
+     */
+    private Position<Float> calcPosition(Float outW, Float outH, Float w, Float h) {
+
+        Position<Float> position = new ImagePosition();
+
+        // 固定宽高
+        if(isFixedImageSize()){
+            position.setX(newPagePadding.getLeft());
+            position.setY(newPagePadding.getBottom());
+            return position;
+        }
+
+        // 计算位置
+        position.setX(calcCP(outW, w));
+        position.setY(calcCP(outH, h));
+
+        return position;
+    }
+
+    /**
+     * 计算尺寸
+     *
+     * @param outW 外边宽
+     * @param outH 外边高
+     * @param w    图宽
+     * @param h    图高
+     */
+    private Size<Float> calcSize(Float outW, Float outH, Float w, Float h) {
+
+        Size<Float> size = new ImageSize();
+
+        // 固定宽高
+        if(isFixedImageSize()){
+            size.setWidth(outW);
+            size.setHeight(outH);
+        }
+
+        // 宽高缩放比
+        float ratio = outW / w;
+
+        size.setWidth(outW); // 宽度等于默认宽度
+        size.setHeight(h * ratio); // 高度按照宽度的缩放比例计算
+
+        // 图片不能完全显示(图片比页面都要长)
+        if (size.getHeight() > outH) {
+            ratio = outH / h;
+            size.setWidth(w * ratio);
+            size.setHeight(outH);
+        }
+
+        return size;
+    }
+
+    /**
+     * 加载图片文件
+     */
     private PDImageXObject loadImage(String imageFile) throws IOException {
 
         // 加载图片文件
@@ -127,6 +219,16 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         }
 
         return PDImageXObject.createFromFileByContent(file, this);
+    }
+
+
+    /**
+     * 设置PDF的属性信息
+     */
+    private void additionInformation() {
+        PDDocumentInformation info = this.getDocumentInformation();
+        info.setAuthor("faintdream@163.com");
+        info.setProducer("faintdream.beeEase & apache.pdfbox");
     }
 
     /**
@@ -147,5 +249,41 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
     public void setNewPageFactory(PageFactory<PDPage> newPageFactory) {
         this.newPageFactory = newPageFactory;
+    }
+
+    public Padding getNewPagePadding() {
+        return newPagePadding;
+    }
+
+    public void setNewPagePadding(Padding newPagePadding) {
+        this.newPagePadding = newPagePadding;
+    }
+
+    public void setNewPagePadding(Float padding) {
+        this.newPagePadding = new Padding(padding);
+    }
+
+    public boolean isFixedImageSize() {
+        return fixedImageSize;
+    }
+
+    public void setFixedImageSize(boolean fixedImageSize) {
+        this.fixedImageSize = fixedImageSize;
+    }
+
+    public boolean isIgnorePaddingH() {
+        return ignorePaddingH;
+    }
+
+    public void setIgnorePaddingH(boolean ignorePaddingH) {
+        this.ignorePaddingH = ignorePaddingH;
+    }
+
+    public boolean isIgnorePaddingV() {
+        return ignorePaddingV;
+    }
+
+    public void setIgnorePaddingV(boolean ignorePaddingV) {
+        this.ignorePaddingV = ignorePaddingV;
     }
 }
