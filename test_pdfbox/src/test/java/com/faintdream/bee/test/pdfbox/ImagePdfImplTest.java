@@ -49,4 +49,13 @@ public class ImagePdfImplTest {
         pdf.pdfByImage("iria.jpg","ImagePdfImplTest4-1.pdf");
         pdf.close();
     }
+
+    @Test
+    public void test5() throws Exception {
+        ImagePdf pdf = new ImagePdfImpl();
+        pdf.pdfByImage("iria.jpg","iria.pdf");
+        pdf.pdfByImage("babara.jpg","babara.pdf");
+        pdf.close();
+
+    }
 }
