@@ -58,4 +58,12 @@ public class ImagePdfImplTest {
         pdf.close();
 
     }
+
+    @Test
+    public void test6() throws Exception{
+        ImagePdfImpl pdf = new ImagePdfImpl();
+        pdf.setSingleMode(true);
+        pdf.pdfByFolder("test1","ImagePdfIMplTest-6.pdf");
+        pdf.close();
+    }
 }

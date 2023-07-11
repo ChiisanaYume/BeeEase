@@ -50,8 +50,17 @@ public class PDFSimpleOperationTest {
         documents.add(document1);
         documents.add(document2);
 
-        simpleOperation.merge(documents);
+        simpleOperation.merge(documents).save(getClass().getSimpleName() + "-marginTest.pdf");
 
 
+    }
+
+    @Test
+    public void marginTest2() throws IOException{
+        PDFSimpleOperation simpleOperation = new PDFSimpleOperation();
+
+        PDDocument document = simpleOperation.merge("PDFSimpleOperationTest");
+        document.save(getClass().getSimpleName() + "-marginTest2.pdf");
+        document.close();
     }
 }

@@ -1,15 +1,15 @@
-package com.faintdream.tool.io.impl;
+package com.faintdream.bee.test.pdfbox;
 
 import com.faintdream.tool.io.Folder;
+import com.faintdream.tool.io.impl.DefImageFilter;
 
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class FDFolder implements Folder{
+public class PDFFolder implements Folder {
     /**
      * 获取文件夹中的文件
      *
@@ -29,7 +29,10 @@ public class FDFolder implements Folder{
     }
 
 
-    private FilenameFilter filter = new DefImageFilter();
+    private FilenameFilter filter = (File dir, String name)->{
+        String lowerCaseName = name.toLowerCase();
+        return lowerCaseName.endsWith(".pdf");
+    };
 
 
     public FilenameFilter getFilter() {

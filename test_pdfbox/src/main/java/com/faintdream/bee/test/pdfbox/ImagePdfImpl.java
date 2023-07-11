@@ -1,11 +1,15 @@
 package com.faintdream.bee.test.pdfbox;
 
+import com.faintdream.tool.io.Folder;
+import com.faintdream.tool.io.impl.FDFolder;
 import com.faintdream.tool.util.IOUtil;
 import org.apache.pdfbox.pdmodel.*;
+import org.apache.pdfbox.pdmodel.encryption.ProtectionPolicy;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
@@ -14,11 +18,14 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
      * newPage 新页面(对象内使用)
      * newPageFactory 创建新页面的工厂方法
      * newPagePadding 新页面padding
+     * countNo 加在存储文件后面的编号(对象内使用)
      */
     private PDPage newPage;
     private PageFactory<PDPage> newPageFactory = new DefNewPageFactory();
 
     private Padding newPagePadding = new Padding(0, 0, 0, 0);
+    private long countNo = 0L;
+
 
 
     /**
@@ -41,6 +48,11 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     private boolean ignorePaddingV =false;
 
     /**
+     * 自动保存(autoSave)
+     * */
+     private boolean autoSave = true;
+
+    /**
      * 将图片插入到pdf文件
      *
      * @param imageFile 图片文件
@@ -49,10 +61,8 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     @Override
     public void pdfByImage(String imageFile, String pdfFile) throws IOException {
 
-        // 文档关闭抛异常
-        if (getDocument().isClosed()) {
-            throw new IOException(getClass().getSimpleName() + ": 对象已不可用，暂存文件已关闭");
-        }
+        // 安全检查
+        securityCheck();
 
         // 创建一个新页面
         PDPage page = createPage();
@@ -77,10 +87,60 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         additionInformation();
 
         // 保存 PDF 文件
-        save(pdfFile);
+        saveFile(pdfFile);
 
         // 关闭 PDF 文档
         // document.close();
+    }
+
+    public void saveFile(String fileName) throws IOException {
+        if(isAutoSave()){
+            save(fileName);
+        }
+    }
+
+    public void pdfByFolder(String folder, String pdfFile) throws IOException {
+
+        boolean temp = isAutoSave();
+        setAutoSave(false); // 设置不自动保存文件
+
+        // 获取当前文件夹的所有图片文件
+        Folder f = new FDFolder();
+        List<File> files = f.getListFiles(loadFolder(folder));
+
+
+
+        // 单模式存储多个文件
+        if(isSingleMode()){
+            setAutoSave(true); // 设置自动保存文件
+
+            // 转换成PDF
+            for (File file : files) {
+                pdfByImage(file.toString(), rename(pdfFile));
+            }
+            setAutoSave(temp); // 还原自动保存文件设置
+            return;
+        }
+
+        setAutoSave(false); // 暂时关闭自动保存文件
+        // 转换成PDF
+        for (File file : files) {
+            pdfByImage(file.toString(), pdfFile);
+        }
+
+        setAutoSave(temp); // 还原自动保存文件设置
+        saveFile(pdfFile);
+
+    }
+
+    /**
+     * 安全检查
+     * */
+    private void securityCheck() throws IOException {
+        // 文档关闭抛异常
+        if (getDocument().isClosed()) {
+            throw new IOException(getClass().getSimpleName() + ": 对象已不可用，暂存文件已关闭");
+        }
     }
 
     /**
@@ -204,6 +264,23 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     }
 
     /**
+     * 加载文件
+     * */
+    private File loadFolder(String filename) throws IOException {
+        // 加载图片文件
+        File file = new File(filename);
+
+        if (!file.isDirectory()) {
+            file = IOUtil.getFile(filename);
+            if (!file.isDirectory()) {
+                throw new IOException(String.format("[%s] 文件不存在!", file));
+            }
+        }
+
+        return file;
+    }
+
+    /**
      * 加载图片文件
      */
     private PDImageXObject loadImage(String imageFile) throws IOException {
@@ -221,7 +298,11 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         return PDImageXObject.createFromFileByContent(file, this);
     }
 
-
+    private String rename(String filename){
+        String newFileName = filename.substring(0, filename.lastIndexOf("."));
+        newFileName = newFileName + "-" + getCountNo() + ".pdf";
+        return newFileName;
+    }
     /**
      * 设置PDF的属性信息
      */
@@ -285,5 +366,17 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
     public void setIgnorePaddingV(boolean ignorePaddingV) {
         this.ignorePaddingV = ignorePaddingV;
+    }
+
+    private long getCountNo() {
+        return ++countNo;
+    }
+
+    public boolean isAutoSave() {
+        return autoSave;
+    }
+
+    public void setAutoSave(boolean autoSave) {
+        this.autoSave = autoSave;
     }
 }

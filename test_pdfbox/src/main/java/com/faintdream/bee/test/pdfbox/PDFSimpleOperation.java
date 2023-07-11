@@ -1,7 +1,11 @@
 package com.faintdream.bee.test.pdfbox;
 
+import com.faintdream.tool.io.Folder;
+import com.faintdream.tool.io.impl.FDFolder;
+import com.faintdream.tool.util.IOUtil;
 import org.apache.pdfbox.pdmodel.PDDocument;
 
+import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -58,6 +62,20 @@ public class PDFSimpleOperation implements DocumentOperation<PDDocument> {
         }
 
         return document;
+    }
+
+    public PDDocument merge(String folderName) throws IOException{
+        Folder folder = new PDFFolder();
+        List<File> files = folder.getListFiles(IOUtil.getFile(folderName));
+
+        List<PDDocument> list = new LinkedList<>();
+        //
+        for(int i=0;i<files.size();i++){
+            PDDocument document = PDDocument.load(files.get(i));
+            list.add(i,document);
+        }
+
+        return merge(list);
     }
 
     /**
