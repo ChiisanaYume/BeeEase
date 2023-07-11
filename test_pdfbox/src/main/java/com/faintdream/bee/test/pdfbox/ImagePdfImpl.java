@@ -9,6 +9,7 @@ import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ImagePdfImpl extends PDDocument implements ImagePdf {
@@ -19,12 +20,14 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
      * newPageFactory 创建新页面的工厂方法
      * newPagePadding 新页面padding
      * countNo 加在存储文件后面的编号(对象内使用)
+     * documentTemps 文档缓存
      */
     private PDPage newPage;
     private PageFactory<PDPage> newPageFactory = new DefNewPageFactory();
 
     private Padding newPagePadding = new Padding(0, 0, 0, 0);
     private long countNo = 0L;
+    private List<PDDocument> documentTemps = new LinkedList<>();
 
 
 
@@ -80,6 +83,9 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         // 注意: 方法中的坐标 (x, y) 表示图片左下角的位置
         contentStream.drawImage(image, info.getAxisX(), info.getAxisY(), info.getWidth(), info.getHeight());
 
+        // 单模式的话写入缓存
+        writeTemp();
+
         // 关闭内容流
         contentStream.close();
 
@@ -87,7 +93,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         additionInformation();
 
         // 保存 PDF 文件
-        saveFile(pdfFile);
+        saveFile(rename(pdfFile));
 
         // 关闭 PDF 文档
         // document.close();
@@ -116,7 +122,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
             // 转换成PDF
             for (File file : files) {
-                pdfByImage(file.toString(), rename(pdfFile));
+                pdfByImage(file.toString(), rename(pdfFile,getCountNo()));
             }
             setAutoSave(temp); // 还原自动保存文件设置
             return;
@@ -160,6 +166,22 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         newPage = newPageFactory.build();
         addPage(newPage);
         return newPage;
+    }
+
+    /**
+     * 写入缓存(只有单模式会启用缓存)
+     * */
+    private void writeTemp(){
+        if(isSingleMode()){
+            documentTemps.add(this);
+        }
+    }
+
+    /**
+     * 清空缓存
+     */
+    private void resetTemp(){
+        documentTemps.clear();
     }
 
     /**
@@ -298,9 +320,26 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         return PDImageXObject.createFromFileByContent(file, this);
     }
 
+    /**
+     * 加工一下文件名
+     * */
     private String rename(String filename){
-        String newFileName = filename.substring(0, filename.lastIndexOf("."));
-        newFileName = newFileName + "-" + getCountNo() + ".pdf";
+        return rename(filename,null);
+    }
+
+    /**
+     * 加工一下文件名
+     * */
+    private String rename(String filename,Long no){
+        String newFileName = filename;
+        if(newFileName.endsWith(".pdf")||newFileName.endsWith(".PDF")){
+            newFileName = filename.substring(0, filename.lastIndexOf("."));
+            if(no!=null){
+                newFileName = newFileName + "-" + no + ".pdf";
+            } else{
+                newFileName = newFileName + "-" + ".pdf";
+            }
+        }
         return newFileName;
     }
     /**
@@ -379,4 +418,9 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     public void setAutoSave(boolean autoSave) {
         this.autoSave = autoSave;
     }
+
+    public List<PDDocument> getDocumentTemps() {
+        return documentTemps;
+    }
+
 }

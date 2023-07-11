@@ -63,6 +63,7 @@ public class ImagePdfImplTest {
     public void test6() throws Exception{
         ImagePdfImpl pdf = new ImagePdfImpl();
         pdf.setSingleMode(true);
+        pdf.setSingleMode(false);
         pdf.pdfByFolder("test1","ImagePdfIMplTest-6.pdf");
         pdf.close();
     }
