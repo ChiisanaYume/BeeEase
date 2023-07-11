@@ -14,7 +14,7 @@ public interface DocumentOperation <D> {
      *
      * @return D document 新文档
      * */
-    D create();
+    D create() throws Exception;
 
     /**
      * 合并文档
@@ -23,7 +23,7 @@ public interface DocumentOperation <D> {
      * @return D document 合并完成后的新文档
      * */
 
-    D merge(List<D> documents);
+    D merge(List<D> documents) throws Exception;
 
     /**
      * 拆分文档
@@ -31,5 +31,5 @@ public interface DocumentOperation <D> {
      * @param document 待合并的文档
      * @return List<D>  documents 拆分完成后的新文档集合(序列)
      */
-    List<D> split(D document);
+    List<D> split(D document) throws Exception;
 }
