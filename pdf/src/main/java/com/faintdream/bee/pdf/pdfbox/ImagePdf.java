@@ -1,4 +1,4 @@
-package com.faintdream.bee.pdf;
+package com.faintdream.bee.pdf.pdfbox;
 
 import java.io.IOException;
 

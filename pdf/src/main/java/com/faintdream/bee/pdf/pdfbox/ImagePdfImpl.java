@@ -1,7 +1,5 @@
 package com.faintdream.bee.pdf.pdfbox;
 
-import com.faintdream.bee.pdf.ImagePdf;
-import com.faintdream.bee.pdf.PageFactory;
 import com.faintdream.bee.pdf.Position;
 import com.faintdream.bee.pdf.Size;
 import com.faintdream.bee.pdf.pdfbox.bean.ImageInfo;
@@ -61,6 +59,11 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
      * 自动保存(autoSave)
      * */
      private boolean autoSave = true;
+
+    /**
+     * 是否标注页码(markPageNumber)
+     */
+    private boolean markPageNumber;
 
     /**
      * 将图片插入到pdf文件
@@ -189,6 +192,16 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
      */
     private void resetTemp(){
         documentTemps.clear();
+    }
+
+    /**
+     * 添加页码
+     * */
+    private void addPageNumber(){
+        // 计算页码的位置
+
+        // 添加页码
+
     }
 
     /**

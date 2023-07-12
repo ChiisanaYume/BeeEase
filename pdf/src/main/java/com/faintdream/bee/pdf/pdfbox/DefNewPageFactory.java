@@ -1,6 +1,5 @@
 package com.faintdream.bee.pdf.pdfbox;
 
-import com.faintdream.bee.pdf.PageFactory;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 

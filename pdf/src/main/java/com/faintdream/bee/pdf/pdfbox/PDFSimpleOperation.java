@@ -1,6 +1,5 @@
 package com.faintdream.bee.pdf.pdfbox;
 
-import com.faintdream.bee.pdf.DocumentOperation;
 import com.faintdream.tool.io.Folder;
 import com.faintdream.tool.util.IOUtil;
 import org.apache.pdfbox.pdmodel.PDDocument;
