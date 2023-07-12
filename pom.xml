@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>test_pdfbox</module>
+        <module>pdf</module>
         <module>test_javafx</module>
         <module>test_javafx_jdk8</module>
 

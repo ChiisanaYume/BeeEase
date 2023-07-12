@@ -9,7 +9,6 @@
         <module name="test_javafx" />
         <module name="module_C_test" />
         <module name="test_javafx_jdk8" />
-        <module name="test_pdfbox" />
         <module name="packageJavafx" />
         <module name="test_javafx_beta" />
         <module name="tool" />
