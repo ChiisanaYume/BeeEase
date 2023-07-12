@@ -21,6 +21,8 @@
         <module name="moduleB" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="17" />
+    <bytecodeTargetLevel target="17">
+      <module name="test_pdfbox" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

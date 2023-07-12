@@ -1,5 +1,6 @@
 package com.faintdream.bee.pdf.pdfbox;
 
+import com.faintdream.bee.pdf.ImagePdf;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.junit.Test;
@@ -63,8 +64,21 @@ public class ImagePdfImplTest {
     public void test6() throws Exception{
         ImagePdfImpl pdf = new ImagePdfImpl();
         pdf.setSingleMode(true);
-        pdf.setSingleMode(false);
+        pdf.setAutoSave(true);
         pdf.pdfByFolder("test1","ImagePdfIMplTest-6.pdf");
+        System.out.println(pdf);
+        // PDFSimpleOperation pdfSimpleOperation = new PDFSimpleOperation();
+        // pdfSimpleOperation.setAutoSave(true);
+        // pdfSimpleOperation.merge(pdf.getDocumentTemps());
+        pdf.close();
+    }
+
+    @Test
+    public void test7() throws Exception{
+        ImagePdfImpl pdf = new ImagePdfImpl();
+        pdf.setSingleMode(false);
+        pdf.setMarkPageNumber(true);
+        pdf.pdfByFolder("test1","ImagePdfIMplTest-7.pdf");
         pdf.close();
     }
 }

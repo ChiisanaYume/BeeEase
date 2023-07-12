@@ -1,5 +1,6 @@
 package com.faintdream.bee.pdf.pdfbox;
 
+import com.faintdream.bee.pdf.ImagePdf;
 import com.faintdream.bee.pdf.Position;
 import com.faintdream.bee.pdf.Size;
 import com.faintdream.bee.pdf.pdfbox.bean.ImageInfo;
@@ -19,58 +20,12 @@ import java.util.List;
 
 public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
-
-    /**
-     * newPage 新页面(对象内使用)
-     * newPageFactory 创建新页面的工厂方法
-     * newPagePadding 新页面padding
-     * countNo 加在存储文件后面的编号(对象内使用)
-     * documentTemps 文档缓存
-     */
-    private PDPage newPage;
-    private PageFactory<PDPage> newPageFactory = new DefNewPageFactory();
-
-    private Padding newPagePadding = new Padding(0, 0, 0, 0);
-    private long countNo = 0L;
-    private List<PDDocument> documentTemps = new LinkedList<>();
-
-
-
-    /**
-     * 是否开启单张图片处理模式(singleMode);
-     * singleMode 一次只处理一张图片，一张图片一个pdf
-     */
-    private boolean singleMode = true;
-
-    /**
-     * 图片自动拉伸(fixedImageSize);
-     * fixedImageSize 图片大小恒等于: 页面 - 页边距（padding）
-     */
-    private boolean fixedImageSize = false;
-
-    /**
-     * 忽略水平 & 垂直方法的padding
-     * */
-    private boolean ignorePaddingH =true;
-
-    private boolean ignorePaddingV =false;
-
-    /**
-     * 自动保存(autoSave)
-     * */
-     private boolean autoSave = true;
-
-    /**
-     * 是否标注页码(markPageNumber)
-     */
-    private boolean markPageNumber;
-
     /**
      * 将图片插入到pdf文件
-     *
      * @param imageFile 图片文件
-     * @param pdfFile   pdf文件名
-     */
+     * @param pdfFile pdf文件名
+     * @throws IOException IO异常
+     * */
     @Override
     public void pdfByImage(String imageFile, String pdfFile) throws IOException {
 
@@ -108,31 +63,27 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         // 关闭 PDF 文档
         // document.close();
     }
-
-    public void saveFile(String fileName) throws IOException {
-        if(isAutoSave()){
-            save(fileName);
-        }
-    }
-
+    /**
+     * 将图片插入到pdf文件(从文件夹中获取)
+     * @param folder 图片文件夹
+     * @param pdfFile pdf文件名
+     * @throws IOException IO异常
+     * */
+    @Override
     public void pdfByFolder(String folder, String pdfFile) throws IOException {
 
         boolean temp = isAutoSave();
-        setAutoSave(false); // 设置不自动保存文件
 
         // 获取当前文件夹的所有图片文件
         Folder f = new FDFolder();
         List<File> files = f.getListFiles(loadFolder(folder));
 
 
-
         // 单模式存储多个文件
         if(isSingleMode()){
-            setAutoSave(true); // 设置自动保存文件
-
             // 转换成PDF
             for (File file : files) {
-                pdfByImage(file.toString(), rename(pdfFile,getCountNo()));
+                pdfByImage(file.toString(), rename(pdfFile,getCountNo(true)));
             }
             setAutoSave(temp); // 还原自动保存文件设置
             return;
@@ -145,8 +96,65 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         }
 
         setAutoSave(temp); // 还原自动保存文件设置
-        saveFile(pdfFile);
+        addPageNumber(); // 添加页码
+        saveFile(pdfFile); // 保存文件
 
+    }
+
+
+    /**
+     * newPage 新页面(对象内使用)
+     * newPageFactory 创建新页面的工厂方法
+     * newPagePadding 新页面padding
+     * countNo 加在存储文件后面的编号(对象内使用)
+     * documentTemps 文档缓存
+     * pageNumberMark 添加页码的对象
+     */
+    private PDPage newPage;
+    private PageFactory<PDPage> newPageFactory = new DefNewPageFactory();
+
+    private Padding newPagePadding = new Padding(0, 0, 0, 0);
+    private long countNo = 0L;
+    private List<PDDocument> documentTemps = new LinkedList<>();
+
+    private PageNumberMark pageNumberMark = new PageNumberMark();
+
+
+
+    /**
+     * 是否开启单张图片处理模式(singleMode);
+     * singleMode 一次只处理一张图片，一张图片一个pdf
+     */
+    private boolean singleMode = true;
+
+    /**
+     * 图片自动拉伸(fixedImageSize);
+     * fixedImageSize 图片大小恒等于: 页面 - 页边距（padding）
+     */
+    private boolean fixedImageSize = false;
+
+    /**
+     * 忽略水平 & 垂直方法的padding
+     * */
+    private boolean ignorePaddingH =true;
+
+    private boolean ignorePaddingV =false;
+
+    /**
+     * 自动保存(autoSave)
+     * */
+     private boolean autoSave = true;
+
+    /**
+     * 是否标注页码(markPageNumber)
+     */
+    private boolean markPageNumber;
+
+
+    public void saveFile(String fileName) throws IOException {
+        if(isAutoSave()){
+            save(fileName);
+        }
     }
 
     /**
@@ -190,18 +198,20 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     /**
      * 清空缓存
      */
-    private void resetTemp(){
+    public void resetTemp(){
         documentTemps.clear();
+        countNo = 0L;
     }
 
     /**
      * 添加页码
      * */
-    private void addPageNumber(){
-        // 计算页码的位置
-
-        // 添加页码
-
+    private void addPageNumber() throws IOException {
+        if(markPageNumber){
+            // 设置当前页码
+            pageNumberMark.setPageNumber(1L);
+            pageNumberMark.Marking(this);
+        }
     }
 
     /**
@@ -428,7 +438,14 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
     }
 
     private long getCountNo() {
-        return ++countNo;
+        return countNo;
+    }
+
+    private long getCountNo(boolean append){
+        if(append){
+            return ++countNo;
+        }
+        return getCountNo();
     }
 
     public boolean isAutoSave() {
@@ -443,4 +460,11 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         return documentTemps;
     }
 
+    public boolean isMarkPageNumber() {
+        return markPageNumber;
+    }
+
+    public void setMarkPageNumber(boolean markPageNumber) {
+        this.markPageNumber = markPageNumber;
+    }
 }

@@ -1,6 +1,6 @@
 package com.faintdream.bee.test;
 
-import com.faintdream.bee.pdf.pdfbox.ImagePdf;
+import com.faintdream.bee.pdf.ImagePdf;
 import com.faintdream.bee.pdf.pdfbox.ImagePdfImpl;
 import com.faintdream.tool.util.IOUtil;
 import org.junit.Test;

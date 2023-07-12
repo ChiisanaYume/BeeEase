@@ -1,5 +1,7 @@
 package com.faintdream.bee.pdf;
 
+import java.io.IOException;
+
 /**
  * 标记，为一个对象添加标记
  * @author faintdream
@@ -12,5 +14,5 @@ public interface Mark<D>{
      * @param document  要添加标记的文档
      * @return document 添加标记完成后的文档
      * */
-    D Marking(D document);
+    D Marking(D document) throws IOException;
 }
