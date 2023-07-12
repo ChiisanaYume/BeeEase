@@ -337,7 +337,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
             if(no!=null){
                 newFileName = newFileName + "-" + no + ".pdf";
             } else{
-                newFileName = newFileName + "-" + ".pdf";
+                newFileName = newFileName + ".pdf";
             }
         }
         return newFileName;

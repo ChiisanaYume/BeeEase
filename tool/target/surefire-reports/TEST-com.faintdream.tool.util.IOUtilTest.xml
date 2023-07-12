@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="com.faintdream.tool.util.IOUtilTest" time="0.023" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="com.faintdream.tool.util.IOUtilTest" time="0.006" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2022.2.3"/>
+    <property name="idea.version" value="2023.1.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="17.0.6+10-LTS"/>
-    <property name="sun.boot.library.path" value="C:\Users\Administrator\.jdks\corretto-17.0.6\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\study\Beee\BeeEase\tool"/>
+    <property name="java.vm.version" value="17.0.7+7-LTS"/>
+    <property name="sun.boot.library.path" value="D:\app\jdk\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\study\BeeEase\tool"/>
     <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="user.script" value=""/>
     <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\study\Beee\BeeEase\tool"/>
+    <property name="user.dir" value="D:\study\BeeEase\tool"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="17.0.6+10-LTS"/>
+    <property name="java.runtime.version" value="17.0.7+7-LTS"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Administrator\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 11"/>
-    <property name="maven.ext.class.path" value="D:\App\IntelliJ IDEA 2022.2.3\plugins\maven\lib\maven-event-listener.jar"/>
-    <property name="classworlds.conf" value="D:\App\apache-maven-3.3.9\bin\m2.conf"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="maven.ext.class.path" value="D:\app\IntelliJ IDEA 2023.1.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="D:\app\apache-maven-3.3.9\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="C:\Users\Administrator\.jdks\corretto-17.0.6\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\App\VMware\bin\;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\App\Inkscape\bin;C:\Program Files\TortoiseGit\bin;D:\App\Git\cmd;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\App\IntelliJ IDEA 2022.2.3\bin;;C:\Users\Administrator\.jdks\corretto-17.0.6\bin;D:\App\apache-maven-4.0.0-alpha-5\\bin;D:\App\wix311-binaries;;."/>
+    <property name="java.library.path" value="D:\app\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\app\QuickTime\QTSystem\;D:\app\java\bin;D:\java;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\app\InkScape\bin;C:\Program Files\dotnet\;C:\Program Files\TortoiseGit\bin;D:\app\Git\cmd;%SQWJ_DRAW_HOME;D:\app\apache-tomcat-10.0.23\bin;E:\faintdream\lib;E:\faintdream\bin;D:\app\apache-maven-3.3.9\bin;C:\Users\Administrator\.dotnet\tools;D:\app\IntelliJ IDEA 2023.1.2\bin;;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
+    <property name="os.version" value="6.1"/>
     <property name="user.home" value="C:\Users\Administrator"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="17"/>
     <property name="user.name" value="Administrator"/>
-    <property name="java.class.path" value="D:\App\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="D:\app\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2.3 -s D:\App\apache-maven-3.3.9\conf\settings.xml deploy"/>
-    <property name="java.home" value="C:\Users\Administrator\.jdks\corretto-17.0.6"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.2 -s D:\app\apache-maven-3.3.9\conf\settings.xml install"/>
+    <property name="java.home" value="D:\app\jdk"/>
     <property name="user.language" value="zh"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="17.0.6"/>
+    <property name="java.version" value="17.0.7"/>
     <property name="native.encoding" value="GBK"/>
     <property name="java.vendor" value="Amazon.com Inc."/>
-    <property name="maven.home" value="D:\App\apache-maven-3.3.9"/>
+    <property name="maven.home" value="D:\app\apache-maven-3.3.9"/>
     <property name="file.separator" value="\"/>
-    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.version.date" value="2023-04-18"/>
     <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="java.vendor.version" value="Corretto-17.0.6.10.1"/>
+    <property name="java.vendor.version" value="Corretto-17.0.7.7.1"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getPathTest" time="0.018"/>
+  <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getPathTest" time="0.005"/>
   <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getPathFTest" time="0"/>
   <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getURLTest" time="0"/>
   <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getClassLoaderTest" time="0"/>
-  <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getClassPathTest" time="0.001"/>
-  <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getFileTest" time="0.002"/>
-  <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getInputStreamTest" time="0.002"/>
+  <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getClassPathTest" time="0"/>
+  <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getFileTest" time="0"/>
+  <testcase classname="com.faintdream.tool.util.IOUtilTest" name="getInputStreamTest" time="0.001"/>
 </testsuite>
