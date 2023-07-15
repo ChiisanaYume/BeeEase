@@ -4,12 +4,10 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.common.PDStream;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
-
+import org.apache.pdfbox.pdmodel.PDPageContentStream.AppendMode;
 import java.io.IOException;
-import java.util.Iterator;
 
 /**
  * 添加页码
@@ -18,7 +16,7 @@ public class PageNumberMark implements PdfMark{
     /**
      * 默认实现
      *
-     * @param document
+     * @param document 要添加页码的文档
      */
     @Override
     public PDDocument Marking(PDDocument document) throws IOException {
@@ -26,7 +24,7 @@ public class PageNumberMark implements PdfMark{
 
         for (PDPage page : document.getPages()) {
 
-            PDPageContentStream contentStream = new PDPageContentStream(document, page,true,false,true);
+            PDPageContentStream contentStream = new PDPageContentStream(document,page,AppendMode.APPEND,false);
 
             // 设置字体和字号
             PDFont font = PDType1Font.HELVETICA_BOLD;
@@ -77,4 +75,5 @@ public class PageNumberMark implements PdfMark{
     public void setPageNumber(Long pageNumber) {
         this.pageNumber = pageNumber;
     }
+
 }

@@ -2,19 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.faintdrem</groupId>
         <artifactId>BeeEase</artifactId>
+        <groupId>com.faintdrem</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>test_javafx</artifactId>
+    <artifactId>gui</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <javafx.modulePath>E:\lib\Other\javafx-sdk-18\lib</javafx.modulePath>
     </properties>
 
 
@@ -42,36 +43,41 @@
             <version>4.13.2</version>
             <scope>compile</scope>
         </dependency>
-
-        <!-- PDFBox PDF操作 -->
-        <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
         <dependency>
-            <groupId>org.apache.pdfbox</groupId>
-            <artifactId>pdfbox</artifactId>
-            <version>2.0.28</version>
+            <groupId>com.faintdrem</groupId>
+            <artifactId>tool</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
 
     <build>
         <plugins>
+
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <!--设置jar压缩包的主类(带包名的完整类名)-->
-                            <mainClass>com.faintdream.gui.javafx.Main</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <executions>
+                    <execution>
+                        <id>default-cli</id>
+                        <configuration>
+                            <mainClass>com.faintdream.bee.gui.javafx.Demo41</mainClass>
+                            <jlink>
+                                <modulePath>${javafx.modulePath}</modulePath>
+                                <addModules>
+                                    <module>javafx.controls</module>
+                                    <module>javafx.fxml</module>
+                                </addModules>
+                            </jlink>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
+
 
         </plugins>
     </build>
-
 
 </project>

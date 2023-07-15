@@ -22,10 +22,11 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
     /**
      * 将图片插入到pdf文件
+     *
      * @param imageFile 图片文件
-     * @param pdfFile pdf文件名
+     * @param pdfFile   pdf文件名
      * @throws IOException IO异常
-     * */
+     */
     @Override
     public void pdfByImage(String imageFile, String pdfFile) throws IOException {
 
@@ -48,7 +49,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         // 注意: 方法中的坐标 (x, y) 表示图片左下角的位置
         contentStream.drawImage(image, info.getAxisX(), info.getAxisY(), info.getWidth(), info.getHeight());
 
-        // 单模式的话写入缓存
+        // 写入缓存
         writeTemp();
 
         // 关闭内容流
@@ -58,21 +59,24 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         additionInformation();
 
         // 保存 PDF 文件
-        saveFile(rename(pdfFile));
+        if (isAutoSave()) {
+            saveFile(pdfFile);
+        }
+
 
         // 关闭 PDF 文档
         // document.close();
     }
+
     /**
      * 将图片插入到pdf文件(从文件夹中获取)
-     * @param folder 图片文件夹
+     *
+     * @param folder  图片文件夹
      * @param pdfFile pdf文件名
      * @throws IOException IO异常
-     * */
+     */
     @Override
     public void pdfByFolder(String folder, String pdfFile) throws IOException {
-
-        boolean temp = isAutoSave();
 
         // 获取当前文件夹的所有图片文件
         Folder f = new FDFolder();
@@ -80,27 +84,30 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
 
         // 单模式存储多个文件
-        if(isSingleMode()){
+        if (isSingleMode()) {
             // 转换成PDF
             for (File file : files) {
-                pdfByImage(file.toString(), rename(pdfFile,getCountNo(true)));
+                pdfByImage(file.toString(), rename(pdfFile, getCountNo(true)));
             }
-            setAutoSave(temp); // 还原自动保存文件设置
             return;
         }
 
+        boolean temp1 = isAutoSave(); // 暂存原值
+        boolean temp2 = isEnableDocumentTemp(); // 暂存原值
+
         setAutoSave(false); // 暂时关闭自动保存文件
+        setEnableDocumentTemp(false); // 暂时关闭缓存
         // 转换成PDF
         for (File file : files) {
             pdfByImage(file.toString(), pdfFile);
         }
 
-        setAutoSave(temp); // 还原自动保存文件设置
+        setAutoSave(temp1); // 还原自动保存文件设置
+        setEnableDocumentTemp(temp2); // 还原缓存设置
         addPageNumber(); // 添加页码
         saveFile(pdfFile); // 保存文件
 
     }
-
 
     /**
      * newPage 新页面(对象内使用)
@@ -115,51 +122,36 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
     private Padding newPagePadding = new Padding(0, 0, 0, 0);
     private long countNo = 0L;
-    private List<PDDocument> documentTemps = new LinkedList<>();
+    private List<PDDocument> documentTemp = new LinkedList<>();
 
     private PageNumberMark pageNumberMark = new PageNumberMark();
 
 
-
     /**
-     * 是否开启单张图片处理模式(singleMode);
-     * singleMode 一次只处理一张图片，一张图片一个pdf
+     * singleMode 是否开启单张图片处理模式; 一次只处理一张图片，一张图片一个pdf
+     * fixedImageSize 图片自动拉伸; 图片大小恒等于: 页面 - 页边距（padding）
+     * ignorePaddingH 忽略水平方向的padding
+     * ignorePaddingV 忽略垂直方向的padding
+     * autoSave 自动保存
+     * markPageNumber 标注页码
+     * enableDocumentTemp 启用缓存
      */
     private boolean singleMode = true;
-
-    /**
-     * 图片自动拉伸(fixedImageSize);
-     * fixedImageSize 图片大小恒等于: 页面 - 页边距（padding）
-     */
     private boolean fixedImageSize = false;
-
-    /**
-     * 忽略水平 & 垂直方法的padding
-     * */
-    private boolean ignorePaddingH =true;
-
-    private boolean ignorePaddingV =false;
-
-    /**
-     * 自动保存(autoSave)
-     * */
-     private boolean autoSave = true;
-
-    /**
-     * 是否标注页码(markPageNumber)
-     */
-    private boolean markPageNumber;
+    private boolean ignorePaddingH = true;
+    private boolean ignorePaddingV = false;
+    private boolean autoSave = true;
+    private boolean markPageNumber = false;
+    private boolean enableDocumentTemp = true;
 
 
     public void saveFile(String fileName) throws IOException {
-        if(isAutoSave()){
-            save(fileName);
-        }
+        save(rename(fileName));
     }
 
     /**
      * 安全检查
-     * */
+     */
     private void securityCheck() throws IOException {
         // 文档关闭抛异常
         if (getDocument().isClosed()) {
@@ -188,26 +180,37 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
     /**
      * 写入缓存(只有单模式会启用缓存)
-     * */
-    private void writeTemp(){
-        if(isSingleMode()){
-            documentTemps.add(this);
+     */
+    private void writeTemp() throws IOException {
+        if(isEnableDocumentTemp()){
+            if (isSingleMode()) {
+                documentTemp.add(this);
+            } else {
+                // 将每一页都提取出来
+                DocumentOperation<PDDocument> operation = new PDFSimpleOperation();
+                try {
+                    List<PDDocument> documents = operation.split(this);
+                    documentTemp.addAll(documents);
+                } catch (Exception e) {
+                    throw new IOException(e);
+                }
+            }
         }
     }
 
     /**
      * 清空缓存
      */
-    public void resetTemp(){
-        documentTemps.clear();
+    public void resetTemp() {
+        documentTemp.clear();
         countNo = 0L;
     }
 
     /**
      * 添加页码
-     * */
+     */
     private void addPageNumber() throws IOException {
-        if(markPageNumber){
+        if (markPageNumber) {
             // 设置当前页码
             pageNumberMark.setPageNumber(1L);
             pageNumberMark.Marking(this);
@@ -218,6 +221,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
      * 计算图片的大小和位置
      */
     private ImageInfo setImageConfig(PDImageXObject image) {
+
 
         // 图片的尺寸,位置信息
         ImageInfo info = new ImageInfo();
@@ -234,6 +238,16 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         float actualWidth = pageWidth - newPagePadding.getLeft() - newPagePadding.getRight();
         float actualHeight = pageHeight - newPagePadding.getTop() - newPagePadding.getBottom();
 
+        // 图片自动拉伸(fixedImageSize); 图片大小 == 页面-页边距（padding） == 实际页面宽高
+        if(isFixedImageSize()){
+            info.setWidth(actualWidth);
+            info.setHeight(actualHeight);
+            info.setAxisX(newPagePadding.getLeft());
+            info.setAxisY(newPagePadding.getBottom());
+            return info;
+        }
+
+        // 正常流程
         // 计算尺寸
         info.setSize(calcSize(actualWidth, actualHeight, width, height));
 
@@ -249,9 +263,6 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
      * @param inner 图长
      */
     private float calcCP(float outer, float inner) {
-        if (isFixedImageSize()) {
-            System.out.println("---");
-        }
         return (outer - inner) / 2;
     }
 
@@ -268,7 +279,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         Position<Float> position = new ImagePosition();
 
         // 固定宽高
-        if(isFixedImageSize()){
+        if (isFixedImageSize()) {
             position.setX(newPagePadding.getLeft());
             position.setY(newPagePadding.getBottom());
             return position;
@@ -294,7 +305,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         Size<Float> size = new ImageSize();
 
         // 固定宽高
-        if(isFixedImageSize()){
+        if (isFixedImageSize()) {
             size.setWidth(outW);
             size.setHeight(outH);
         }
@@ -317,7 +328,7 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
     /**
      * 加载文件
-     * */
+     */
     private File loadFolder(String filename) throws IOException {
         // 加载图片文件
         File file = new File(filename);
@@ -352,26 +363,27 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
     /**
      * 加工一下文件名
-     * */
-    private String rename(String filename){
-        return rename(filename,null);
+     */
+    private String rename(String filename) {
+        return rename(filename, null);
     }
 
     /**
      * 加工一下文件名
-     * */
-    private String rename(String filename,Long no){
+     */
+    private String rename(String filename, Long no) {
         String newFileName = filename;
-        if(newFileName.endsWith(".pdf")||newFileName.endsWith(".PDF")){
+        if (newFileName.endsWith(".pdf") || newFileName.endsWith(".PDF")) {
             newFileName = filename.substring(0, filename.lastIndexOf("."));
-            if(no!=null){
+            if (no != null) {
                 newFileName = newFileName + "-" + no + ".pdf";
-            } else{
+            } else {
                 newFileName = newFileName + ".pdf";
             }
         }
         return newFileName;
     }
+
     /**
      * 设置PDF的属性信息
      */
@@ -441,8 +453,8 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         return countNo;
     }
 
-    private long getCountNo(boolean append){
-        if(append){
+    private long getCountNo(boolean append) {
+        if (append) {
             return ++countNo;
         }
         return getCountNo();
@@ -456,8 +468,8 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
         this.autoSave = autoSave;
     }
 
-    public List<PDDocument> getDocumentTemps() {
-        return documentTemps;
+    public List<PDDocument> getDocumentTemp() {
+        return documentTemp;
     }
 
     public boolean isMarkPageNumber() {
@@ -466,5 +478,21 @@ public class ImagePdfImpl extends PDDocument implements ImagePdf {
 
     public void setMarkPageNumber(boolean markPageNumber) {
         this.markPageNumber = markPageNumber;
+    }
+
+    public PageNumberMark getPageNumberMark() {
+        return pageNumberMark;
+    }
+
+    public void setPageNumberMark(PageNumberMark pageNumberMark) {
+        this.pageNumberMark = pageNumberMark;
+    }
+
+    public boolean isEnableDocumentTemp() {
+        return enableDocumentTemp;
+    }
+
+    public void setEnableDocumentTemp(boolean enableDocumentTemp) {
+        this.enableDocumentTemp = enableDocumentTemp;
     }
 }

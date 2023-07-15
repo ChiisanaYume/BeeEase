@@ -33,6 +33,7 @@
             <groupId>org.apache.pdfbox</groupId>
             <artifactId>pdfbox</artifactId>
             <version>2.0.28</version>
+            <!--version>3.0.0-RC1</version-->
         </dependency>
 
         <!-- https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls -->

@@ -16,20 +16,8 @@
         <option value="$PROJECT_DIR$/pdf/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/SmallTool/pom.xml" />
-        <option value="$PROJECT_DIR$/gui-test/pom.xml" />
-        <option value="$PROJECT_DIR$/module-test-001/pom.xml" />
-        <option value="$PROJECT_DIR$/module_A_test/pom.xml" />
-        <option value="$PROJECT_DIR$/module_B_test/pom.xml" />
-        <option value="$PROJECT_DIR$/module_C_test/pom.xml" />
-        <option value="$PROJECT_DIR$/module_D_test/pom.xml" />
-        <option value="$PROJECT_DIR$/module_E_test/pom.xml" />
-      </set>
-    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
-    <output url="file://C:/Windows/temp" />
+    <output url="file://C:/Windows/Temp" />
   </component>
 </project>

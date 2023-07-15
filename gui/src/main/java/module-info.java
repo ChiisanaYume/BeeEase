@@ -1,15 +1,15 @@
-module test_javafx {
+module gui {
 
 
     // 依赖的模块
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
-    requires org.apache.pdfbox;
+    requires tool;
 
     // 导出的包
-    exports com.faintdream.bee.test1.gui.javafx;
+    exports com.faintdream.bee.gui.javafx;
 
     // 将指定的包打开给其他模块(javafx.fxml)访问
-    opens com.faintdream.bee.test1.gui.javafx to javafx.fxml;
+    opens com.faintdream.bee.gui.javafx to javafx.fxml;
 }

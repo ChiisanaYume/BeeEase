@@ -67,9 +67,6 @@ public class ImagePdfImplTest {
         pdf.setAutoSave(true);
         pdf.pdfByFolder("test1","ImagePdfIMplTest-6.pdf");
         System.out.println(pdf);
-        // PDFSimpleOperation pdfSimpleOperation = new PDFSimpleOperation();
-        // pdfSimpleOperation.setAutoSave(true);
-        // pdfSimpleOperation.merge(pdf.getDocumentTemps());
         pdf.close();
     }
 

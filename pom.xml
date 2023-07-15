@@ -19,6 +19,7 @@
         <module>packageJavafx</module>
         <module>tool</module>
         <module>pdf</module>
+        <module>gui</module>
     </modules>
 
 </project>

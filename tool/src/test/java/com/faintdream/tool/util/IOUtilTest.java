@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
@@ -48,7 +49,7 @@ public class IOUtilTest {
     }
 
     @Test
-    public void getURLTest(){
+    public void getURLTest() throws IOException {
         URL url = IOUtil.getURL("box.png");
         System.out.println(url);
     }
