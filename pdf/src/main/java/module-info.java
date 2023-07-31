@@ -4,7 +4,7 @@ open module test_pdfbox {
     requires tool;
     requires junit;
     requires org.apache.pdfbox;
-
+    requires java.desktop;
 
 
 }

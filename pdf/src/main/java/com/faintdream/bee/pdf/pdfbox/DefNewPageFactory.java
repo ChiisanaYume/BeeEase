@@ -10,6 +10,7 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
  * @version 1.0
  * */
 public class DefNewPageFactory implements PageFactory<PDPage> {
+
     /**
      * 创建页面
      *

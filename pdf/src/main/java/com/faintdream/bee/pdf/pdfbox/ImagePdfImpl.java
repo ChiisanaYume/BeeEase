@@ -7,6 +7,7 @@ import com.faintdream.bee.pdf.pdfbox.bean.ImageInfo;
 import com.faintdream.bee.pdf.pdfbox.bean.ImagePosition;
 import com.faintdream.bee.pdf.pdfbox.bean.ImageSize;
 import com.faintdream.bee.pdf.pdfbox.bean.Padding;
+import com.faintdream.bee.pdf.pdfbox.modify.PageNumberMark;
 import com.faintdream.tool.io.Folder;
 import com.faintdream.tool.io.impl.FDFolder;
 import com.faintdream.tool.util.IOUtil;

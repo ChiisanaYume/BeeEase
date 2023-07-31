@@ -1,5 +1,6 @@
-package com.faintdream.bee.pdf.pdfbox;
+package com.faintdream.bee.pdf.pdfbox.modify;
 
+import com.faintdream.bee.pdf.pdfbox.PdfMark;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
@@ -12,7 +13,7 @@ import java.io.IOException;
 /**
  * 添加页码
  * */
-public class PageNumberMark implements PdfMark{
+public class PageNumberMark implements PdfMark {
     /**
      * 默认实现
      *
