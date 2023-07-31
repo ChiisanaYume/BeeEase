@@ -39,9 +39,19 @@ public class CutLineMark implements PdfMark {
 //            contentStream.stroke();
             float l = getCutLineLength();
 
+            // 左上
             line(contentStream,0,h,l,h);
             line(contentStream,0,h,0,h-l);
 
+            // 右上
+            line(contentStream,w,h,w-l,h);
+            line(contentStream,w,h,w,h-l);
+
+            // 右下
+            line(contentStream,w,0,w-l,0);
+            line(contentStream,w,0,w,l);
+
+            // 左下
             line(contentStream,0,0,0,l);
             line(contentStream,0,0,l,0);
 
