@@ -21,18 +21,22 @@ public class DefFileOperation implements FileOperation {
 
         // 尝试从类路径读取文件流
         try{
+            if(getClass().getClassLoader().getResource(filename)==null){
+                throw new IOException("类路径文件不存在");
+            }
             return getClass().getClassLoader().getResourceAsStream(filename);
         }catch (Exception ignored){
 
         }
 
+        System.out.println("测试3");
         // 尝试从绝对路径读取文件流
         try{
-            read(new File(filename));
+            return read(new File(filename));
         }catch (Exception ignored){
             // throw new IOException();
         }
-
+        System.out.println("测试2");
         throw new IOException("无法读取文件");
     }
 

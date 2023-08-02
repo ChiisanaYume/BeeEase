@@ -2,15 +2,16 @@ package com.faintdream.bee.pdf.pdfbox.modify;
 
 import com.faintdream.tool.io.FileOperation;
 import com.faintdream.tool.io.impl.DefFileOperation;
-import com.faintdream.tool.util.IOUtil;
 import org.apache.pdfbox.pdmodel.PDDocument;
+import org.junit.After;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-
-import static org.junit.Assert.*;
+import java.net.URL;
+import java.util.Objects;
 
 public class CutLineMarkTest {
 
@@ -22,20 +23,44 @@ public class CutLineMarkTest {
         CutLineMark mark = new CutLineMark();
         PDDocument document2 = mark.Marking(document);
 
-        document.save(getClass().getSimpleName() + "160X110 亿洲标牌0.8箭头铝 1块.pdf");
-        document2.save(getClass().getSimpleName() + "markingTest1-2.pdf");
+        document.save(getClass().getSimpleName() + " - " + "markingTest1-1.pdf");
+        document2.save(getClass().getSimpleName() + " - " + "markingTest1-2.pdf");
 
     }
+
     @Test
-    @Ignore
+
     public void markingTest2() throws IOException {
-        InputStream inputStream = oper.read("D:\\工作区w\\W打印\\2023\\08.01\\160X110 亿洲标牌0.8箭头铝 1块.pdf");
+        InputStream inputStream = oper.read("D:\\study\\temp\\160X110 亿洲标牌0.8箭头铝 1块.pdf");
         System.out.println(oper);
         System.out.println(inputStream);
-        PDDocument document = PDDocument.load(oper.read("D:\\工作区w\\W打印\\2023\\08.01\\160X110 亿洲标牌0.8箭头铝 1块.pdf"));
+        PDDocument document = PDDocument.load(oper.read("D:\\study\\temp\\160X110 亿洲标牌0.8箭头铝 1块.pdf"));
         CutLineMark mark = new CutLineMark();
         document = mark.Marking(document);
 
-        document.save(getClass().getSimpleName() + "E:\\桌面\\160X110 亿洲标牌0.8箭头铝 1块.pdf");
+        document.save(getClass().getSimpleName() + " - " + "160X110 亿洲标牌0.8箭头铝 1块.pdf");
     }
+
+    @After
+    public void close(){
+        String test1File1 = getClass().getSimpleName() + "markingTest1-1.pdf";
+        String test1File2 = getClass().getSimpleName() + "markingTest1-2.pdf";
+        String test2File1 = getClass().getSimpleName() + "160X110 亿洲标牌0.8箭头铝 1块.pdf";
+
+        deleteFileByClassPath(test1File1);
+        deleteFileByClassPath(test1File2);
+        deleteFileByClassPath(test2File1);
+
+    }
+
+    private void deleteFileByClassPath(String filename){
+        File file = new File(filename);
+        if(file.exists()){
+            boolean b = file.delete();
+            System.out.println(b);
+        }
+
+
+    }
+
 }

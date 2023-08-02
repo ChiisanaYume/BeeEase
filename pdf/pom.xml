@@ -59,12 +59,8 @@
             <artifactId>javafx-fxml</artifactId>
             <version>16</version>
         </dependency>
-        <dependency>
-            <groupId>com.faintdrem</groupId>
-            <artifactId>tool</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
+
+
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
