@@ -9,10 +9,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-
+    <groupId>com.faintdream</groupId>
     <artifactId>pdf</artifactId>
-
-
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -61,13 +59,26 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- 添加依赖项，例如依赖 module2 -->
-        <dependency>
-            <groupId>com.faintdream</groupId>
-            <artifactId>tool</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <!--设置jar压缩包的主类(带包名的完整类名)-->
+                            <mainClass>com.faintdream.test2.gui.javafx.Demo03</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
