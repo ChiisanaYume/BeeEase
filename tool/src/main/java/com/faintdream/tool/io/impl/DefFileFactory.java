@@ -4,6 +4,9 @@ import com.faintdream.tool.io.FileFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Files;
+import java.nio.file.FileAlreadyExistsException;
 
 public class DefFileFactory implements FileFactory {
 
@@ -29,10 +32,11 @@ public class DefFileFactory implements FileFactory {
      * */
     private void createFile(final File file) throws IOException {
 
-        File f = file.getAbsoluteFile();
+        File f = file.getAbsoluteFile(); // 绝对路径
+        Path path = f.toPath(); // Path对象
 
         // 如果传入的路径(File)指向一个文件夹而不是文件，抛出异常
-        if(!f.isFile()){
+        if(f.isDirectory()){
             throw new IOException("非法操作,不支持操作文件夹...");
         }
 
@@ -41,14 +45,16 @@ public class DefFileFactory implements FileFactory {
             return;
         }
 
-        // 创建文件
-        boolean exists = file.createNewFile();
-        if(exists){
-            throw new IOException("未知原因文件创建失败...");
+        // 如果父路径不存在,创建它
+        if (!path.getParent().toFile().exists()) {
+            Files.createDirectories(path.getParent());
         }
 
+        // 创建文件
+        Files.createFile(path);
 
     }
+
 
     public File getFile() {
         return file;
