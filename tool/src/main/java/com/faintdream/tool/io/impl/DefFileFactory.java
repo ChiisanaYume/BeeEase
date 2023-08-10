@@ -6,23 +6,33 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Files;
-import java.nio.file.FileAlreadyExistsException;
 
 public class DefFileFactory implements FileFactory {
 
     private File file;
+
+
+    @Override
+    public File build() throws Exception {
+        return build(getFile());
+    }
+
     /**
      * 创建文件
      *
-     * @return File  创建的文件
+     * @param file 文件的路径
+     * @return file 仍然返回这个文件的路径
      * @throws Exception 异常
      */
+
     @Override
-    public File build() throws Exception {
+    public File build(File file) throws Exception {
 
         // 创建文件(阻塞)
         createFile(file);
+
         // 将文件纳入FileOperation容器管理
+        // code
 
         return file;
     }
@@ -63,5 +73,6 @@ public class DefFileFactory implements FileFactory {
     public void setFile(File file) {
         this.file = file;
     }
+
 
 }
