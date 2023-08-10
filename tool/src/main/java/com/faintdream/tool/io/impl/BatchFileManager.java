@@ -35,6 +35,10 @@ public class BatchFileManager {
      * @param tag 标签
      * */
     public void delete(String tag) throws IOException {
+        if(tag==null||tag.equals("")){
+            throw new IOException("无效的标签");
+        }
+
         // 遍历fileMap
         for (File key : fileMap.keySet()) {
             if(tag.equals(fileMap.get(key))){
