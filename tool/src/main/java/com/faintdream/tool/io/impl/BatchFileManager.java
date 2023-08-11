@@ -52,4 +52,7 @@ public class BatchFileManager {
         df.deleteFile(file);
     }
 
+    public Map<File, String> getFileMap() {
+        return fileMap;
+    }
 }
