@@ -4,7 +4,9 @@ import com.faintdream.tool.io.DeleteFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -35,18 +37,30 @@ public class BatchFileManager {
      * @param tag 标签
      * */
     public void delete(String tag) throws IOException {
-        if(tag==null||tag.equals("")){
+        if (tag == null || tag.equals("")) {
             throw new IOException("无效的标签");
         }
 
-        // 遍历fileMap
-        for (File key : fileMap.keySet()) {
-            if(tag.equals(fileMap.get(key))){
-                delete(key);
+        // 使用 synchronized 锁住 fileMap
+        synchronized (fileMap) {
+
+            // 创建一个临时列表来保存需要删除的文件
+            List<File> filesToDelete = new ArrayList<>();
+
+            // 遍历fileMap
+            for (File key : fileMap.keySet()) {
+                if (tag.equals(fileMap.get(key))) {
+                    filesToDelete.add(key);
+                }
+            }
+
+            // 删除需要删除的文件
+            for (File file : filesToDelete) {
+                delete(file);
             }
         }
-
     }
+
 
     public void deleteFile(File file) throws IOException {
         df.deleteFile(file);

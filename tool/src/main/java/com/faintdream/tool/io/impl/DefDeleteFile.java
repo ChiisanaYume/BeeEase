@@ -13,7 +13,7 @@ public class DefDeleteFile implements DeleteFile {
      * @throws IOException IO异常
      * */
     @Override
-    public void deleteDirectory(final File directory) throws IOException {
+    public synchronized void deleteDirectory(final File directory) throws IOException {
 
         // 如果给定的文件是一个目录
         if (directory.isDirectory()) {
