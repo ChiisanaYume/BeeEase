@@ -21,14 +21,14 @@ public class DefReadFiles implements ReadFiles {
 
         // 尝试从类路径读取文件流
         try{
-            return readByClassPath(filename);
+            return readFromClassPath(filename);
         }catch (Exception ignored){
             // 忽略异常，继续执行程序
         }
 
         // 尝试从绝对路径读取文件流
         try{
-            return readByAbsolutePath(filename);
+            return readFromAbsolutePath(filename);
         }catch (Exception ignored){
             // 忽略异常，继续执行程序
         }
@@ -49,7 +49,7 @@ public class DefReadFiles implements ReadFiles {
     }
 
     @Override
-    public InputStream readByClassPath(String filename) throws IOException {
+    public InputStream readFromClassPath(String filename) throws IOException {
         if(getClass().getClassLoader().getResource(filename)==null){
             throw new IOException("类路径文件不存在");
         }
@@ -57,12 +57,12 @@ public class DefReadFiles implements ReadFiles {
     }
 
     @Override
-    public InputStream readByAbsolutePath(String filename) throws IOException {
+    public InputStream readFromAbsolutePath(String filename) throws IOException {
         return read(new File(filename));
     }
 
     @Override
-    public InputStream readByParent(String parent, String filename) {
+    public InputStream readFromParent(String parent, String filename) {
         return null;
     }
 }

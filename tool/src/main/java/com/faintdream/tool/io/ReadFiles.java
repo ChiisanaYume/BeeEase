@@ -27,7 +27,7 @@ public interface ReadFiles {
      * */
     InputStream read(File filename)throws IOException;
 
-    InputStream readByClassPath(String filename) throws IOException;
-    InputStream readByAbsolutePath(String file) throws IOException;
-    InputStream readByParent(String parent,String filename);
+    InputStream readFromClassPath(String filename) throws IOException;
+    InputStream readFromAbsolutePath(String file) throws IOException;
+    InputStream readFromParent(String parent, String filename);
 }
