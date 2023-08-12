@@ -1,11 +1,11 @@
 package com.faintdream.tool.io.impl;
 
-import com.faintdream.tool.io.DeleteFile;
+import com.faintdream.tool.io.DeleteFiles;
 
 import java.io.File;
 import java.io.IOException;
 
-public class DefDeleteFile implements DeleteFile {
+public class DefDeleteFiles implements DeleteFiles {
 
     /**
      * 删除目录并递归的删除子目录

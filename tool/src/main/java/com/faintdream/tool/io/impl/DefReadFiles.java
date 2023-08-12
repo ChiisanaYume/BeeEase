@@ -1,6 +1,6 @@
 package com.faintdream.tool.io.impl;
 
-import com.faintdream.tool.io.FileOperation;
+import com.faintdream.tool.io.ReadFiles;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class DefFileOperation implements FileOperation {
+public class DefReadFiles implements ReadFiles {
     /**
      * 读文件(获取文件流);
      *
@@ -17,21 +17,18 @@ public class DefFileOperation implements FileOperation {
      * @throws IOException IO异常
      */
     @Override
-    public InputStream read(String filename) throws IOException {
+    public InputStream read(final String filename) throws IOException {
 
         // 尝试从类路径读取文件流
         try{
-            if(getClass().getClassLoader().getResource(filename)==null){
-                throw new IOException("类路径文件不存在");
-            }
-            return getClass().getClassLoader().getResourceAsStream(filename);
+            return readByClassPath(filename);
         }catch (Exception ignored){
             // 忽略异常，继续执行程序
         }
 
         // 尝试从绝对路径读取文件流
         try{
-            return read(new File(filename));
+            return readByAbsolutePath(filename);
         }catch (Exception ignored){
             // 忽略异常，继续执行程序
         }
@@ -49,5 +46,23 @@ public class DefFileOperation implements FileOperation {
     public InputStream read(File filename) throws IOException {
         Path path = filename.getAbsoluteFile().toPath();
         return Files.newInputStream(path);
+    }
+
+    @Override
+    public InputStream readByClassPath(String filename) throws IOException {
+        if(getClass().getClassLoader().getResource(filename)==null){
+            throw new IOException("类路径文件不存在");
+        }
+        return getClass().getClassLoader().getResourceAsStream(filename);
+    }
+
+    @Override
+    public InputStream readByAbsolutePath(String filename) throws IOException {
+        return read(new File(filename));
+    }
+
+    @Override
+    public InputStream readByParent(String parent, String filename) {
+        return null;
     }
 }

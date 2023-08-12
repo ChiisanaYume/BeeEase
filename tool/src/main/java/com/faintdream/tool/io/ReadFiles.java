@@ -9,7 +9,7 @@ import java.io.InputStream;
  * @version 1.0
  * @author faintdream
  * */
-public interface FileOperation {
+public interface ReadFiles {
 
     /**
      * 读文件(获取文件流);
@@ -26,4 +26,8 @@ public interface FileOperation {
      * @throws IOException IO异常
      * */
     InputStream read(File filename)throws IOException;
+
+    InputStream readByClassPath(String filename) throws IOException;
+    InputStream readByAbsolutePath(String file) throws IOException;
+    InputStream readByParent(String parent,String filename);
 }

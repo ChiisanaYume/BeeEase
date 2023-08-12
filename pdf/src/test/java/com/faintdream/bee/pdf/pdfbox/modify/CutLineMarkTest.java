@@ -1,21 +1,18 @@
 package com.faintdream.bee.pdf.pdfbox.modify;
 
-import com.faintdream.tool.io.FileOperation;
-import com.faintdream.tool.io.impl.DefFileOperation;
+import com.faintdream.tool.io.ReadFiles;
+import com.faintdream.tool.io.impl.DefReadFiles;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.junit.After;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
-import java.util.Objects;
 
 public class CutLineMarkTest {
 
-    FileOperation oper = new DefFileOperation();
+    ReadFiles oper = new DefReadFiles();
 
     @Test
     public void markingTest1() throws IOException {
