@@ -17,24 +17,46 @@ import java.util.Map;
  * */
 public class BatchFileManager {
 
+    /**
+     * fileMap 维护的HashMap集合，以File为key,标签(String)为value
+     * df 需要使用DeleteFile对象来删除文件
+     * DEF_TAG 默认标签名
+     * */
     final private Map<File,String> fileMap = new HashMap<>();
     final private DeleteFile df = new DefDeleteFile();
+    final private String DEF_TAG = "default";
 
-    // 文件纳入BatchFileManager管理
+    /**
+     * 将文件纳入BatchFileManager管理
+     * @param file 文件路径
+     * @param tag 文件标签
+     * */
     public void add(File file,String tag){
         fileMap.put(file,tag);
     }
 
-    // 解除文件BatchFileManager管理
-    // 默认还会删除文件
+    /**
+     * 将文件纳入BatchFileManager管理(使用默认标牌)
+     * @param file 文件路径
+     * */
+    public void add(File file){
+        add(file,DEF_TAG);
+    }
+
+    /**
+     * 解除文件BatchFileManager管理并,并删除文件(根据文件路径)
+     * @param file 文件路径
+     * @throws IOException
+     * */
     public void delete(File file) throws IOException {
         fileMap.remove(file);
         deleteFile(file);
     }
 
     /**
-     * 解除文件BatchFileManager管理,并删除文件(根据标牌)
+     * 解除文件BatchFileManager管理,并删除文件(根据文件标牌)
      * @param tag 标签
+     * @throws IOException
      * */
     public void delete(String tag) throws IOException {
         if (tag == null || tag.equals("")) {
@@ -61,6 +83,9 @@ public class BatchFileManager {
         }
     }
 
+    /**
+     * 解除BatchFileManager管理的所有文件,并删除所有文件
+     * */
     public void delete() throws IOException {
 
         // 使用 synchronized 锁住 fileMap
