@@ -61,7 +61,20 @@ public class BatchFileManager {
         }
     }
 
+    public void delete() throws IOException {
 
+        // 使用 synchronized 锁住 fileMap
+        synchronized (fileMap) {
+
+            // 创建一个临时列表来保存需要删除的文件
+            List<File> filesToDelete = new ArrayList<>(fileMap.keySet());
+
+            // 删除需要删除的文件
+            for (File file : filesToDelete) {
+                delete(file);
+            }
+        }
+    }
     public void deleteFile(File file) throws IOException {
         df.deleteFile(file);
     }
