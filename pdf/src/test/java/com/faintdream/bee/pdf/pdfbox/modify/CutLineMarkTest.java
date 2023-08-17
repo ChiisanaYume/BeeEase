@@ -1,7 +1,7 @@
 package com.faintdream.bee.pdf.pdfbox.modify;
 
-import com.faintdream.tool.io.ReadFiles;
-import com.faintdream.tool.io.impl.DefReadFiles;
+import com.faintdream.tool.io.FilesRead;
+import com.faintdream.tool.io.impl.DefFilesRead;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.junit.After;
 import org.junit.Test;
@@ -12,7 +12,7 @@ import java.io.InputStream;
 
 public class CutLineMarkTest {
 
-    ReadFiles oper = new DefReadFiles();
+    FilesRead oper = new DefFilesRead();
 
     @Test
     public void markingTest1() throws IOException {

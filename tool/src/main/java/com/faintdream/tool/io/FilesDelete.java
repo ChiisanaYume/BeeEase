@@ -8,7 +8,7 @@ import java.io.IOException;
  * @author faintdream
  * @version 1.0
  * */
-public interface DeleteFiles {
+public interface FilesDelete {
 
     /**
      * 删除目录并递归的删除子目录

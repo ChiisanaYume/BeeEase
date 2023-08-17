@@ -6,9 +6,9 @@ import org.junit.Test;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class DefReadFilesTest {
+public class DefFilesReadTest {
 
-    private DefReadFiles drf = new DefReadFiles();
+    private DefFilesRead drf = new DefFilesRead();
     private ReadTextFromInputStreamAble rs = new ReadTextFromInputStream();
     @Test
     public void readFileFromAbsoluteTest() throws IOException {

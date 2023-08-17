@@ -9,7 +9,7 @@ import java.io.InputStream;
  * @version 1.0
  * @author faintdream
  * */
-public interface ReadFiles {
+public interface FilesRead {
 
     /**
      * 读文件(获取文件流);

@@ -1,6 +1,6 @@
 package com.faintdream.tool.io.impl;
 
-import com.faintdream.tool.io.ReadFiles;
+import com.faintdream.tool.io.FilesRead;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class DefReadFiles implements ReadFiles {
+public class DefFilesRead implements FilesRead {
     /**
      * 读文件(获取文件流);
      *

@@ -1,6 +1,6 @@
 package com.faintdream.tool.io.impl;
 
-import com.faintdream.tool.io.DeleteFiles;
+import com.faintdream.tool.io.FilesDelete;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,7 +23,7 @@ public class BatchFileManager {
      * DEF_TAG 默认标签名
      * */
     final private Map<File,String> fileMap = new HashMap<>();
-    final private DeleteFiles df = new DefDeleteFiles();
+    final private FilesDelete df = new DefFilesDelete();
     final private String DEF_TAG = "default";
 
     /**
