@@ -19,7 +19,7 @@
 
     <dependencies>
 
-        <!--junit 单元测试-->
+        <!--junit 单元测试 -->
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
@@ -28,6 +28,7 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- JetBrains 注解库 -->
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
