@@ -36,7 +36,7 @@ public class BatchFileManager {
     }
 
     /**
-     * 将文件纳入BatchFileManager管理(使用默认标牌)
+     * 将文件纳入BatchFileManager管理(使用默认标签)
      * @param file 文件路径
      * */
     public void add(File file){
