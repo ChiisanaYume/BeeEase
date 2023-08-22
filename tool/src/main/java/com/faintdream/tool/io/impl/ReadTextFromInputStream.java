@@ -2,12 +2,8 @@ package com.faintdream.tool.io.impl;
 
 import com.faintdream.tool.io.ReadTextFromInputStreamAble;
 import com.faintdream.tool.io.Reuse;
-import org.jetbrains.annotations.Range;
-
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class ReadTextFromInputStream implements ReadTextFromInputStreamAble {
 

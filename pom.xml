@@ -18,6 +18,7 @@
         <module>packageJavafx</module>
         <module>pdf</module>
         <module>gui</module>
+        <module>compare</module>
     </modules>
 
 </project>

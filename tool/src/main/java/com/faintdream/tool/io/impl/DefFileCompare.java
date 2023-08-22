@@ -29,10 +29,10 @@ public class DefFileCompare implements FilesCompare {
             if (compare(files[0], files[i])) {
                 continue;
             }
-            return true;
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     public boolean compare(final File file1, final File file2) throws IOException {
