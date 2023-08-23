@@ -12,7 +12,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 
 import com.faintdream.tool.io.FilesCompare;
 import com.faintdream.tool.io.impl.DefFilesCompare;
@@ -26,7 +25,7 @@ public class CompareWindow {
             // 选择的文件
             List<File> selectedFiles = new LinkedList<>();
 
-            JFrame frame = new JFrame("文件拖放示例");
+            JFrame frame = new JFrame("比较文件是否完全相同");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             JPanel panel = new JPanel();
@@ -34,6 +33,10 @@ public class CompareWindow {
 
             JTextArea textArea = new JTextArea();
             textArea.setEditable(false);
+
+            // 设置文本颜色为红色
+            textArea.setForeground(Color.RED);
+
             panel.add(new JScrollPane(textArea), BorderLayout.CENTER);
 
             // 添加底部面板
@@ -41,13 +44,9 @@ public class CompareWindow {
 
             // 添加`文件对比`按钮，并绑定事件
             JButton compareButton = new JButton("文件对比");
-
             compareButton.addActionListener(e -> {
-                // 在这里执行对比操作，您可以从 textArea 中获取文件路径并进行比较
-                // 比如，您可以将文件路径存储在一个数据结构中，然后执行比较逻辑
-                // 这里只是示例，具体操作需要根据您的需求来实现
-                // 这里仅清空文本区域作为示例
 
+                // 在这里执行对比操作，您可以从 textArea 中获取文件路径并进行比较
                 StringBuffer text = new StringBuffer();
                 text.append("\n");
 
@@ -76,17 +75,16 @@ public class CompareWindow {
             // 为`文件对比`按钮(后入先至???)绑定新事件
             compareButton.addActionListener(e ->{
                 textArea.append("\n程序运行比较慢,请耐心等待...\n");
-                try {
-                    Thread.sleep(200);
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
-                }
             });
+
 
             // 添加`清理输出`按钮(后入先至???)，并绑定事件
             JButton clearButton = new JButton("清理输出");
             clearButton.addActionListener(e -> {
+                // 清空List集合
+                selectedFiles.clear();
                 textArea.setText("");
+
             });
 
             // 添加`关闭窗口`按钮，并绑定事件
@@ -122,6 +120,7 @@ public class CompareWindow {
     }
 
     // 启用文件拖放支持的方法
+    @SuppressWarnings("spell")
     private static void enableFileDrop(Component component, FileDropListener listener) {
         DropTarget dropTarget = new DropTarget(component, new DropTargetAdapter() {
             @Override
