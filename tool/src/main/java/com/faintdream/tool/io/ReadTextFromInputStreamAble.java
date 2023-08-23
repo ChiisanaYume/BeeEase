@@ -8,6 +8,7 @@ import java.io.InputStream;
  * @version 1.0
  * @author faintdream
  * */
+@FunctionalInterface
 public interface ReadTextFromInputStreamAble {
 
     /**

@@ -8,6 +8,7 @@ import java.io.IOException;
  * @version 1.0
  * 判断文件是否(完全)相同
  * */
+@FunctionalInterface
 public interface FilesCompare {
 
     /**

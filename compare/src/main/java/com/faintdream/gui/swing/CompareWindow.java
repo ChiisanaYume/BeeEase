@@ -10,10 +10,9 @@ import java.awt.dnd.DropTargetAdapter;
 import java.awt.dnd.DropTargetDropEvent;
 import java.io.File;
 import java.io.IOException;
-import java.util.LinkedList;
 import java.util.List;
 import com.faintdream.tool.io.FilesCompare;
-import com.faintdream.tool.io.impl.DefFileCompare;
+import com.faintdream.tool.io.impl.DefFilesCompare;
 
 
 @SuppressWarnings("unchecked")
@@ -37,14 +36,7 @@ public class CompareWindow {
 
             // 添加对比按钮
             JButton compareButton = new JButton("文件对比");
-            compareButton.addActionListener(e ->{
-                textArea.append("\n程序运行比较慢,请耐心等待...\n\n");
-                try {
-                    Thread.sleep(200);
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
-                }
-            });
+
             compareButton.addActionListener(e -> {
                 // 在这里执行对比操作，您可以从 textArea 中获取文件路径并进行比较
                 // 比如，您可以将文件路径存储在一个数据结构中，然后执行比较逻辑
@@ -53,14 +45,16 @@ public class CompareWindow {
 
                 StringBuffer text = new StringBuffer();
                 text.append("\n");
-                File[] files = selectedFiles.toArray(new File[selectedFiles.size()]);
-                FilesCompare fileCompare = new DefFileCompare();
-
+                File[] files = new File[selectedFiles.size()];
+                FilesCompare fileCompare = new DefFilesCompare();
+                for (int i = 0; i < files.length; i++) {
+                    files[i] = selectedFiles.get(i);
+                }
                 try {
                     if(fileCompare.compare(files)) {
-                        text.append("--所有文件相同--\n\n");
+                        text.append("-- 所有文件均相同 --\n\n");
                     } else {
-                        text.append("--有文件不相同--\n\n");
+                        text.append("-- 有不相同的文件 --\n\n");
                     }
                 } catch (IOException ex) {
                     ex.printStackTrace();
@@ -70,7 +64,16 @@ public class CompareWindow {
 
             });
 
-            // 添加对比按钮
+            compareButton.addActionListener(e ->{
+                textArea.append("\n程序运行比较慢,请耐心等待...\n\n");
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            });
+
+            // 添加`清理输出`按钮( 后入先至 )
             JButton clearButton = new JButton("清理输出");
             clearButton.addActionListener(e -> {
                 textArea.setText("");

@@ -9,6 +9,7 @@ import java.util.List;
  * @author faintdream
  * @version 1.0
  * */
+@FunctionalInterface
 public interface Folder {
 
     /**

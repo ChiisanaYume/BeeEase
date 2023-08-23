@@ -12,9 +12,10 @@ import java.io.InputStream;
  * 使用java流读取文件，然后逐字节进行比较，如果有一个字节不相同，那个文件就不相同
  * @version 1.0
  * @author faintdream
- * @see FilesCompare
+ * @see com.faintdream.tool.io.FilesCompare
  * */
-public class DefFileCompare implements FilesCompare {
+
+public class DefFilesCompare implements FilesCompare {
     /**
      * 判断所有文件是否完全相同
      *
@@ -34,7 +35,6 @@ public class DefFileCompare implements FilesCompare {
 
         return true;
     }
-
     public boolean compare(final File file1, final File file2) throws IOException {
 
         // 获取绝对路径
@@ -49,6 +49,11 @@ public class DefFileCompare implements FilesCompare {
         if (!f2.exists()) {
             throw new IOException("文件不存在");
         }
+
+//        // 判断两个文件的路径是否完全相同
+//        if (f1.equals(f2)) {
+//            return true;
+//        }
 
         // 分别读取两个文件
         FilesRead filesRead = new DefFilesRead();

@@ -6,6 +6,8 @@ package com.faintdream.tool;
  * @version 1.0
  * @param <P> Product 生产的商品
  * */
+
+@FunctionalInterface
 public interface Factory<P>{
     /**
      * 生产商品

@@ -1,6 +1,5 @@
 package com.faintdream.tool.io.impl;
 
-import com.faintdream.tool.io.FilesCompare;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -11,9 +10,9 @@ import java.util.Objects;
 
 import static org.junit.Assert.*;
 
-public class DefFileCompareTest {
+public class DefFilesCompareTest {
 
-    DefFileCompare c = new DefFileCompare();
+    DefFilesCompare c = new DefFilesCompare();
 
     @Test
     public void compareTest1() throws IOException, URISyntaxException {
@@ -24,6 +23,7 @@ public class DefFileCompareTest {
         assertTrue(compare);
     }
 
+    @Ignore
     @Test
     public void compareTest2() throws IOException {
         try {

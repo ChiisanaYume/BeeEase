@@ -4,4 +4,5 @@ open module pdf {
     requires java.base;
     requires java.desktop;
     requires junit;
+    requires tool;
 }
