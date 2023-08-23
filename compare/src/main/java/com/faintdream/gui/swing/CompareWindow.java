@@ -10,17 +10,22 @@ import java.awt.dnd.DropTargetAdapter;
 import java.awt.dnd.DropTargetDropEvent;
 import java.io.File;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
+
 import com.faintdream.tool.io.FilesCompare;
 import com.faintdream.tool.io.impl.DefFilesCompare;
 
 
 @SuppressWarnings("unchecked")
 public class CompareWindow {
-
-    static private List<File> selectedFiles;
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
+
+            // 选择的文件
+            List<File> selectedFiles = new LinkedList<>();
+
             JFrame frame = new JFrame("文件拖放示例");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -34,7 +39,7 @@ public class CompareWindow {
             // 添加底部面板
             JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
-            // 添加对比按钮
+            // 添加`文件对比`按钮，并绑定事件
             JButton compareButton = new JButton("文件对比");
 
             compareButton.addActionListener(e -> {
@@ -45,11 +50,14 @@ public class CompareWindow {
 
                 StringBuffer text = new StringBuffer();
                 text.append("\n");
+
+                // 将List集合转化为数组
                 File[] files = new File[selectedFiles.size()];
                 FilesCompare fileCompare = new DefFilesCompare();
                 for (int i = 0; i < files.length; i++) {
                     files[i] = selectedFiles.get(i);
                 }
+
                 try {
                     if(fileCompare.compare(files)) {
                         text.append("-- 所有文件均相同 --\n\n");
@@ -60,12 +68,14 @@ public class CompareWindow {
                     ex.printStackTrace();
                 }
 
+                // 清空List集合
+                selectedFiles.clear();
                 textArea.append(text.toString());
 
             });
-
+            // 为`文件对比`按钮(后入先至???)绑定新事件
             compareButton.addActionListener(e ->{
-                textArea.append("\n程序运行比较慢,请耐心等待...\n\n");
+                textArea.append("\n程序运行比较慢,请耐心等待...\n");
                 try {
                     Thread.sleep(200);
                 } catch (InterruptedException ex) {
@@ -73,13 +83,13 @@ public class CompareWindow {
                 }
             });
 
-            // 添加`清理输出`按钮( 后入先至 )
+            // 添加`清理输出`按钮(后入先至???)，并绑定事件
             JButton clearButton = new JButton("清理输出");
             clearButton.addActionListener(e -> {
                 textArea.setText("");
             });
 
-            // 添加关闭按钮
+            // 添加`关闭窗口`按钮，并绑定事件
             JButton closeButton = new JButton("关闭窗口");
             closeButton.addActionListener(e -> {
                 frame.dispose(); // 关闭窗口
@@ -101,9 +111,10 @@ public class CompareWindow {
             // 启用文件拖放支持
             enableFileDrop(textArea, files -> {
                 StringBuilder builder = new StringBuilder();
-                selectedFiles = files;
+                //selectedFiles.set(files);
                 for (File file : files) {
                     builder.append(file.getAbsolutePath()).append("\n");
+                    selectedFiles.add(file.getAbsoluteFile());
                 }
                 textArea.append(builder.toString());
             });

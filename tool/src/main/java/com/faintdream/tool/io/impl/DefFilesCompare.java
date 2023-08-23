@@ -50,10 +50,10 @@ public class DefFilesCompare implements FilesCompare {
             throw new IOException("文件不存在");
         }
 
-//        // 判断两个文件的路径是否完全相同
-//        if (f1.equals(f2)) {
-//            return true;
-//        }
+        // 判断两个文件的路径是否完全相同
+        if (f1.equals(f2)) {
+            return true;
+        }
 
         // 分别读取两个文件
         FilesRead filesRead = new DefFilesRead();
