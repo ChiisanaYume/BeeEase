@@ -9,11 +9,17 @@ import java.awt.dnd.DropTarget;
 import java.awt.dnd.DropTargetAdapter;
 import java.awt.dnd.DropTargetDropEvent;
 import java.io.File;
+import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
+import com.faintdream.tool.io.FilesCompare;
+import com.faintdream.tool.io.impl.DefFileCompare;
 
 
 @SuppressWarnings("unchecked")
 public class CompareWindow {
+
+    static private List<File> selectedFiles;
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("文件拖放示例");
@@ -31,17 +37,37 @@ public class CompareWindow {
 
             // 添加对比按钮
             JButton compareButton = new JButton("文件对比");
+            compareButton.addActionListener(e ->{
+                textArea.append("\n程序运行比较慢,请耐心等待...\n\n");
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            });
             compareButton.addActionListener(e -> {
                 // 在这里执行对比操作，您可以从 textArea 中获取文件路径并进行比较
                 // 比如，您可以将文件路径存储在一个数据结构中，然后执行比较逻辑
                 // 这里只是示例，具体操作需要根据您的需求来实现
                 // 这里仅清空文本区域作为示例
+
                 StringBuffer text = new StringBuffer();
-                text.append(textArea.getText());
                 text.append("\n");
-                text.append("--所有文件完全相同--");
-                text.append("\n");
-                textArea.setText(text.toString());
+                File[] files = selectedFiles.toArray(new File[selectedFiles.size()]);
+                FilesCompare fileCompare = new DefFileCompare();
+
+                try {
+                    if(fileCompare.compare(files)) {
+                        text.append("--所有文件相同--\n\n");
+                    } else {
+                        text.append("--有文件不相同--\n\n");
+                    }
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+
+                textArea.append(text.toString());
+
             });
 
             // 添加对比按钮
@@ -72,6 +98,7 @@ public class CompareWindow {
             // 启用文件拖放支持
             enableFileDrop(textArea, files -> {
                 StringBuilder builder = new StringBuilder();
+                selectedFiles = files;
                 for (File file : files) {
                     builder.append(file.getAbsolutePath()).append("\n");
                 }
