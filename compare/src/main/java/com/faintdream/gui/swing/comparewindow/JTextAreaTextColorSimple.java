@@ -1,4 +1,4 @@
-package com.faintdream.gui.swing;
+package com.faintdream.gui.swing.comparewindow;
 
 import javax.swing.*;
 import java.awt.Color;

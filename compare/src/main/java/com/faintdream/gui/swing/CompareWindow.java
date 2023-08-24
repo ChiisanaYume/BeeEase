@@ -25,14 +25,14 @@ public class CompareWindow {
             // 选择的文件
             List<File> selectedFiles = new LinkedList<>();
 
-            JFrame frame = new JFrame("比较文件是否完全相同");
+            JFrame frame = new JFrame("文件比较(比较文件是否完全相同)");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             JPanel panel = new JPanel();
             panel.setLayout(new BorderLayout());
 
             JTextArea textArea = new JTextArea();
-            textArea.setEditable(false);
+            textArea.append("程序运行可能会比较慢,请耐心等待...\n\n");
 
             // 设置文本颜色为红色
             textArea.setForeground(Color.RED);
@@ -74,7 +74,7 @@ public class CompareWindow {
             });
             // 为`文件对比`按钮(后入先至???)绑定新事件
             compareButton.addActionListener(e ->{
-                textArea.append("\n程序运行比较慢,请耐心等待...\n");
+                //textArea.append("\n程序运行比较慢,请耐心等待...\n");
             });
 
 
@@ -84,6 +84,7 @@ public class CompareWindow {
                 // 清空List集合
                 selectedFiles.clear();
                 textArea.setText("");
+                textArea.append("程序运行可能会比较慢,请耐心等待...\n\n");
 
             });
 
@@ -103,7 +104,7 @@ public class CompareWindow {
             panel.add(bottomPanel, BorderLayout.SOUTH);
 
             frame.add(panel);
-            frame.setSize(400, 300);
+            frame.setSize(500, 300);
             frame.setVisible(true);
 
             // 启用文件拖放支持
@@ -116,7 +117,9 @@ public class CompareWindow {
                 }
                 textArea.append(builder.toString());
             });
+
         });
+
     }
 
     // 启用文件拖放支持的方法
