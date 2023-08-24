@@ -109,13 +109,20 @@ public class CompareWindow {
 
             // 启用文件拖放支持
             enableFileDrop(textArea, files -> {
-                StringBuilder builder = new StringBuilder();
+                StringBuilder text = new StringBuilder();
                 //selectedFiles.set(files);
                 for (File file : files) {
-                    builder.append(file.getAbsolutePath()).append("\n");
+
+                    text.append(file.getAbsolutePath()).append("\n");
+
+                    // 如果拖拽的是目录
+                    if(file.isDirectory()){
+                        text.append("注意:目录并不会加入比较列表\n");
+                        continue;
+                    }
                     selectedFiles.add(file.getAbsoluteFile());
                 }
-                textArea.append(builder.toString());
+                textArea.append(text.toString());
             });
 
         });
