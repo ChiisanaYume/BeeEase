@@ -104,7 +104,7 @@ public class CompareWindow {
             panel.add(bottomPanel, BorderLayout.SOUTH);
 
             frame.add(panel);
-            frame.setSize(500, 300);
+            frame.setSize(400, 300);
             frame.setVisible(true);
 
             // 启用文件拖放支持

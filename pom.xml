@@ -17,7 +17,6 @@
         <module>test_javafx_beta</module>
         <module>packageJavafx</module>
         <module>pdf</module>
-        <module>gui</module>
         <module>compare</module>
     </modules>
 
